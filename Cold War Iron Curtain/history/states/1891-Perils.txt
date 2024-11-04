@@ -1,21 +1,13 @@
-
 state={
-	id=960
-	name="STATE_960"
+	id=1891
+	name="STATE_1891"
 
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 1291 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 1364 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 1376 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 4310 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 7342 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 12215 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16467 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16473 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16475 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 12144 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 16476 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
 		owner = MAL
 		set_state_flag = tropical
@@ -25,11 +17,17 @@ state={
 		add_core_of = MAL
 		add_core_of = MLA
 		victory_points = {
-			7342 1 #Sungai Petani
+			12144 3 #Kedah
+		}
+		victory_points = {
+			16476 1 #Perlis
 		}
 		buildings = {
 			infrastructure = 1
 			state_infrastructure = 1
+			12144 = {
+				naval_base = 2
+			}
 		}
 		set_state_flag = HDI2
 		set_variable = {
@@ -205,11 +203,10 @@ state={
 		}
 
 	}
-
 	provinces={
-		1291 1364 1376 4310 7342 12215 16467 16473 16475 
+		12144 16476 
 	}
-	manpower=831761
+	manpower=415881
 	buildings_max_level_factor=1.000
 	state_category=pop1dev1
 	local_supplies=0.000
