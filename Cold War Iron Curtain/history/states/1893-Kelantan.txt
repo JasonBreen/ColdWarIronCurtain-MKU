@@ -1,20 +1,15 @@
-
 state={
-	id=792
-	name="STATE_792"
-	resources={
-		steel=8.000
-		tungsten=28.000
-	}
+	id=1893
+	name="STATE_1893"
 
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 4355 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 12199 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16469 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16471 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 7329 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 10227 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 16470 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 16472 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
 		owner = MAL
 		set_state_flag = tropical
@@ -23,21 +18,17 @@ state={
 		set_state_flag = undeveloped
 		add_core_of = MAL
 		add_core_of = MLA
-		1960.7.1 = {
-			remove_core_of = MLA
-
-		}
 		victory_points = {
-			12199 5 #Kuala Terengganu
-		}
-		victory_points = {
-			4355 1 #Kuala Dungun
+			16472 3 #Kelantan
 		}
 		buildings = {
 			infrastructure = 0
 			state_infrastructure = 1
 			arms_factory = 1
 			fossil_fuel_powerplant = 1
+			7329 = {
+				naval_base = 1
+			}
 		}
 		set_state_flag = HDI2
 		set_variable = {
@@ -190,25 +181,30 @@ state={
 			set_state_category = pop1dev3
 
 		}
-	    set_variable = {	
-            college_educated = 0
-        }
-        set_variable = {
-            high_school_educated = 2
-        }
-        set_variable = {
-            primary_educated = 11
-        }
-        set_variable = {
-            literate_educated = 29
-        }
+		set_variable = {
+			college_educated = 0
+
+		}
+		set_variable = {
+			high_school_educated = 2
+
+		}
+		set_variable = {
+			primary_educated = 11
+
+		}
+		set_variable = {
+			literate_educated = 29
+
+		}
+
 	}
 
 	provinces={
-		4355 7329 10227 12199 16469 16470 16471 16472 
+		7329 10227 16470 16472 
 	}
 	manpower=342781
-	buildings_max_level_factor=1.000
 	state_category=pop1dev1
+	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
