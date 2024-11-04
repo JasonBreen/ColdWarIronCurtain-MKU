@@ -1,19 +1,13 @@
-
 state={
-	id=784
-	name="STATE_784"
-	resources={
-		steel=38
-		aluminium=10
-	}
-
+	id=1894
+	name="STATE_1894"
+	
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 4024 } add_to_array = { THIS.vp_values = 15 }
-		add_to_array = { THIS.vp_provinces = 16463 } add_to_array = { THIS.vp_values = 5 }
-		add_to_array = { THIS.vp_provinces = 10297 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 4412 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 16462 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
 		owner = MAL
 		set_state_flag = tropical
@@ -22,16 +16,6 @@ state={
 		set_state_flag = semideveloped
 		add_core_of = MAL
 		add_core_of = MLA
-		1960.7.1 = {
-			remove_core_of = MLA
-
-		}
-		victory_points = {
-			4024 15 
-		}
-		victory_points = {
-			16463 5 
-		}
 		buildings = {
 			infrastructure = 1
 			state_infrastructure = 1
@@ -39,11 +23,6 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 4
-			10297 = {
-				naval_base = 4
-
-			}
-
 		}
 		set_state_flag = HDI3
 		set_variable = {
@@ -214,11 +193,10 @@ state={
             literate_educated = 44
         }
 	}
-
 	provinces={
-		4024 10297 16463 
+		4412 16462 
 	}
-	manpower=189000
+	manpower=711471
 	buildings_max_level_factor=1.000
 	state_category=pop3dev2
 	local_supplies=0.000
