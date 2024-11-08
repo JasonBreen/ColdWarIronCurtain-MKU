@@ -1,57 +1,13 @@
-
 state={
-	id=1261
-	name="STATE_1261"
+	id=1896
+	name="STATE_1896"
 
-	history={
-		add_to_array = {
-			THIS.vp_provinces = 10386
-
-		}
-		add_to_array = {
-			THIS.vp_values = 10
-
-		}
-		add_to_array = {
-			THIS.vp_provinces = 4588
-
-		}
-		add_to_array = {
-			THIS.vp_values = 0
-
-		}
-		add_to_array = {
-			THIS.vp_provinces = 10486
-
-		}
-		add_to_array = {
-			THIS.vp_values = 0
-
-		}
-		add_to_array = {
-			THIS.vp_provinces = 12335
-
-		}
-		add_to_array = {
-			THIS.vp_values = 0
-
-		}
-		add_to_array = {
-			THIS.vp_provinces = 12464
-
-		}
-		add_to_array = {
-			THIS.vp_values = 0
-
-		}
-		add_to_array = {
-			THIS.vp_provinces = 12492
-
-		}
-		add_to_array = {
-			THIS.vp_values = 0
-
-		}
+	history = {
+		### MACHINE-GENERATED SECTION ###
+		# Do not touch, unless you've edited the victory points,
+		# in which case you should regenerate the whole set.
+		add_to_array = { THIS.vp_provinces = 4087 } add_to_array = { THIS.vp_values = 0 }
+		### END OF MACHINE-GENERATED SECTION ###
 		owner = BRM
 		set_state_flag = tropical
 		set_state_flag = lakes
@@ -59,9 +15,6 @@ state={
 		set_state_flag = verypoor
 		add_core_of = BRM
 		add_core_of = BCP
-		victory_points = {
-			10386 10 
-		}
 		buildings = {
 			infrastructure = 0
 			state_infrastructure = 0
@@ -241,12 +194,10 @@ state={
 		}
 
 	}
-
 	provinces={
-		4588 10386 10486 12335 12464 12492 
+		4087 
 	}
-	manpower=1841097
+	manpower=1151
 	buildings_max_level_factor=1.000
-	state_category=pop1
 	local_supplies=0.000
 }
