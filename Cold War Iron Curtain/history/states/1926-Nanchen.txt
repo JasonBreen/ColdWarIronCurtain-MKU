@@ -1,16 +1,11 @@
-state = {
-	id = 1359
-	name = "STATE_1359"  #yushu
-	resources = {
-	}
+state={
+	id=1926
+	name="STATE_1926"
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 4914 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 8018 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 8037 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 12899 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 4964 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
 		owner = CHI
 		set_state_flag = mountains
@@ -49,11 +44,11 @@ state = {
 		#Judaic#
 		set_variable = { ReligionJudaism = 0 }
 		#Islamic#
-		set_variable = { ReligionIslamSunni = 10 }
+		set_variable = { ReligionIslamSunni = 0 }
 		set_variable = { ReligionIslamShia = 0 }
 		set_variable = { ReligionIslamIbadi = 0 }
 		#Buddhism#
-		set_variable = { ReligionBuddhismVajrayana = 90 }
+		set_variable = { ReligionBuddhismVajrayana = 100 }
 		set_variable = { ReligionBuddhismMahayana = 0 }
 		set_variable = { ReligionBuddhismThereveda = 0 }
 		#Eastern#
@@ -106,11 +101,10 @@ state = {
             literate_educated = 6
         }
 	}
-	provinces = {					
-        12899 8018 4914 8037
+	provinces={
+		4964 
 	}
-	manpower = 87837
-	buildings_max_level_factor = 1.000
-	state_category = pop1
-	local_supplies = 50.000
+	manpower=4773
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }
