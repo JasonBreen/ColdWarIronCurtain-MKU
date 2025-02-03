@@ -1,28 +1,27 @@
+
 state={
-	id=872
-	name="STATE_872"
+	id=1957
+	name="STATE_1957"
 	resources={
-		oil=1.000
+
 	}
 
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 1288 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 10165 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 10236 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 10306 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 12236 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
 		owner = PHI
 		set_state_flag = tropical
-		set_state_flag = riverlarge
+		set_state_flag = lakes
 		set_state_flag = small
-		set_state_flag = semideveloped
+		set_state_flag = decent
 		buildings = {
 			infrastructure = 1
 			state_infrastructure = 1
-			industrial_complex = 1
-			fossil_fuel_powerplant = 1
-			air_base = 1
 
 		}
 		add_core_of = PHI
@@ -33,10 +32,6 @@ state={
 		}
 		add_to_array = {
 			culture = 72
-
-		}
-		add_to_array = {
-			culture = 418
 
 		}
 		set_variable = {
@@ -159,32 +154,30 @@ state={
 			ReligionOther = 0
 
 		}
-
 		1980.1.1 = {
-			add_manpower = 601640
-			set_state_category = pop2dev2
+			add_manpower = 702291
+			set_state_category = pop3dev2
 
 		}
-
         set_variable = {
-            college_educated = 1
+            college_educated = 2
         }
         set_variable = {
-            high_school_educated = 6
+            high_school_educated = 8
         }
         set_variable = {
-            primary_educated = 30
+            primary_educated = 37
         }
         set_variable = {
-            literate_educated = 70
+            literate_educated = 74
         }
 	}
 
 	provinces={
-		1288 10165  
+		10236 10306 12236 
 	}
-	manpower=467769
+	manpower=426986
 	buildings_max_level_factor=1.000
-	state_category=pop2dev1
+	state_category=pop2dev2
 	local_supplies=0.000
 }
