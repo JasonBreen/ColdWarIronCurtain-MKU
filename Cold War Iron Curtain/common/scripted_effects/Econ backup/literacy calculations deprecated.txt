@@ -4,8 +4,16 @@
 #college_educated
 
 literacy_calculation = {
+	#log = "[?THIS.modifier@education_gain_rate]"
 
+	set_variable = { a = THIS.modifier@education_gain_rate }
+	multiply_variable = { a = 0.1 }
 
+	# let modifier be 0.01, then a is 0.001, lowest possible
+
+	#log = "a: [?a]"
+
+	every_owned_state = {
 		set_variable = { THIS.literacy_state_factor = THIS.literate_educated }
 
 		# let literacy be 50
@@ -47,9 +55,20 @@ literacy_calculation = {
 			min = 0
 			max = 100
 		}
-	
+
+	}
 }
 primary_calculation = {
+	#log = "[?THIS.modifier@education_gain_rate]"
+
+	set_variable = { b = THIS.modifier@education_gain_rate }
+	multiply_variable = { b = 0.075 }
+
+	# let modifier be 0.01, then b is 0.001, lowest possible
+
+	#log = "b: [?b]"
+
+	every_owned_state = {
 		set_variable = { THIS.primary_state_factor = THIS.primary_educated }
 		set_variable = {
 			prior_edu_adjustment = THIS.literate_educated
@@ -99,11 +118,19 @@ primary_calculation = {
 			min = 0
 			max = 100
 		}
-	
+	}
 }
 secondary_calculation = {
+	#log = "[?THIS.modifier@education_gain_rate]"
 
+	set_variable = { c = THIS.modifier@education_gain_rate }
+	multiply_variable = { c = 0.05 }
 
+	# let modifier be 0.01, then c is 0.001, lowest possible
+
+	#log = "c: [?c]"
+
+	every_owned_state = {
 		set_variable = { THIS.high_school_state_factor = THIS.high_school_educated }
 		set_variable = {
 			prior_edu_adjustment = THIS.primary_educated
@@ -153,9 +180,19 @@ secondary_calculation = {
 			min = 0
 			max = 100
 		}
-	
+	}
 }
 college_calculation = {
+	#log = "[?THIS.modifier@education_gain_rate]"
+
+	set_variable = { d = THIS.modifier@education_gain_rate }
+	multiply_variable = { d = 0.05 }
+
+	# let modifier be 0.01, then d is 0.001, lowest possible
+
+	#log = "d: [?d]"
+
+	every_owned_state = {
 		set_variable = { THIS.college_state_factor = THIS.college_educated }
 		set_variable = {
 			prior_edu_adjustment = THIS.high_school_educated
@@ -205,56 +242,13 @@ college_calculation = {
 			min = 0
 			max = 100
 		}
-	
+	}
 }
 monthly_education_pulse = {
-	#Literate
-	#log = "[?THIS.modifier@education_gain_rate]"
-
-	set_variable = { a = THIS.modifier@education_gain_rate }
-	multiply_variable = { a = 0.1 }
-
-	# let modifier be 0.01, then a is 0.001, lowest possible
-	#log = "a: [?a]"
-
-	#Primary
-	#log = "[?THIS.modifier@education_gain_rate]"
-
-	set_variable = { b = THIS.modifier@education_gain_rate }
-	multiply_variable = { b = 0.075 }
-
-	# let modifier be 0.01, then b is 0.001, lowest possible
-
-	#log = "b: [?b]"
-
-	#Secondary
-	#log = "[?THIS.modifier@education_gain_rate]"
-
-	set_variable = { c = THIS.modifier@education_gain_rate }
-	multiply_variable = { c = 0.05 }
-
-	# let modifier be 0.01, then c is 0.001, lowest possible
-
-
-	#log = "c: [?c]"
-	#College
-	#log = "[?THIS.modifier@education_gain_rate]"
-
-	set_variable = { d = THIS.modifier@education_gain_rate }
-	multiply_variable = { d = 0.05 }
-
-	# let modifier be 0.01, then d is 0.001, lowest possible
-
-	#log = "d: [?d]"
-
-	religious_drift_national = yes
-	every_owned_state = {
-		literacy_calculation = yes
-		primary_calculation = yes
-		secondary_calculation = yes
-		college_calculation = yes
-		religous_drift_every_state_call = yes
-	}
+	literacy_calculation = yes
+	primary_calculation = yes
+	secondary_calculation = yes
+	college_calculation = yes
 }
 
 
