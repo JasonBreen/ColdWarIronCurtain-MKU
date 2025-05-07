@@ -1,60 +1,76 @@
 state={
-	id=1623
-	name="STATE_1623"
-	provinces={
-		1341 4345 16094 
-	}
+	id=1679
+	name="STATE_1679"
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 4345 } add_to_array = { THIS.vp_values = 15 }
-		add_to_array = { THIS.vp_provinces = 1341 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16094 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 3513 } add_to_array = { THIS.vp_values = 1 }
+		add_to_array = { THIS.vp_provinces = 4274 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 4328 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 7398 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
-		owner = CAN
-		set_state_flag = cold
-		set_state_flag = freshwatersea
-		set_state_flag = massive
-		set_state_flag = developed
+		owner = USA
+		set_state_flag = mountains
+		set_state_flag = is_mountainous_state
+		set_state_flag = riverlarge
+		set_state_flag = small
+		set_state_flag = decent
 		set_state_flag = is_urban_state
-		victory_points = {
-			4345 15 
-		}
 		buildings = {
 			infrastructure = 1
 			state_infrastructure = 1
-			water_infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 1
-			office_park = 1
-			agri_industrial_complex = 2
+			industrial_complex = 3
 			fossil_fuel_powerplant = 1
-
+			air_base = 6
+			arms_factory = 2
+			radar_station = 1
 		}
-		add_core_of = CAN
-		add_core_of = QBC
-		set_variable = {
-			coal_amount = 0
-
+		add_core_of = USA
+		add_core_of = CSD
+		victory_points = {
+			3513 1 
 		}
-		set_state_flag = HDI4
+		set_state_flag = Progressive_Bastion
+		set_state_flag = HDI5
 		set_variable = {
 			tourism_infrastructure = 0
 
 		}
-		add_to_array = {
-			culture = 6
-		}
-		add_to_array = {
-			culture = 150
-		}
 		set_variable = {
-			ReligionChristianityCatholic = 22
+			college_educated = 6.8
 
 		}
 		set_variable = {
-			ReligionChristianityProtestant = 78
+			high_school_educated = 43.1
+
+		}
+		set_variable = {
+			primary_educated = 73
+
+		}
+		set_variable = {
+			literate_educated = 98.8
+
+		}
+		add_to_array = {
+			culture = 5
+
+		}
+		add_to_array = {
+			culture = 8
+
+		}
+		add_to_array = {
+			culture = 7
+
+		}
+		set_variable = {
+			ReligionChristianityCatholic = 16
+
+		}
+		set_variable = {
+			ReligionChristianityProtestant = 56
 
 		}
 		set_variable = {
@@ -66,7 +82,7 @@ state={
 
 		}
 		set_variable = {
-			ReligionJudaism = 0
+			ReligionJudaism = 2
 
 		}
 		set_variable = {
@@ -122,7 +138,7 @@ state={
 
 		}
 		set_variable = {
-			ReligionIrreligious = 0
+			ReligionIrreligious = 15
 
 		}
 		set_variable = {
@@ -130,7 +146,7 @@ state={
 
 		}
 		set_variable = {
-			ReligionSpiritual = 0
+			ReligionZionistChristian = 0
 
 		}
 		set_variable = {
@@ -158,46 +174,37 @@ state={
 
 		}
 		set_variable = {
-			ReligionNaturalist = 0
+			ReligionChineseSalvationist = 0
 
 		}
 		set_variable = {
-			ReligionFurry = 0
+			ReligionMessianic = 0
 
 		}
 		set_variable = {
-			ReligionOther = 0
+			ReligionOther = 6
+
 		}
 		1960.1.1 = {
-			add_manpower = 266091
-			set_state_category = pop1dev2
+			add_manpower = 160810	
 		}
 		1973.1.1 = {
-			add_manpower = 295449
+			add_manpower = 736255		
 			set_state_category = pop1dev3
 		}
 		1980.1.1 = {
-			add_manpower = 129460
+			add_manpower = -174330
 		}
 		1991.1.1 = {
-			add_manpower = 224561
+			add_manpower = 135915
 			set_state_category = pop1dev4
 		}
-        set_variable = {
-            college_educated = 7
-        }
-        set_variable = {
-            high_school_educated = 31
-        }
-        set_variable = {
-            primary_educated = 67
-        }
-        set_variable = {
-            literate_educated = 99
-        }
 	}
-	state_category = pop1dev2
-	manpower=888265
+	provinces={
+		3513 4328 7398 4274
+	}
+	manpower=988845	
 	buildings_max_level_factor=1.000
+	state_category=pop1dev2
 	local_supplies=0.000
 }
