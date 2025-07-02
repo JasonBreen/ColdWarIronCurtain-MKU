@@ -1,54 +1,50 @@
 state = {
-	id = 672
-	name = "STATE_672"
+	id = 1981
+	name = "STATE_1981"
 	resources = {
-
 	}
 
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 12268 } add_to_array = { THIS.vp_values = 10 }
-		add_to_array = { THIS.vp_provinces = 1274 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 1401 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 4364 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 4381 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 7440 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 10150 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 10294 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 10322 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 12296 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 12277 } add_to_array = { THIS.vp_values = 10 }
+		add_to_array = { THIS.vp_provinces = 12293 } add_to_array = { THIS.vp_values = 5 }
+		add_to_array = { THIS.vp_provinces = 1413 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 4390 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 7223 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 7642 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
-		owner = WPA
+		owner = INO
 		set_state_flag = tropical
-		set_state_flag = riverlarge
+		set_state_flag = lakes
 		set_state_flag = nominal
-		set_state_flag = undeveloped
+		set_state_flag = semideveloped
 		set_state_flag = is_jungle_state
 		add_core_of = INO
-
-		buildings = {
-			infrastructure = 1
-			state_infrastructure = 1
-
-			agri_industrial_complex = 1
+		victory_points = {
+			12293 5 
 		}
-		1950.1.1 = {
-			owner = INO
+		victory_points = {
+			12277 10 
+		}
+		buildings = {
+			infrastructure = 0
+			state_infrastructure = 0
+
+
 		}
 		set_state_flag = HDI3
 		set_variable = { tourism_infrastructure = 0 }
 		
 		#1st is majority. Up to 3 minorities below. First is Majority, Next 3 are minorities, largest to smallest
-		add_to_array = { culture = 66 } 		
-		add_to_array = { culture = 67 } 
+		add_to_array = { culture = 67 } 		
 
 		##RELIGIONS##
 		#Note: These don't need to add up to anything, simple ratios will do
 		#Christian#
 		set_variable = { ReligionChristianityCatholic = 0 }
-		set_variable = { ReligionChristianityProtestant = 2 }
+		set_variable = { ReligionChristianityProtestant = 4 }
 		set_variable = { ReligionChristianityOrthodox = 0 }
 		set_variable = { ReligionChristianityOriental = 0 }
 		#Judaic#
@@ -59,7 +55,7 @@ state = {
 		set_variable = { ReligionIslamIbadi = 0 }
 		#Buddhism#
 		set_variable = { ReligionBuddhismVajrayana = 0 }
-		set_variable = { ReligionBuddhismMahayana = 2 }
+		set_variable = { ReligionBuddhismMahayana = 0 }
 		set_variable = { ReligionBuddhismThereveda = 0 }
 		#Eastern#
 		set_variable = { ReligionShinto = 0 }
@@ -85,37 +81,38 @@ state = {
 		set_variable = { ReligionMessianic = 0 }
 		set_variable = { ReligionOther = 0 }
 		1960.1.1 = {
-			add_manpower = 132206
+			add_manpower = 1444922
 		}
 		1973.1.1 = {	
-			add_manpower = 264679		
+			add_manpower = 2892751		
+			set_state_category = pop7dev2
 		}
 		1980.1.1 = {
-			add_manpower = 168465
+			add_manpower = 1841203
 
 		}
 		1991.1.1 = {
-			add_manpower = 270125
-			set_state_category = pop2dev2
+			add_manpower = 2952273
+			set_state_category = pop10dev2
 		}
         set_variable = {	
-            college_educated = 0
+            college_educated = 1
         }
         set_variable = {
-            high_school_educated = 2
+            high_school_educated = 4
         }
         set_variable = {
-            primary_educated = 10
+            primary_educated = 8
         }
         set_variable = {
-            literate_educated = 25
+            literate_educated = 22
         }
 	}
 
 	provinces = {
-		1274 4364 4381 7440 10150 10294 10322 
-	}
-	manpower = 504984						
+		17480 17464 17435 17448 17453 17461 17465 12293 1413 17486 17487 4390 17490 17455 17472
+	} 
+	manpower = 5519110				
 	buildings_max_level_factor = 1.000
-	state_category = pop1dev1
+	state_category = pop5dev1
 }
