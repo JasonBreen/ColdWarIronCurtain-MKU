@@ -1,20 +1,11 @@
-
 state={
-	id=524
-	name="STATE_524"
-	resources={
-		oil=2.000
-		aluminium=4.000
-	}
-
+	id=2032
+	name="STATE_2032"
 	history = {
 		### MACHINE-GENERATED SECTION ###
 		# Do not touch, unless you've edited the victory points,
 		# in which case you should regenerate the whole set.
-		add_to_array = { THIS.vp_provinces = 1091 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 12027 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16113 } add_to_array = { THIS.vp_values = 0 }
-		add_to_array = { THIS.vp_provinces = 16114 } add_to_array = { THIS.vp_values = 0 }
+		add_to_array = { THIS.vp_provinces = 13541 } add_to_array = { THIS.vp_values = 0 }
 		### END OF MACHINE-GENERATED SECTION ###
 		owner = CHI
 		set_state_flag = subtropical_monsoon
@@ -24,19 +15,11 @@ state={
 		set_state_flag = is_urban_state
 		add_core_of = CHI
 		add_core_of = PRC
-		victory_points = {
-			16113 5 #taichung
-		}
 		buildings = {
 			infrastructure = 1
 			state_infrastructure = 1
-			water_infrastructure = 1
-			fossil_fuel_powerplant = 1
-			agri_industrial_complex = 2
-			dockyard = 1
-			16113 = {
-				coastal_bunker = 2
-				bunker = 1
+			13541 = {
+				naval_base = 1
 			}
 		}
 		set_state_flag = HDI3
@@ -176,25 +159,7 @@ state={
 			ReligionOther = 7
 
 		}
-		1960.1.1 = {
-			add_manpower = 888866
-
-		}
-		1973.1.1 = {
-			add_manpower = 1380955
-			set_state_category = pop2dev2
-
-		}
-		1980.1.1 = {
-			add_manpower = 556955
-
-		}
-		1991.1.1 = {
-			add_manpower = 764656
-			set_state_category = pop2dev4
-
-		}
-        set_variable = {
+		set_variable = {
             college_educated = 3
         }
         set_variable = {
@@ -207,12 +172,11 @@ state={
             literate_educated = 69
         }
 	}
-
 	provinces={
-		1091 12027 16113 16114 
+		13541 
 	}
-	manpower=1564567
+	manpower=150000
 	buildings_max_level_factor=1.000
-	state_category=pop2dev2
+	state_category = pop1
 	local_supplies=0.000
 }
