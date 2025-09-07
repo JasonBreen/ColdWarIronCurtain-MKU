@@ -1,23 +1,9 @@
-
 state={
-	id=287
-	name="STATE_287"
-	resources={
-		aluminium=15.000
-		oil=6.000
-	}
-
-	history={
+	id=2029
+	name="STATE_2029"
+	history = {
 		add_to_array = {
-			THIS.vp_provinces = 7792
-
-		}
-		add_to_array = {
-			THIS.vp_values = 5
-
-		}
-		add_to_array = {
-			THIS.vp_provinces = 1943
+			THIS.vp_provinces = 1698
 
 		}
 		add_to_array = {
@@ -25,7 +11,7 @@ state={
 
 		}
 		add_to_array = {
-			THIS.vp_provinces = 10885
+			THIS.vp_provinces = 2074
 
 		}
 		add_to_array = {
@@ -33,7 +19,7 @@ state={
 
 		}
 		add_to_array = {
-			THIS.vp_provinces = 10911
+			THIS.vp_provinces = 4947
 
 		}
 		add_to_array = {
@@ -41,7 +27,15 @@ state={
 
 		}
 		add_to_array = {
-			THIS.vp_provinces = 12864
+			THIS.vp_provinces = 5736
+
+		}
+		add_to_array = {
+			THIS.vp_values = 0
+
+		}
+		add_to_array = {
+			THIS.vp_provinces = 10315
 
 		}
 		add_to_array = {
@@ -58,17 +52,22 @@ state={
 		add_claim_by = PRC
 		add_compliance = 80
 		add_core_of = SIK
-		1950.3.1 = {
-			owner = PRC
-
+		victory_points = {
+			2074 5 
 		}
 		buildings = {
 			infrastructure = 0
 			state_infrastructure = 1
-			1943 = {
+			1698 = {
 				bunker = 1
 			}
-			10911 = {
+			2074 = {
+				bunker = 2
+			}
+			4947 = {
+				bunker = 1
+			}
+			5736 = {
 				bunker = 1
 			}
 		}
@@ -201,24 +200,6 @@ state={
 			ReligionOther = 0
 
 		}
-		1960.1.1 = {
-			#add_manpower = 193963
-
-		}
-		1973.1.1 = {
-			#add_manpower = 361974
-			set_state_category = pop1dev1
-
-		}
-		1980.1.1 = {
-			#add_manpower = 167337
-
-		}
-		1991.1.1 = {
-			#add_manpower = 286141
-			set_state_category = pop1dev2
-
-		}
 		set_variable = {
 			high_school_educated = 0
 
@@ -231,14 +212,12 @@ state={
 			literate_educated = 18
 
 		}
-
 	}
-
 	provinces={
-		1943 7792 10885 10911 12864  
+		1698 2074 4947 5736 10315 
 	}
-	manpower=375000
+	manpower=0
 	buildings_max_level_factor=1.000
-	state_category=pop1
 	local_supplies=0.000
+	state_category = pop1
 }
