@@ -1,15 +1,10 @@
-﻿set_war_support = 0.2
+﻿set_war_support = 0.8
 
-capital = 1892
+capital = 1940
 
-#TECH CULTURE#
-
-#TECH/OOBS
-
-set_research_slots = 1
-
-
-
+oob = "ISA_1949"
+set_air_oob = ISA_1949_air
+set_country_flag = CWIC_HOG_UI_ENABLED
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns"}
@@ -141,33 +136,40 @@ set_technology = {
 ##WMD##
 
 }
-create_country_leader = {
-	name = "Tengku Mahmood Mahyideen"
-	picture = "Tengku_Mahmood_Mahyideen.png"
-	ideology = sunni_islamism
+
+add_ideas = {
+	
 }
 
-recruit_character = SRM_Haji_Sulong
+set_convoys = 0
+
+set_popularities = { 
+	nationalist = 100
+}
 
 set_politics = {
-	ruling_party = islamism
+	ruling_party = nationalist
+	last_election = "1949.1.1"
+	election_frequency = 48
 	elections_allowed = no
 }
 
-init_influence = yes
-set_variable = { var = domestic_influence_amount value = 500 }
-add_to_array = { influence_array = SIA.id }
-add_to_array = { influence_array_val = 2500 }
-SRM = {
-	set_country_flag = Is_In_Sphere
-	set_variable = {
-		Sphere_Leader = SIA.id
-	}	
-}
+#POLITICAL
+recruit_character = ISA_Fong_Sitthitham
 
+
+init_influence = yes
+set_variable = { var = domestic_influence_amount value = 3000 }
 startup_influence = yes
 
 
-set_variable = { economic_x_axis = 2 } 
-set_variable = { economic_y_axis = 2 } 
+#End of Dynamic Modifiers List
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+
+}
+
+set_variable = { economic_x_axis = 23 } 
 startup_economics = yes
