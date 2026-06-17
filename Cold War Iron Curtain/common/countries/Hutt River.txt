@@ -1,4 +1,4 @@
 graphical_culture = ANZAC_gfx
 graphical_culture_2d = commonwealth_2d
 
-color = { 57  143  97 }
+color = { 37 123 77 }
