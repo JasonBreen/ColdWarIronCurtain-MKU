@@ -2196,7 +2196,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		available = {
-			has_country_flag = VIN_reunification_election_cancelled
+			always = no
 		}
 		completion_reward = {
 			country_event = VIE_VIN_Reunification_50s.3
@@ -2260,7 +2260,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		available = {
-			has_country_flag = VIN_reunification_election_approved
+			always = no
 		}
 		completion_reward = {
 			annex_country = { target = VIE transfer_troops = yes }
@@ -5017,8 +5017,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		completion_reward = {
-			set_country_flag = Enable_Larger_Raids
-			custom_effect_tooltip = Enable_Larger_Raids_TT
+
 		}
 	}
 	focus = {
@@ -5035,19 +5034,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-			add_manpower = 10000
-			add_command_power = 50
-			country_event = SWF_Indochina_War.1
-			add_opinion_modifier = {
-				target = PRC
-				modifier = minor_increase
-			}
-			PRC = {
-				add_opinion_modifier = {
-					target = VIN
-					modifier = minor_increase
-				}
-			}
 
 		}
 	}
@@ -5065,8 +5051,27 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			set_country_flag = Enable_Air_Base_Raids
-			custom_effect_tooltip = Enable_Air_Base_Raids_TT
+
+		}
+	}
+	focus = {
+		id = VIN_Autumn_Winter
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetTag]: id = VIN_Autumn"
+		}
+		icon = GFX_Hoa_Binh_Campaign
+		prerequisite = {
+			focus = VIN_Thap_Van_Dai
+		}
+		prerequisite = {
+			focus = VIN_Operation_Cao-Bac
+		} 
+		cost = 7
+		relative_position_id = VIN_Plan_Large
+		x = 0
+		y = 2
+		completion_reward = {
+
 		}
 	}
 	focus = {
@@ -5081,7 +5086,7 @@ focus_tree = {
 		cost = 7
 		relative_position_id = VIN_Thap_Van_Dai
 		x = 0
-		y = 1
+		y = 2
 		completion_reward = {
 
 		}
@@ -5098,7 +5103,7 @@ focus_tree = {
 		cost = 7
 		relative_position_id = VIN_Operation_Cao-Bac
 		x = 0
-		y = 1
+		y = 2
 		completion_reward = {
 
 		}
@@ -5116,14 +5121,11 @@ focus_tree = {
 			focus = VIN_Northwest
 		} 
 		cost = 7
-		relative_position_id = VIN_Plan_Large
+		relative_position_id = VIN_Autumn_Winter
 		x = 0
-		y = 3
+		y = 2
 		completion_reward = {
-			add_timed_idea = {
-				idea = PRC_50s_Southwest_Offensive_Spirit
-				days = 365
-			}
+
 		}
 	}
 	focus = {
