@@ -1,0 +1,55 @@
+# Labeler configuration for actions/labeler@v5
+# Maps PR labels to glob patterns of changed files.
+# Labels must exist on the repository before they can be applied.
+# Create them at: https://github.com/JasonBreen/ColdWarIronCurtain-MKU/labels
+
+events:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/events/**"
+
+focus-trees:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/common/national_focus/**"
+
+decisions:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/common/decisions/**"
+
+ideas:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/common/ideas/**"
+
+localisation:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/localisation/**"
+
+gfx:
+  - changed-files:
+    - any-glob-to-any-file:
+      - "Cold War Iron Curtain/gfx/**"
+      - "Cold War Iron Curtain/GFX/**"
+      - "Cold War Iron Curtain/interface/**"
+
+history:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/history/**"
+
+ai:
+  - changed-files:
+    - any-glob-to-any-file:
+      - "Cold War Iron Curtain/common/ai_strategy_plans/**"
+      - "Cold War Iron Curtain/common/ai_focuses/**"
+      - "Cold War Iron Curtain/common/ai_templates/**"
+      - "Cold War Iron Curtain/common/ai_equipment/**"
+
+technologies:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/common/technologies/**"
+
+characters:
+  - changed-files:
+    - any-glob-to-any-file: "Cold War Iron Curtain/common/characters/**"
+
+ci:
+  - changed-files:
+    - any-glob-to-any-file: ".github/**"
