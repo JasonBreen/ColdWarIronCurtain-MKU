@@ -1,0 +1,77 @@
+name: Validate PDX Script
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "Cold War Iron Curtain/**/*.txt"
+      - "Cold War Iron Curtain/**/*.gui"
+      - "Cold War Iron Curtain/**/*.gfx"
+      - "Cold War Iron Curtain/**/*.yml"
+  pull_request:
+    paths:
+      - "Cold War Iron Curtain/**/*.txt"
+      - "Cold War Iron Curtain/**/*.gui"
+      - "Cold War Iron Curtain/**/*.gfx"
+      - "Cold War Iron Curtain/**/*.yml"
+
+jobs:
+  cwtools:
+    name: CWTools PDX Script Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # CWTools CLI validates PDX script syntax for HOI4 mods.
+      # See: https://github.com/cwtools/cwtools-vscode
+      # Replace the placeholder below with the real CWTools CLI invocation once
+      # the team has configured it (see docs/SETUP.md for instructions).
+      - name: Run CWTools validation (placeholder)
+        run: |
+          echo "CWTools validation step – configure this once CWTools CLI is set up."
+          echo "Expected command:"
+          echo "  dotnet cwtools validate --game hoi4 \"Cold War Iron Curtain\""
+          echo ""
+          echo "Files changed in this push/PR:"
+          git diff --name-only HEAD~1 HEAD -- "Cold War Iron Curtain/" || true
+
+      # Basic YML encoding check: localisation files must be UTF-8 BOM
+      - name: Check localisation file encoding
+        run: |
+          set +e
+          bad=0
+          while IFS= read -r -d '' f; do
+            # Check for UTF-8 BOM (EF BB BF)
+            bom=$(head -c 3 "$f" | od -An -tx1 | tr -d ' \n')
+            if [ "$bom" != "efbbbf" ]; then
+              echo "MISSING BOM: $f"
+              bad=1
+            fi
+          done < <(find "Cold War Iron Curtain/localisation" -name "*.yml" -print0)
+          if [ "$bad" -ne 0 ]; then
+            echo ""
+            echo "One or more localisation files are missing the UTF-8 BOM."
+            echo "Save them as UTF-8 with BOM in your editor."
+            exit 1
+          fi
+          echo "All localisation files have correct UTF-8 BOM encoding."
+
+      # Check that no PDX script file uses spaces for indentation (tabs only)
+      - name: Check for space indentation in PDX script files
+        run: |
+          set +e
+          bad=0
+          while IFS= read -r -d '' f; do
+            if grep -Pn "^ +" "$f" > /dev/null 2>&1; then
+              echo "SPACE INDENT: $f"
+              bad=1
+            fi
+          done < <(find "Cold War Iron Curtain" \( -name "*.txt" -o -name "*.gui" -o -name "*.gfx" \) \
+            -not -path "*/CWIC Backup/*" -print0)
+          if [ "$bad" -ne 0 ]; then
+            echo ""
+            echo "PDX script files must use hard tabs, not spaces, for indentation."
+            exit 1
+          fi
+          echo "All PDX script files use tab indentation."

@@ -1,0 +1,32 @@
+{
+    "folders": [
+        {
+            "name": "ColdWarIronCurtain-MKU (root)",
+            "path": "."
+        },
+        {
+            "name": "Cold War Iron Curtain (mod)",
+            "path": "Cold War Iron Curtain"
+        }
+    ],
+    "settings": {
+        "files.encoding": "utf8bom",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false,
+        "editor.detectIndentation": false
+    },
+    "extensions": {
+        "recommendations": [
+            "tboby.cwtools-vscode",
+            "nacl.hoi4-mod-utilities",
+            "redhat.vscode-yaml",
+            "editorconfig.editorconfig",
+            "gruntfuggly.todo-tree",
+            "eamodio.gitlens"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": []
+    }
+}

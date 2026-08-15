@@ -1,0 +1,68 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    name: Package & publish release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+
+      # Build the release zip — contains only the mod folder
+      - name: Create mod zip
+        run: |
+          VERSION="${{ steps.version.outputs.VERSION }}"
+          ZIP_NAME="ColdWarIronCurtain-${VERSION}.zip"
+          echo "Building $ZIP_NAME …"
+          zip -r "$ZIP_NAME" \
+            "Cold War Iron Curtain" \
+            "Cold_War_Iron_Curtain.mod" \
+            --exclude "*/CWIC Backup/*" \
+            --exclude "*/.git*" \
+            --exclude "*/__pycache__/*" \
+            --exclude "*.psd" \
+            --exclude "*/_tools/*"
+          echo "ZIP_NAME=$ZIP_NAME" >> "$GITHUB_OUTPUT"
+        id: zip
+
+      # Create a GitHub Release and attach the zip
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Cold War Iron Curtain ${{ steps.version.outputs.VERSION }}"
+          tag_name: ${{ steps.version.outputs.VERSION }}
+          draft: false
+          prerelease: ${{ contains(steps.version.outputs.VERSION, '-rc') || contains(steps.version.outputs.VERSION, '-beta') || contains(steps.version.outputs.VERSION, '-alpha') }}
+          generate_release_notes: true
+          files: ${{ steps.zip.outputs.ZIP_NAME }}
+
+      # Optional: post a Discord notification when a release is published.
+      # Requires the DISCORD_WEBHOOK_URL secret (see docs/SETUP.md).
+      - name: Notify Discord
+        if: ${{ env.DISCORD_WEBHOOK_URL != '' }}
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          VERSION: ${{ steps.version.outputs.VERSION }}
+        run: |
+          curl -s -X POST "$DISCORD_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"embeds\": [{
+                \"title\": \"Cold War Iron Curtain ${VERSION} released!\",
+                \"description\": \"A new version of the mod is available.\",
+                \"url\": \"https://github.com/${{ github.repository }}/releases/tag/${VERSION}\",
+                \"color\": 3447003
+              }]
+            }"

@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        // HOI4 / Paradox modding
+        "tboby.cwtools-vscode",         // CWTools – Paradox script syntax, validation, hover docs
+        "nacl.hoi4-mod-utilities",      // HOI4 Mod Utilities – focus tree previewer, localization helper
+
+        // General quality-of-life
+        "redhat.vscode-yaml",           // YAML language support (localisation files)
+        "editorconfig.editorconfig",    // Respect .editorconfig if present
+        "christian-kohler.path-intellisense", // Path autocomplete
+        "gruntfuggly.todo-tree",        // Highlights TODO/FIXME comments
+        "eamodio.gitlens",              // Enhanced Git integration
+        "ms-vscode.hexeditor"           // Useful for inspecting binary assets
+    ]
+}
