@@ -1,3 +1,54 @@
 {
-    "hoi4ModUtilities.modFile": "f:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ColdWarIronCurtain\\Cold War Iron Curtain\\descriptor.mod"
+    // HOI4 Mod Utilities – update this path to your local mod folder
+    "hoi4ModUtilities.modFile": "f:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ColdWarIronCurtain\\Cold War Iron Curtain\\descriptor.mod",
+
+    // File associations for Paradox script files
+    "files.associations": {
+        "*.txt": "plaintext",
+        "*.mod": "plaintext",
+        "*.gui": "plaintext",
+        "*.gfx": "plaintext",
+        "*.asset": "plaintext",
+        "*.yml": "yaml",
+        "*.yaml": "yaml"
+    },
+
+    // HOI4 localisation files are UTF-8 BOM
+    "files.encoding": "utf8bom",
+    "files.eol": "\n",
+
+    // Editor defaults matching PDX script style
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.rulers": [120],
+    "editor.wordWrap": "off",
+
+    // YAML uses spaces
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+
+    // Hide binary/asset files from search and explorer
+    "search.exclude": {
+        "**/CWIC Backup/**": true,
+        "**/*.psd": true,
+        "**/*.png": true,
+        "**/*.jpg": true,
+        "**/*.dds": true,
+        "**/*.tga": true,
+        "**/*.ogg": true,
+        "**/*.wav": true,
+        "**/*.mp3": true,
+        "**/*.pdf": true
+    },
+    "files.exclude": {
+        "**/*.psd": true,
+        "**/*.dds": true,
+        "**/*.tga": true,
+        "**/*.ogg": true,
+        "**/*.wav": true,
+        "**/*.mp3": true
+    }
 }
