@@ -17,7 +17,7 @@ When prompted, install the recommended extensions:
 | **GitLens** (`eamodio.gitlens`) | Git history and blame |
 | **TODO Tree** (`gruntfuggly.todo-tree`) | Track TODO/FIXME in code |
 
-After installing CWTools, update `.vscode/settings.json` and change the `hoi4ModUtilities.modFile` path to point to your local HOI4 mod installation:
+After installing **HOI4 Mod Utilities**, verify `.vscode/settings.json` has the correct `hoi4ModUtilities.modFile` path for your setup:
 
 ```json
 "hoi4ModUtilities.modFile": "C:/Users/<YourName>/Documents/Paradox Interactive/Hearts of Iron IV/mod/ColdWarIronCurtain/Cold War Iron Curtain/descriptor.mod"
