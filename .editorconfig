@@ -1,0 +1,43 @@
+# EditorConfig — https://editorconfig.org
+# Keeps PDX script and localisation encoding correct in any editor.
+# The `editorconfig.editorconfig` extension is recommended in .vscode/extensions.json.
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+# Paradox script indents with hard tabs.
+[*.{txt,gui,gfx,asset,mod}]
+indent_style = tab
+indent_size = 4
+charset = utf-8
+
+# HOI4 localisation must be UTF-8 with BOM or the game silently skips the file.
+[localisation/**.yml]
+charset = utf-8-bom
+indent_style = space
+indent_size = 2
+
+[**/localisation/**.yml]
+charset = utf-8-bom
+indent_style = space
+indent_size = 2
+
+# Repo tooling and config.
+[*.py]
+indent_style = space
+indent_size = 4
+charset = utf-8
+
+[*.{json,yml,yaml,md}]
+indent_style = space
+indent_size = 2
+charset = utf-8
+
+# Never normalise the archive.
+[CWIC Backup/**]
+trim_trailing_whitespace = false
+insert_final_newline = false

@@ -1,6 +1,8 @@
 {
-    // HOI4 Mod Utilities – update this path to your local mod folder
-    "hoi4ModUtilities.modFile": "f:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ColdWarIronCurtain\\Cold War Iron Curtain\\descriptor.mod",
+    // NOTE: this file is shared/tracked. Do NOT put your local mod path here —
+    // it would overwrite everyone else's. Set "hoi4ModUtilities.modFile" in your
+    // own User settings (Ctrl+Shift+P → "Preferences: Open User Settings (JSON)")
+    // or in .vscode/settings.local.json, which is gitignored. See docs/SETUP.md.
 
     // File associations for Paradox script files
     "files.associations": {

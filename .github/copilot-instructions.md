@@ -1,5 +1,9 @@
 # Copilot Instructions – Cold War Iron Curtain (CWIC)
 
+> **See [`AGENTS.md`](../AGENTS.md) for the canonical, fuller guide.** It covers
+> the repo tooling, the incremental CI gates, and the legacy-formatting rules
+> summarised below. Keep the two in sync when either changes.
+
 ## Project overview
 This repository is **Cold War Iron Curtain (CWIC)**, a large overhaul mod for **Hearts of Iron IV** (Paradox Interactive).
 The mod covers the Cold War era (roughly 1950–1991) and replaces the vanilla HOI4 start-date and focus trees with historically-grounded Cold War content.
@@ -65,9 +69,13 @@ ColdWarIronCurtain-MKU/
 - When a new folder is fully replaced by the mod, add a `replace_path = "…"` entry.
 
 ### File naming
-- Events: `<CountryOrTopic>_Events.txt` or `<CountryOrTopic>.txt` (match existing casing in the folder).
-- Focus trees: `<decade>s_<COUNTRY_TAG>.txt` (e.g. `1950s_AFG.txt`).
-- History: `<TAG> - <Country Name>.txt` for countries; numeric state ID `<NNN>-<StateName>.txt` for states.
+File naming is **inconsistent across the repo** — `ADR.txt`, `ARG50s_Events.txt`,
+`1950s_Afghanistan.txt` and `1950s_BUL.txt` all coexist. Match the neighbouring
+files in the folder you are editing rather than applying a single global rule.
+
+- Events: `<CountryOrTopic>_Events.txt` or `<CountryOrTopic>.txt`.
+- Focus trees: `<decade>s_<CountryOrTag>.txt` (both full names and tags are in use).
+- History: `<TAG> - <Country Name>.txt` for countries; `<NNN>-<StateName>.txt` for states.
 
 ## Common patterns
 
@@ -123,6 +131,19 @@ tag_decision_category = {
 ## What NOT to do
 - Do not hard-code absolute paths anywhere in script files.
 - Do not remove or rename existing `replace_path` entries in `descriptor.mod`.
-- Do not use spaces for indentation in PDX script files.
+- Do not use spaces for indentation in **new** PDX script lines.
 - Do not add localisation keys without a matching script reference (and vice versa).
 - Do not modify files in `CWIC Backup/` — that folder is an archive.
+- **Do not mass-reformat whitespace.** ~42% of existing PDX files use space
+  indentation and some mix tabs and spaces in one block. That is known legacy
+  debt. CI only checks the lines you *add*, so write new lines with tabs and
+  leave surrounding lines untouched — a repo-wide reindent would produce an
+  unreviewable diff and destroy `git blame`.
+
+## Before opening a PR
+```bash
+python3 tools/check_style.py --diff origin/development-branch
+python3 tools/loc_audit.py --check
+```
+There is no automated gameplay test. State clearly in the PR description what
+needs in-game verification and which country/date to load.

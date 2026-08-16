@@ -1,7 +1,53 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Custom for Visual Studio
+# ---------------------------------------------------------------------------
+# Game assets — declare explicitly as binary.
+#
+# `* text=auto` above relies on Git's content heuristic (a NUL byte in the
+# first 8000 bytes). That is usually right, but this repo tracks ~60,000 art
+# and audio files, and a single misdetected file would be silently corrupted by
+# line-ending normalisation. Declaring them binary removes the guesswork and
+# also stops Git from attempting useless textual diffs of them.
+# ---------------------------------------------------------------------------
+*.dds  binary
+*.tga  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.bmp  binary
+*.psd  binary
+*.gif  binary
+*.ico  binary
+
+*.ogg  binary
+*.wav  binary
+*.mp3  binary
+*.bank binary
+
+*.zip  binary
+*.7z   binary
+*.rar  binary
+
+# HOI4 map data is binary despite the extension in some cases.
+*.bin  binary
+
+# ---------------------------------------------------------------------------
+# Text formats
+# ---------------------------------------------------------------------------
+# Paradox script — normalise to LF in the repo.
+*.txt   text
+*.gui   text
+*.gfx   text
+*.asset text
+*.mod   text
+
+# Localisation is UTF-8 with BOM; keep it text but never let a tool strip it.
+*.yml  text
+
+# ---------------------------------------------------------------------------
+# Diff helpers
+# ---------------------------------------------------------------------------
 *.cs     diff=csharp
 
 # Standard to msysgit
@@ -15,3 +61,6 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# Keep the mod's own docs out of GitHub's language statistics.
+CWIC?Backup/** linguist-vendored

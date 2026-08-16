@@ -17,11 +17,20 @@ When prompted, install the recommended extensions:
 | **GitLens** (`eamodio.gitlens`) | Git history and blame |
 | **TODO Tree** (`gruntfuggly.todo-tree`) | Track TODO/FIXME in code |
 
-After installing CWTools, update `.vscode/settings.json` and change the `hoi4ModUtilities.modFile` path to point to your local HOI4 mod installation:
+After installing CWTools, point the HOI4 Mod Utilities extension at your local
+mod install. **Do not put this in `.vscode/settings.json`** — that file is
+tracked, so your local path would overwrite everyone else's.
+
+Put it in your own User settings (`Ctrl+Shift+P` → *Preferences: Open User
+Settings (JSON)*), or in `.vscode/settings.local.json`, which is gitignored:
 
 ```json
 "hoi4ModUtilities.modFile": "C:/Users/<YourName>/Documents/Paradox Interactive/Hearts of Iron IV/mod/ColdWarIronCurtain/Cold War Iron Curtain/descriptor.mod"
 ```
+
+The `.editorconfig` at the repo root handles tab indentation and the
+localisation UTF-8 BOM automatically, provided you have the
+`editorconfig.editorconfig` extension installed.
 
 ---
 
@@ -75,7 +84,7 @@ Create the following labels at <https://github.com/JasonBreen/ColdWarIronCurtain
 
 ## 4. Creating a release
 
-1. Merge all changes for the release into `main`.
+1. Merge all changes for the release into `development-branch` (the default branch).
 2. Update the `version` field in `Cold War Iron Curtain/descriptor.mod`.
 3. Create and push a tag:
    ```bash
@@ -90,15 +99,35 @@ Create the following labels at <https://github.com/JasonBreen/ColdWarIronCurtain
 
 ---
 
-## 5. CWTools CLI validation (future)
+## 5. What CI actually checks
 
-The `validate.yml` workflow has a placeholder step for [CWTools CLI](https://github.com/cwtools/cwtools-vscode).
-To enable full validation:
+`.github/workflows/validate.yml` runs three jobs on every push and PR. All are
+plain Python 3 with no dependencies, so you can run them locally first:
 
-1. Install the .NET runtime on your CI runner (or use a Docker image).
-2. Download the CWTools CLI release binary.
-3. Replace the placeholder step in `.github/workflows/validate.yml` with:
-   ```yaml
-   - name: Run CWTools validation
-     run: dotnet cwtools validate --game hoi4 "Cold War Iron Curtain"
-   ```
+```bash
+python3 tools/check_style.py --diff origin/development-branch   # tabs + loc BOM
+python3 tools/check_style.py --all                              # debt report
+python3 tools/loc_audit.py --check                              # SEA loc audit
+```
+
+| Job | What it does |
+|-----|--------------|
+| **Style** | Checks that lines *you added* use tab indentation, and that any localisation file you touched keeps its UTF-8 BOM. |
+| **Localisation audit** | Runs `loc_audit.py --check`, resolving every SEA event key against `localisation/english/`. |
+| **Repository hygiene** | Fails if a script file gains a hardcoded absolute path (`C:\Users\…`). |
+
+### Why the style check is incremental
+
+About **42%** of the PDX script files in this repo use space indentation,
+predating the tabs convention. A whole-tree gate would fail on every pull
+request forever, so the check only looks at added lines. Run
+`python3 tools/check_style.py --all` to see the remaining debt.
+
+Do **not** try to fix it with a mass reformat — that would touch thousands of
+files and destroy `git blame` for the mod's history.
+
+### Adding CWTools CLI (optional, future)
+
+Full PDX semantic validation would need [CWTools CLI](https://github.com/cwtools/cwtools-vscode):
+install the .NET runtime on the runner, fetch the CWTools binary, and add a step
+running `dotnet cwtools validate --game hoi4 "Cold War Iron Curtain"`.

@@ -12,6 +12,9 @@ jobs:
     permissions:
       contents: write
 
+    env:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -50,10 +53,15 @@ jobs:
 
       # Optional: post a Discord notification when a release is published.
       # Requires the DISCORD_WEBHOOK_URL secret (see docs/SETUP.md).
+      #
+      # NOTE: a step's `if:` is evaluated BEFORE that step's own `env:` block is
+      # applied, so `if: env.DISCORD_WEBHOOK_URL != ''` paired with a step-level
+      # `env:` is always false and the step silently never runs. The secret is
+      # therefore promoted to job level (see `env:` on the job) so the guard can
+      # actually see it.
       - name: Notify Discord
         if: ${{ env.DISCORD_WEBHOOK_URL != '' }}
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           VERSION: ${{ steps.version.outputs.VERSION }}
         run: |
           curl -s -X POST "$DISCORD_WEBHOOK_URL" \
