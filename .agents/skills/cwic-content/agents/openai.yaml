@@ -1,0 +1,6 @@
+interface:
+  display_name: "CWIC Content"
+  short_description: "Create focused CWIC gameplay content safely"
+  default_prompt: "Use $cwic-content to implement the requested CWIC gameplay change."
+policy:
+  allow_implicit_invocation: true

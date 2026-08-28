@@ -1,0 +1,47 @@
+# Git directory
+.git/
+.gitattributes
+
+# IDE and system files
+.vscode/
+.continue/
+.idea/
+.DS_Store
+thumbs.db
+
+# Large backup and temporary folders
+CWIC Backup/
+Reworked MLA/
+Reworked MLA/common/decisions/categories/
+Reworked MLA/common/national_focus/
+Reworked MLA/common/scripted_guis/
+Reworked MLA/common/scripted_localisation/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Binary and asset files (to save tokens/bandwidth during indexing)
+*.psd
+*.png
+*.jpg
+*.jpeg
+*.dds
+*.asset
+*.ogg
+*.mp3
+*.wav
+*.exe
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.pdf
+
+# Documentation and logs (optional, but can be large)
+LogDocs/
+*.csv
+*.docx
+*.xlsx
+```

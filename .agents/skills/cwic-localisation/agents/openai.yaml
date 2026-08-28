@@ -1,0 +1,6 @@
+interface:
+  display_name: "CWIC Localisation"
+  short_description: "Maintain CWIC localisation keys and encoding"
+  default_prompt: "Use $cwic-localisation to add or repair the requested CWIC text."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "CWIC Pull Request"
+  short_description: "Prepare focused CWIC pull request evidence"
+  default_prompt: "Use $cwic-pr to prepare a PR description for my current CWIC changes."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "CWIC Validate"
+  short_description: "Run focused CWIC checks and report limits"
+  default_prompt: "Use $cwic-validate to validate my current CWIC changes."
+policy:
+  allow_implicit_invocation: true
