@@ -1,13 +1,10 @@
 {
-    // HOI4 Mod Utilities – update this path to your local mod folder
-    "hoi4ModUtilities.modFile": "f:\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\ColdWarIronCurtain\\Cold War Iron Curtain\\descriptor.mod",
+    // HOI4 Mod Utilities – workspace-relative descriptor path
+    "hoi4ModUtilities.modFile": "${workspaceFolder}/Cold War Iron Curtain/descriptor.mod",
 
     // File associations for Paradox script files
     "files.associations": {
-        "*.txt": "plaintext",
         "*.mod": "plaintext",
-        "*.gui": "plaintext",
-        "*.gfx": "plaintext",
         "*.asset": "plaintext",
         "*.yml": "yaml",
         "*.yaml": "yaml"
