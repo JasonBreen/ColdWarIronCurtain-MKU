@@ -295,7 +295,7 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-	VIN_Chu_Van_Tan = {	# vin_establish_viet_bac_zone moves him to THO and promotes him as the Viet Bac chairman
+	VIN_Chu_Van_Tan = {
 		name = "Chu Van Tan"
 		portraits = {
 			army = {
@@ -313,7 +313,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 2
 		}
-		country_leader = {	# one role per ideology group Hanoi can be running when the zone is constituted
+		country_leader = {
 			desc = "POLITICS_CHU_VAN_TAN_DESC"
 			ideology = ho_chi_minh_thought
 		}
@@ -400,6 +400,22 @@ characters = {
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
+		}
+	}
+	VIN_Tran_Du_Chau = {
+		name = "Tran Du Chau"
+		portraits = {
+			army = {
+				large = "gfx/leaders/VIN/1949/GENERALS/Tran_Du_Chau_40s.dds"
+			}
+		}
+		corps_commander = {
+			traits = { self_taught irregular_officer politically_connected logistics_wizard VIE_Pro_France }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
 		}
 	}
 }

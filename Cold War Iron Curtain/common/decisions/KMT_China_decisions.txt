@@ -76,7 +76,13 @@ Chinese_Civil_War_missions_category = {
 			always = no
 		}
 
-
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 613
+    		}
+    		
+		}
+		
 		fire_only_once = yes
 		priority = 10
 		selectable_mission = no
@@ -94,15 +100,8 @@ Chinese_Civil_War_missions_category = {
 
 		complete_effect = {
 			news_event = Shanghai_Campaign.1
-			if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_minor_loss = yes
-			}
+			CHI_new_minor_loss = yes
+			
 		}
 
 		timeout_effect = {
@@ -111,27 +110,12 @@ Chinese_Civil_War_missions_category = {
 					613 = { is_controlled_by = PRC  } 
 				}
 				news_event = Shanghai_Campaign.1
-				if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_minor_loss = yes
-				} 
+				
+				CHI_new_minor_loss = yes
+				
 			}
-			else_if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_minor_defense = yes 
-					else = {
-						minor_CCW_KMT_defense = yes 
-					}
+			else = {
+				CHI_new_minor_defense = yes 
 			}
 		    
 		   
@@ -160,8 +144,7 @@ Chinese_Civil_War_missions_category = {
         		state = 602
         		state = 1575
     		}
-    		highlight_color_while_active = 3
-    		highlight_color_before_active = 2
+    		
 		}
 
 		activation = {
@@ -186,19 +169,7 @@ Chinese_Civil_War_missions_category = {
 		days_mission_timeout = 152
 
 		complete_effect = {
-			if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_major_loss = yes 
-					else = {
-						add_war_support = -0.15
-					}
-			}
-			
+			CHI_new_major_loss = yes 	
 		}
 
 		timeout_effect = {
@@ -208,25 +179,12 @@ Chinese_Civil_War_missions_category = {
 						602 = { is_controlled_by = PRC}
 						1575 = { is_controlled_by = PRC}
 					}
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_major_loss = yes 
-					else = {
-						add_war_support = -0.15
-					}
-						
-				}
+				}		
+				CHI_new_major_loss = yes 	
 			}
 			
 			
 				 
-			
 			else = {
 				if = {
 					limit = {
@@ -234,27 +192,8 @@ Chinese_Civil_War_missions_category = {
 					}
 					remove_ideas = civil_war_fervor
 				}
-				if = {
-					limit = {
-						AND = {
-							tag = CHI
-							has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = Old_Chinese_Civil_War
-							}
-						}	
-					}
-					major_CCW_KMT_defense = yes 
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_major_defense = yes 
-				}
+				CHI_new_major_defense = yes 
+				
 		    }
 			
 	    }
@@ -298,27 +237,22 @@ Chinese_Civil_War_missions_category = {
         		state = 601
         		state = 2015
 				state = 605
+				state = 1978
+				state = 1557
+				state = 603
+				state = 325
+				state = 1326
+				state = 1988
     		}
-    		highlight_color_while_active = 3
-    		highlight_color_before_active = 2
+    		
 		}
 		
 
 		days_mission_timeout = 223
 
 		complete_effect = {
-			if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_major_loss = yes 
-					else = {
-						add_war_support = -0.15
-					}
-			}
+			
+			CHI_new_major_loss = yes 	
 			news_event = KMT_Civilwar.36
 			custom_effect_tooltip = southwest_defense_fail_loc
 
@@ -345,18 +279,9 @@ Chinese_Civil_War_missions_category = {
 					CHI = {country_event = { id = KMT_Civilwar.20 days = 11} }
 					CHI =  {country_event = { id = KMT_Civilwar.21 days = 9} }
 				}
-				if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_major_loss = yes 
-					else = {
-						add_war_support = -0.15
-					}
-				}
+				CHI_new_major_loss = yes 
+					
+				
 		
 			}
 			else = {
@@ -375,34 +300,14 @@ Chinese_Civil_War_missions_category = {
 							activate_mission = CHI_recapture_beiping
 						}	
 					}
-				if = {
-					limit = {
-						tag = PRC
-					}
-					remove_ideas = civil_war_fervor
-				}
-				if = {
-					limit = {
-						AND = {
-							tag = CHI
-							has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = Old_Chinese_Civil_War
-							}
-						}	
-					}
-					major_CCW_KMT_defense = yes 
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = chinese_civil_war_mode
-							option = New_Chinese_Civil_War
+					if = {
+						limit = {
+							tag = PRC
 						}
+						remove_ideas = civil_war_fervor
 					}
 					CHI_new_major_defense = yes 
 					
-				}
 			}	
 		}
 	}
@@ -428,9 +333,10 @@ Chinese_Civil_War_missions_category = {
 				state = 594
 				state = 1569
 				state = 592
+				state = 2014
+				state = 2031
     		}
-    		highlight_color_while_active = 3
-    		highlight_color_before_active = 2
+    		
 		}
 
 		activation = {
@@ -455,20 +361,8 @@ Chinese_Civil_War_missions_category = {
 		days_mission_timeout = 223
 
 		complete_effect = {
-			
-			if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_major_loss = yes 
-
-					else = {
-						add_war_support = -0.15
-					}
-			}
+		
+			CHI_new_major_loss = yes 
 			news_event = KMT_Civilwar.35
 			
 		}
@@ -478,19 +372,7 @@ Chinese_Civil_War_missions_category = {
 				limit = {
 					1569 = { is_controlled_by = PRC}
 				}
-				if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-
-					CHI_new_major_loss = yes 
-					else = {
-						add_war_support = -0.15
-					}
-				}
+				CHI_new_major_loss = yes 
 				news_event = KMT_Civilwar.35
 			}
 				
@@ -501,28 +383,7 @@ Chinese_Civil_War_missions_category = {
 					}
 					remove_ideas = civil_war_fervor
 				}
-				if = {
-					limit = {
-						AND = {
-							tag = CHI
-							has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = Old_Chinese_Civil_War
-							}
-						}	
-					}
-					major_CCW_KMT_defense = yes 
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = chinese_civil_war_mode
-							option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_major_defense = yes 
-					
-				}
+				CHI_new_major_defense = yes 
 		    }
 		}
 	}
@@ -555,9 +416,17 @@ Chinese_Civil_War_missions_category = {
         		state = 283
 				state = 1359
 				state = 612
+				state = 2033
+				state = 283
+				state = 2034
+				state = 1995
+				state = 1992
+				state = 1994
+				state = 1991
+				state = 1989
+				state = 1990
     		}
-    		highlight_color_while_active = 3
-    		highlight_color_before_active = 2
+    		
 		}
 		activation = {
 			always = no
@@ -580,19 +449,8 @@ Chinese_Civil_War_missions_category = {
 		days_mission_timeout = 223
 
 		complete_effect = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = chinese_civil_war_mode
-						option = New_Chinese_Civil_War
-					}
-				}
-				CHI_new_minor_loss = yes 
-				else = {
-					add_war_support = -0.15
-				}
-			}
-
+			
+			CHI_new_minor_loss = yes 
 			custom_effect_tooltip = northwest_defense_fail_loc
 			hidden_effect = {
 				CHI = { set_country_flag = lost_northwest }
@@ -608,20 +466,7 @@ Chinese_Civil_War_missions_category = {
 						2033 = { is_controlled_by = PRC}	
 					}	
 				}
-		
-				if = {
-					limit = {
-						has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_minor_loss = yes 
-					else = {
-						add_war_support = -0.15
-					}
-				}
-
+				CHI_new_minor_loss = yes 
 				custom_effect_tooltip = xinjiang_might_defect_loc
 				hidden_effect = {
 					CHI = {country_event = KMT_Civilwar.22}
@@ -636,30 +481,8 @@ Chinese_Civil_War_missions_category = {
 					}
 					remove_ideas = civil_war_fervor
 				}
-				if = {
-					limit = {
-						AND = {
-							tag = CHI
-							has_game_rule = {
-								rule = chinese_civil_war_mode
-								option = Old_Chinese_Civil_War
-							}
-						}	
-					}
-					major_CCW_KMT_defense = yes 
-				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = chinese_civil_war_mode
-							option = New_Chinese_Civil_War
-						}
-					}
-					CHI_new_minor_defense = yes 
-					
-				}
+				CHI_new_minor_defense = yes 
 		    }
-		    
 		}
     }
 	
@@ -773,24 +596,14 @@ Chinese_Civil_War_missions_category = {
     CHI_hunan_defection = {                       
         allowed = {
 				tag = CHI
-				#NOT = {
-				#	has_game_rule = {
-				#		rule = chinese_civil_war_mode
-				#		option = New_Chinese_Civil_War
-				#	}
-				#}
+				
         }            
 		icon = soldierly_discipline
         available = {                           
             CHI = {
 				has_completed_focus = CHI_CIVILWAR_form_the_national_security_bureau
 			}
-			NOT = {
-				has_game_rule = {
-					rule = chinese_civil_war_mode
-					option = New_Chinese_Civil_War
-				}
-			}
+			
         }
 		cancel_trigger = {
 		    OR = {
@@ -802,25 +615,23 @@ Chinese_Civil_War_missions_category = {
 					}
 				}
 			}
-			NOT = {
-				has_game_rule = {
-					rule = chinese_civil_war_mode
-					option = New_Chinese_Civil_War
-				}
-			 }
+			
 	    }
         activation = {                          
             CHI = {
                 has_war_with = PRC
 				
-            }  
-			NOT = {
-				has_game_rule = {
-					rule = chinese_civil_war_mode
-					option = New_Chinese_Civil_War
-				}
-			 }                    
+            }                     
         }
+		
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 602
+        		state = 1575
+    		}
+    		
+		}
+		
 		fire_only_once = yes 
         selectable_mission = no               
         days_mission_timeout = 72
@@ -1198,6 +1009,9 @@ Chinese_Civil_War_missions_category = {
 			cost = 75
 			days_remove = 20
 		
+			target_trigger = {
+				FROM = { tag = USA }
+			}
 			
 			remove_effect = {
 				add_equipment_to_stockpile = {
@@ -1220,6 +1034,9 @@ Chinese_Civil_War_missions_category = {
 			cost = 80
 			days_remove = 20
 		
+			target_trigger = {
+				FROM = { tag = USA }
+			}
 			
 			remove_effect = {
 				add_equipment_to_stockpile = {
@@ -1242,6 +1059,9 @@ Chinese_Civil_War_missions_category = {
 			cost = 80
 			days_remove = 20
 		
+			target_trigger = {
+				FROM = { tag = USA }
+			}
 			
 			remove_effect = {
 				add_equipment_to_stockpile = {
@@ -1264,6 +1084,9 @@ Chinese_Civil_War_missions_category = {
 			cost = 100
 			days_remove = 30
 		
+			target_trigger = {
+				FROM = { tag = USA }
+			}
 			
 			remove_effect = {
 				add_equipment_to_stockpile = {
@@ -1296,6 +1119,9 @@ Chinese_Civil_War_missions_category = {
 			cost = 120
 			days_remove = 30
 		
+			target_trigger = {
+				FROM = { tag = USA }
+			}
 			
 			remove_effect = {
 				add_equipment_to_stockpile = {
@@ -2952,8 +2778,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 615} 
-			highlight_color_while_active = 1
-			highlight_color_before_active = 1
+			
 		}
 		allowed = {
 			tag = CHI
@@ -2999,8 +2824,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 602 state = 1575} 
-			highlight_color_while_active = 2
-			highlight_color_before_active = 2
+			
 		}
 		ai_will_do = {
 			factor = 0
@@ -3048,8 +2872,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 594 state = 2031 state = 2014} 
-			highlight_color_while_active = 3
-			highlight_color_before_active = 3
+			
 		}
 		ai_will_do = {
 			factor = 0
@@ -3081,8 +2904,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 1326 state = 1988 state = 325} 
-			highlight_color_while_active = 3
-			highlight_color_before_active = 3
+			
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -3124,8 +2946,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 1557 state = 1963 state = 1927 state = 1928 state = 1929 state = 1930 state = 1978 state = 605 state = 601 state = 2015} 
-			highlight_color_while_active = 10
-			highlight_color_before_active = 10
+			
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -3167,8 +2988,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 1359 state = 1926 state = 604 state = 2033 state = 283 state = 1995 state = 1994 state = 1992 state = 1787 state = 1989 state = 2034 state = 1990 state = 1991} 
-			highlight_color_while_active = 13
-			highlight_color_before_active = 13
+			
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -3210,8 +3030,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 615} 
-			highlight_color_while_active = 1
-			highlight_color_before_active = 1
+			
 		}
 		custom_cost_trigger = {
 			check_variable = { var = currentMoney value = 25 compare = greater_than_or_equals }
@@ -3262,8 +3081,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 602 state = 1575} 
-			highlight_color_while_active = 2
-			highlight_color_before_active = 2
+			
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -3326,8 +3144,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 594 state = 2031 state = 2014} 
-			highlight_color_while_active = 3
-			highlight_color_before_active = 3
+			
 		}
 		custom_cost_trigger = {
 			check_variable = { var = currentMoney value = 25 compare = greater_than_or_equals }
@@ -3364,8 +3181,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 1326 state = 1988 state = 325} 
-			highlight_color_while_active = 3
-			highlight_color_before_active = 3
+		
 		}
 		custom_cost_trigger = {
 			check_variable = { var = currentMoney value = 25 compare = greater_than_or_equals }
@@ -3415,8 +3231,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 1557 state = 1963 state = 1927 state = 1928 state = 1929 state = 1930 state = 1978 state = 605 state = 601 state = 2015} 
-			highlight_color_while_active = 10
-			highlight_color_before_active = 10
+			
 		}
 		custom_cost_trigger = {
 			check_variable = { var = currentMoney value = 25 compare = greater_than_or_equals }
@@ -3466,8 +3281,7 @@ Chinese_Faction_Decisions = {
 		}
 		highlight_states = {
 			highlight_state_targets = {state = 1359 state = 1926 state = 604 state = 2033 state = 283 state = 1995 state = 1994 state = 1992 state = 1787 state = 1989 state = 2034 state = 1990 state = 1991} 
-			highlight_color_while_active = 13
-			highlight_color_before_active = 13
+			
 		}
 		custom_cost_trigger = {
 			check_variable = { var = currentMoney value = 25 compare = greater_than_or_equals }

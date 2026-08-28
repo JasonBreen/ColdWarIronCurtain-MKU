@@ -87,6 +87,12 @@
  VIN_Mass_Recruitments_Binh_Xuyen_and_Sectarians:0 "Recruit the Binh Xuyen and Sectarians"
  VIN_Mass_Recruitments_Binh_Xuyen_and_Sectarians_desc:0 "The fractured politics of the south offer an opportunity. By recruiting the Binh Xuyen and religious sectarians, we can turn local armed power against the colonial order."
 
+ VIN_Summon_Nguyen_Binh_North:0 "Summon Nguyen Binh North"
+ VIN_Summon_Nguyen_Binh_North_desc:0 "The Party wants its southern commander in the Viet Bac for training and for consultations on the trail that must one day link the two halves of the country. Bringing him north means putting him on a road, and every road out of Nam Bo is watched."
+
+ VIN_Keep_Binh_in_Nam_Bo:0 "Keep Binh in Nam Bo"
+ VIN_Keep_Binh_in_Nam_Bo_desc:0 "The summons can be withdrawn. Nam Bo has one commander who can hold the guerrillas, the urban committees and the sect contacts together at once, and the North has nobody to send in his place. Hanoi will pay for the decision in authority rather than in blood."
+
  VIN_Nguyen_Binh_Ambush:0 "The Nguyen Binh Ambush"
  VIN_Nguyen_Binh_Ambush_desc:0 "The fate of Nguyen Binh will shape the southern struggle. A single ambush may decide whether the resistance remains unified or fractures into rival currents."
 
@@ -99,8 +105,8 @@
  VIN_Fate_of_Kieu_Cong_Cung_Revisionists:0 "The Fate of Kieu Cong Cung's Revisionists"
  VIN_Fate_of_Kieu_Cong_Cung_Revisionists_desc:0 "Rival currents within the southern movement cannot be ignored. We must settle the question of revisionism, syndicalism, and the authority of the revolutionary center."
 
- VIN_Promote_Le_Duc_Tho_Orthodoxy:0 "Promote Le Duc Tho's Orthodoxy"
- VIN_Promote_Le_Duc_Tho_Orthodoxy_desc:0 "The southern movement must be brought into a disciplined Marxist-Leninist line. Le Duc Tho's political network offers a path toward ideological consolidation."
+ VIN_Promote_Le_Duc_Tho_Orthodoxy:0 "Promote Le Duan's Orthodoxy"
+ VIN_Promote_Le_Duc_Tho_Orthodoxy_desc:0 "The southern movement must be brought into a disciplined Marxist-Leninist line. The Party's southern office under Le Duan, and his deputy Le Duc Tho after him, offers a path toward ideological consolidation."
 
  VIN_Bac_Tien:0 "Northward Advance"
  VIN_Bac_Tien_desc:0 "A northern advance can reunite the armed struggle under one command and prevent the south from becoming a separate political project."
@@ -472,8 +478,8 @@
  dbp_camp_under_siege_desc:0 "The camp is supplied by air and nothing else. Whoever is dug into the valley pays for it - and stops paying the day the valley changes hands."
  VIN_Campaign_Mobilization:0 "Campaign Mobilization"
  VIN_Campaign_Mobilization_desc:0 "Months of stockpiling spent at once. Porter columns move ahead of the divisions and the rice is forward, easing, but not erasing, the logistical cost of a highland offensive.\n\nThis holds only while a campaign is in the field."
- VIN_Campaign_Overextension:0 "Campaign Overextension"
- VIN_Campaign_Overextension_desc:0 "The columns have moved beyond the operation assigned to them. Supply routes now cross the wrong valleys, reserves are scattered across unrelated fronts, and local victories consume strength without bringing the campaign objective any closer.\n\nWithdraw from off-theatre foreign ground to remove this penalty."
+ VIN_Campaign_Overextension:0 "Severe Operational Overextension"
+ VIN_Campaign_Overextension_desc:0 "The columns have moved beyond the operation assigned to them. Supply routes now cross the wrong valleys, reserves are scattered across unrelated fronts, and local victories consume strength without bringing the campaign objective any closer.\n\nWithdraw from off-theatre foreign ground to remove this severe penalty."
  VIN_Resistance_War_Economy:0 "Resistance War Economy"
  VIN_Resistance_War_Economy_desc:0 "There is no treasury and no industry worth the name. What there is instead is a war economy improvised out of the Viet Bac: workshops cut into hillsides, rice levied by the village, porters where there are no roads, and whatever crosses the border from Kwangsi.\n\nIt does not make the Democratic Republic solvent. It makes it capable of fielding an army while insolvent - and it lasts only as long as the war with the corps does."
  VIN_guerilla_network:0 "Guerrilla Networks"
@@ -892,8 +898,13 @@ VIN_Captured_French_Infantry_Equipment:0 "Captured French Infantry Equipment"
 VIN_Aquisitioned_French_Artillery:0 "Acquisitioned French Artillery"
 VIN_Prepare_to_Strike_the_De_Lattre_Line:0 "Prepare to Strike the De Lattre Line"
 VIN_Strike_Vinh_Yen:0 "Strike Vinh Yen"
+VIN_Strike_Vinh_Yen_desc:0 "The French have concentrated their mobile reserve northwest of Hanoi. A limited offensive at Vinh Yen will test whether de Lattre's new command can withstand our regular divisions in open battle."
 VIN_Attack_Mao_Khe:0 "Attack Mao Khe"
+VIN_Attack_Mao_Khe_desc:0 "The eastern approaches and coal district at Mao Khe form a vulnerable extension of the delta line. We will strike the outposts before the French can fully reinforce them by river."
 VIN_The_Battle_of_the_Day_River:0 "The Battle of the Day River"
+VIN_The_Battle_of_the_Day_River_desc:0 "A broad offensive across the Day River line can break the Catholic districts away from the French position and stretch their mobile groups across several objectives."
+VIN_Assault_Na_San:0 "Assault the Na San Hedgehog"
+VIN_Assault_Na_San_desc:0 "The retreating French Union forces have gathered around an air-supplied camp at Na San. Its ring of strongpoints must be tested before the expeditionary corps turns the hedgehog into a model for future battles."
 VIN_Propaganda_Warfare:0 "Propaganda Warfare"
 VIN_Recover_Our_Losses:0 "Recover Our Losses"
 VIN_The_Hoa_Binh_Campaign:0 "The Hoa Binh Campaign"

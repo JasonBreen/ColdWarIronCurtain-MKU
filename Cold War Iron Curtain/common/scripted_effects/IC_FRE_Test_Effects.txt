@@ -56,7 +56,6 @@
 #   e test_fre_lorraine_status   log Lorraine posture and exclusive result
 #   e test_fre_hoa_binh_status   log phase-two posture and exclusive result
 #   e test_fre_hoa_binh_day_105  force a planned Amarante request at day 105
-#   e test_fre_dbp_start         jump straight into the Dien Bien Phu arc
 #   e test_fre_command_next      advance the command rotation one step
 #   -- Tai highlands / Dien Bien Phu ownership --
 #   e test_tai_status            log who owns 1761 and 671 and whether TAI is alive
@@ -172,16 +171,6 @@ test_fre_ops_unlock = {
 			fre_castor_force_superseded_cleanup = yes
 			fre_pollux_force_superseded_cleanup = yes
 			fre_atlante_force_superseded_cleanup = yes
-		}
-	}
-}
-
-test_fre_dbp_start = {
-	if = {
-		limit = { country_exists = FRE }
-		FRE = {
-			set_country_flag = FRE_Dien_Bien_Phu_Established
-			country_event = { id = FRE_DBP.1 days = 1 }
 		}
 	}
 }
@@ -891,5 +880,48 @@ test_fre_hoa_binh_day_105 = {
 		}
 		VIN = { set_variable = { VIN_camp_days_elapsed = 105 } }
 		FRE = { fre_hoa_binh_response_daily_tick = yes }
+	}
+}
+
+test_fre_limited_operation_status = {
+	if = {
+		limit = { country_exists = FRE }
+		FRE = {
+			log = "[FRE LIMITED] active=[?FRE_op_current|0] day=[?FRE_op_days_elapsed|0] hold=[?FRE_op_objective_hold_days|0] outcome=[?FRE_op_last_outcome|0]"
+			if = {
+				limit = {
+					has_country_flag = FRE_Limited_Operation_Active
+					country_exists = VIN
+					VIN = { has_country_flag = VIN_Limited_Campaign_Armistice_Pending }
+				}
+				log = "[FRE LIMITED] FAIL - VIN campaign armistice retry overlaps the live operation"
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = FRE_Limited_Operation_Active }
+					OR = { has_idea = FRE_Limited_Operation_Light has_idea = FRE_Limited_Operation_Standard has_idea = FRE_Limited_Operation_Maximum }
+				}
+				log = "[FRE LIMITED] FAIL - commitment idea survived cleanup"
+			}
+			if = {
+				limit = { has_country_flag = FRE_Limited_Operation_Active FRE_no_operation_running_trigger = yes }
+				log = "[FRE LIMITED] FAIL - shared operation gate does not see the live operation"
+			}
+		}
+	}
+}
+
+test_fre_limited_operation_superseded_cleanup = {
+	if = {
+		limit = { country_exists = FRE }
+		FRE = {
+			set_variable = { FRE_op_current = 2 }
+			set_country_flag = FRE_Limited_Operation_Active
+			set_global_flag = FRE_Operation_Active
+			add_ideas = FRE_Limited_Operation_Standard
+			set_temp_variable = { fre_op_outcome = 5 }
+			fre_operation_resolve_outcome = yes
+			test_fre_limited_operation_status = yes
+		}
 	}
 }

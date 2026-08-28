@@ -1,5 +1,47 @@
 ideas = {
 	country = {
+		VIN_highland_direct_rule = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.10
+				war_support_factor = -0.03
+			}
+		}
+		VIN_highland_direct_rule_2 = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.20
+				war_support_factor = -0.06
+			}
+		}
+		VIN_highland_autonomy_compact = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		VIN_highland_autonomy_compact_2 = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.10
+			}
+		}
 		VIN_Resistance_War_Economy = {
 			removal_cost = -1
 			picture = generic_production_bonus
@@ -10,7 +52,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				unit_limit_bonus = 12
+				unit_limit_bonus = 18
 				industrial_capacity_factory = 0.35
 				production_speed_buildings_factor = 0.30
 				production_factory_max_efficiency_factor = 0.15
@@ -24,8 +66,6 @@ ideas = {
 			}
 		}
 
-		# Held for as long as a campaign is in the field. Applied by
-		# vin_campaign_apply_war_spirits, removed by vin_campaign_finish.
 		VIN_Campaign_Mobilization = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
@@ -43,13 +83,24 @@ ideas = {
 				army_speed_factor = 0.05
 				army_morale_factor = 0.05
 				land_reinforce_rate = 0.05
-				acclimatization_mountaineer_gain_factor = 0.25
+				acclimatization_hot_climate_gain_factor = 0.25
 				winter_attrition_factor = -0.15
 			}
 		}
 
-		# Applied only while VIN occupies still-foreign ground outside the active
-		# campaign's operational envelope. Re-evaluated by the daily campaign tick.
+		VIN_National_Reunification_Preparation = {
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			allowed = { always = no }
+			allowed_civil_war = { }
+			modifier = {
+				planning_speed = 0.10
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+				land_reinforce_rate = 0.02
+			}
+		}
+
 		VIN_Campaign_Overextension = {
 			removal_cost = -1
 			picture = generic_army_problems
@@ -59,17 +110,18 @@ ideas = {
 			allowed_civil_war = {
 			}
 			modifier = {
-				army_attack_factor = -0.20
-				army_org_factor = -0.15
-				army_speed_factor = -0.10
-				supply_consumption_factor = 0.30
-				out_of_supply_factor = 0.25
-				land_reinforce_rate = -0.05
-				attrition = 0.10
+				army_attack_factor = -0.60
+				army_defence_factor = -0.35
+				army_org_factor = -0.45
+				army_speed_factor = -0.35
+				planning_speed = -0.50
+				supply_consumption_factor = 0.90
+				out_of_supply_factor = 0.75
+				land_reinforce_rate = -0.15
+				attrition = 0.35
 			}
 		}
 
-		# Ongoing disruption after Lorraine reaches the northern base-area routes.
 		VIN_Lorraine_Depots_Disrupted = {
 			removal_cost = -1
 			picture = generic_army_problems
@@ -231,6 +283,19 @@ ideas = {
 				attack_bonus_against_cores = 0.15
 			}
 		}
+
+		NLF_wartime_reconstitution = {
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			allowed = { always = no }
+			allowed_civil_war = { }
+			modifier = {
+				recruitable_population_factor = 0.15
+				industrial_capacity_factory = 0.20
+				production_factory_max_efficiency_factor = 0.10
+				training_time_army_factor = -0.20
+			}
+		}
 		NLF_vietminh_disarray = {
 			removal_cost = -1
 
@@ -284,7 +349,6 @@ ideas = {
 			}
 		}
 
-		# Post-Dien Bien Phu support, removed when the southern war ends.
 		NLF_Northern_Supply_Line = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
@@ -298,12 +362,21 @@ ideas = {
 			}
 		}
 	}
-	# Held for a campaign only when both VIN and FRE are AI-controlled. Applied
-	# by vin_campaign_apply_war_spirits and removed by vin_campaign_finish. The
-	# Laos raid never touches this.
 	hidden_ideas = {
+	    VIN_highland_autonomy_resources = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				autonomy_manpower_share = 100
+				cic_to_overlord_factor = 100
+				mic_to_overlord_factor = 100
+				extra_trade_to_overlord_factor = 100
+			}
+		}
 		VIN_Campaign_AI_Support = {
-			name = VIN_Campaign_Mobilization	# in case it ever surfaces in a tooltip
+			name = VIN_Campaign_Mobilization
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -311,7 +384,6 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
 			modifier = {
 				army_attack_factor = 0.25
 				army_defence_factor = 0.25
@@ -324,7 +396,7 @@ ideas = {
 				supply_consumption_factor = -0.15
 				out_of_supply_factor = -0.20
 				attrition = -0.30
-				acclimatization_mountaineer_gain_factor = 0.5
+				acclimatization_hot_climate_gain_factor = 0.5
 				winter_attrition_factor = -0.20
 				heat_attrition_factor = -0.20
 				planning_speed = 0.20
@@ -332,7 +404,6 @@ ideas = {
 				conscription = 0.01
 				industrial_capacity_factory = 0.10
 			}
-
 			equipment_bonus = {
 				infantry_equipment = {
 					instant = yes
@@ -342,7 +413,6 @@ ideas = {
 				}
 			}
 		}
-
 		VIN_Indochina_AI_Support = {
 			name = VIN_Campaign_Mobilization
 			removal_cost = -1

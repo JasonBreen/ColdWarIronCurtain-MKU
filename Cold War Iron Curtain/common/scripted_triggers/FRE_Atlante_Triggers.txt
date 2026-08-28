@@ -1,7 +1,3 @@
-# Operation Atlante targets the two provinces of the southern Viet Minh base in
-# state 1287. Control by CEFEO, France, or the State of Vietnam counts, but the
-# operation itself never transfers the state.
-
 fre_atlante_french_aligned_controls_north_objective_trigger = {
 	OR = {
 		AND = { country_exists = FRE  FRE = { controls_province = 4255 } }
@@ -23,8 +19,6 @@ fre_atlante_full_objective_trigger = {
 	fre_atlante_french_aligned_controls_south_objective_trigger = yes
 }
 
-# The limited plan deliberately makes the Vietnamese National Army earn its
-# own coastal lodgement rather than crediting any allied controller.
 fre_atlante_vietnamese_objective_trigger = {
 	country_exists = VIE
 	VIE = { controls_province = 4255 }
@@ -37,4 +31,13 @@ fre_atlante_live_window_trigger = {
 	country_exists = VIE
 	country_exists = NLF
 	VIE = { has_war_with = NLF }
+}
+fre_atlante_terminal_trigger = {
+	OR = {
+		has_country_flag = FRE_Operation_Atlante_Result_Central_Success
+		has_country_flag = FRE_Operation_Atlante_Result_Vietnamese_Foothold
+		has_country_flag = FRE_Operation_Atlante_Result_Stalled
+		has_country_flag = FRE_Operation_Atlante_Result_Northern_Priority
+		has_country_flag = FRE_Operation_Atlante_Result_Superseded
+	}
 }

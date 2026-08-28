@@ -1,9 +1,7 @@
-# Operation Castor establishes the exact Dien Bien Phu airhead before the later
-# VIN campaign. It owns no territorial transfer, peace, or Geneva result.
-# Result ids: 1 airhead established, 2 failed, 3 theatre-superseded.
-
 fre_castor_focus_complete = {
 	set_country_flag = FRE_Operation_Castor_Launched
+	set_country_flag = FRE_Mission_Operation_Castor_Activated
+	fre_castor_load_callback_prices = yes
 	if = {
 		limit = {
 			NOT = { has_global_flag = Indochina_War_Over }
@@ -67,7 +65,20 @@ fre_castor_begin_common = {
 		}
 	}
 	fre_dbp_fortify_camp = yes
+	vin_cefeo_intel_launch_castor = yes
 	activate_mission = FRE_Mission_Operation_Castor
+}
+
+fre_castor_load_callback_prices = {
+	set_variable = { FRE_Castor_Full_Price = 100 }
+	set_variable = { FRE_Castor_Limited_Price = 60 }
+	if = { limit = { has_country_flag = FRE_Operation_Brochet_Result_Clean } add_to_variable = { FRE_Castor_Full_Price = -15 } add_to_variable = { FRE_Castor_Limited_Price = -15 } }
+	else_if = { limit = { has_country_flag = FRE_Operation_Brochet_Result_Costly } add_to_variable = { FRE_Castor_Full_Price = -5 } add_to_variable = { FRE_Castor_Limited_Price = -5 } }
+	if = { limit = { has_country_flag = FRE_Na_San_Result_Clean } add_to_variable = { FRE_Castor_Full_Price = -15 } add_to_variable = { FRE_Castor_Limited_Price = -15 } }
+	else_if = { limit = { has_country_flag = FRE_Na_San_Result_Costly } add_to_variable = { FRE_Castor_Full_Price = -5 } add_to_variable = { FRE_Castor_Limited_Price = -5 } }
+	else_if = { limit = { has_country_flag = FRE_Na_San_Result_Failure } add_to_variable = { FRE_Castor_Full_Price = 15 } add_to_variable = { FRE_Castor_Limited_Price = 15 } }
+	clamp_variable = { var = FRE_Castor_Full_Price min = 50 max = 140 }
+	clamp_variable = { var = FRE_Castor_Limited_Price min = 25 max = 100 }
 }
 
 fre_castor_begin_full_drop = {
@@ -83,7 +94,9 @@ fre_castor_begin_full_drop = {
 		}
 		fre_castor_prepare_new_operation = yes
 		set_country_flag = FRE_Castor_Full_Drop
-		set_temp_variable = { fre_credit_amount = -100 }
+		fre_castor_load_callback_prices = yes
+		set_temp_variable = { fre_credit_amount = FRE_Castor_Full_Price }
+		multiply_temp_variable = { fre_credit_amount = -1 }
 		fre_change_war_credits = yes
 		add_manpower = -4000
 		add_equipment_to_stockpile = { type = transport_plane_equipment amount = -6 }
@@ -109,7 +122,9 @@ fre_castor_begin_limited_drop = {
 		}
 		fre_castor_prepare_new_operation = yes
 		set_country_flag = FRE_Castor_Limited_Drop
-		set_temp_variable = { fre_credit_amount = -60 }
+		fre_castor_load_callback_prices = yes
+		set_temp_variable = { fre_credit_amount = FRE_Castor_Limited_Price }
+		multiply_temp_variable = { fre_credit_amount = -1 }
 		fre_change_war_credits = yes
 		add_manpower = -2500
 		add_equipment_to_stockpile = { type = transport_plane_equipment amount = -4 }
@@ -173,7 +188,6 @@ fre_castor_daily_tick = {
 		}
 		else = { set_variable = { FRE_Castor_Hold_Days = 0 } }
 
-		# Exact-objective success outranks a same-day theatre closure or timeout.
 		if = {
 			limit = { NOT = { check_variable = { FRE_Castor_Hold_Days < FRE_Castor_Hold_Required } } }
 			fre_castor_resolve_success = yes
@@ -195,9 +209,6 @@ fre_castor_daily_tick = {
 	}
 }
 
-# Backstop for the visible mission timer. If mission processing occurs before
-# the daily pulse on the final day, current control completes a streak with
-# thirteen recorded days instead of losing an otherwise valid fourteenth day.
 fre_castor_deadline_resolve = {
 	if = {
 		limit = { has_country_flag = FRE_Castor_Airhead_Active }
@@ -229,7 +240,7 @@ fre_castor_resolve_success = {
 			limit = { NOT = { has_global_flag = Indochina_War_Over } }
 			FRA = {
 				add_to_variable = {
-					StruggleInvolvedNationsIndochinaProFranceScore = 25
+					StruggleInvolvedNationsIndochinaProFranceScore = 10
 					tooltip = Add_to_French_Victory_Points_TT
 				}
 				add_to_variable = {
@@ -268,11 +279,11 @@ fre_castor_resolve_failure = {
 			limit = { NOT = { has_global_flag = Indochina_War_Over } }
 			FRA = {
 				add_to_variable = {
-					StruggleInvolvedNationsIndochinaProFranceScore = -25
+					StruggleInvolvedNationsIndochinaProFranceScore = -10
 					tooltip = Add_to_French_Victory_Points_TT
 				}
 				add_to_variable = {
-					StruggleInvolvedNationsIndochinaCommunistScore = 25
+					StruggleInvolvedNationsIndochinaCommunistScore = 10
 					tooltip = Add_to_Communist_Victory_Points_TT
 				}
 				add_to_variable = {
@@ -311,9 +322,6 @@ fre_castor_orphan_check = {
 	}
 }
 
-# If Hanoi opens the siege before the establishment clock completes, retain the
-# already deployed garrison for the parent campaign but close Castor itself as
-# superseded. The campaign response and recorder remain sole owners thereafter.
 fre_castor_handoff_to_campaign = {
 	if = {
 		limit = { has_country_flag = FRE_Castor_Airhead_Active }
@@ -332,6 +340,9 @@ fre_castor_force_superseded_cleanup = {
 }
 
 fre_castor_cleanup = {
+	vin_cefeo_intel_finish_castor = yes
+	set_temp_variable = { response_validation_package = 4 }
+	response_package_validation_log = yes
 	671 = {
 		if = {
 			limit = { has_dynamic_modifier = { modifier = FRE_Castor_Airhead_Forming } }

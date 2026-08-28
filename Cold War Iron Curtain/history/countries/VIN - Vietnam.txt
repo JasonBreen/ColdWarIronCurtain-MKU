@@ -63,6 +63,7 @@ set_technology = {
 	squad_weapons_1 = 1
 	hmg_1 = 1
 
+	mountain_warfare_1 = 1
 	special_operations = 1
 	amphibious_warfare_1 = 1
 	airborne_operations_1 = 1
@@ -451,6 +452,7 @@ if = {
 	recruit_character = VIN_Hoang_Sam
 	recruit_character = VIN_Ta_Xuan_Thu
 	recruit_character = VIN_Huynh_Van_Nghe
+	recruit_character = VIN_Tran_Du_Chau
 
 	#Navy Admirals
 	recruit_character = VIN_Nguyen_Ba_Phat

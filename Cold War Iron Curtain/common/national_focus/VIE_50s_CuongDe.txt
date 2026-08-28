@@ -3332,8 +3332,6 @@ focus_tree = {
 	}
 	focus = {
 		id = VIE_NH_Diem_Appoint_Cung_LandReform_Minister
-		completion_reward = {
-		}
 		icon = GFX_goal_generic_political_pressure
 		cost = 5
 		relative_position_id = VIE_NH_Diem_AgroCredit_Experiment
@@ -3344,6 +3342,19 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			country_event = DiemLR.0
+			if = {
+				limit = {
+					has_country_flag = Cung_Defection
+					has_character = NLF_Kieu_Cong_Cung
+				}
+				NLF_Kieu_Cong_Cung = {
+					add_unit_leader_trait = politically_connected
+				}
+				custom_effect_tooltip = VIE_Diem_Cung_Civic_Action_tt
+			}
+			else = {
+				custom_effect_tooltip = VIE_Diem_No_Cung_tt
+			}
 			custom_effect_tooltip = Decrease_Land_Reform_Penalty_5
 			add_to_variable = {
 				VIE_Land_Reform_Penalty = 0.05
@@ -3488,7 +3499,6 @@ focus_tree = {
 		x = 0
 		y = 5
 		completion_reward = {
-			#1960s Load In
 			custom_effect_tooltip = VIE_NH_Diem_Begin_5YP_WIP_tt
 		}
 	}
@@ -3670,15 +3680,16 @@ focus_tree = {
 					popularity = 0.05
 				}
 			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_country_flag = Cung_Defection
-					}
-					NLF_Kieu_Cong_Cung = {
-						promote_leader = yes
-					}
+			if = {
+				limit = {
+					has_country_flag = Cung_Defection
+					has_character = NLF_Kieu_Cong_Cung
 				}
+				NLF_Kieu_Cong_Cung = {
+					add_unit_leader_trait = politically_connected
+				}
+				add_to_variable = { VIE_ChieuHoi_Cadres = 2 }
+				custom_effect_tooltip = VIE_Diem_Cung_Civic_Action_tt
 			}
 			country_event = NH_DIEMa.8
 		}
@@ -3989,7 +4000,6 @@ focus_tree = {
 		icon = GFX_unknown
 		completion_reward = {
 		}
-		#PLACEHOLDER - Replace GFX_unknown with Tay-Ninh Training Base dedicated icon
 		cost = 5
 		relative_position_id = VIE_NH_Diem_Expand_CNP
 		prerequisite = {
@@ -4014,7 +4024,6 @@ focus_tree = {
 		icon = GFX_unknown
 		completion_reward = {
 		}
-		#PLACEHOLDER - Replace GFX_unknown with dedicated icon
 		cost = 5
 		relative_position_id = VIE_NH_Diem_Expand_CNP
 		prerequisite = {
@@ -4024,7 +4033,6 @@ focus_tree = {
 		x = 0
 		y = 5
 		completion_reward = {
-			#PLACEHOLDER - Add second stage Personalist Revolution effects
 			country_event = CuongDe_NgoDinh.25
 			hidden_effect = {
 				country_event = { id = DiemLR.3 hours = 6 }
@@ -4468,7 +4476,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_command_power = 30
-			#Unlock Next Army Tree
 		}
 	}
 }
