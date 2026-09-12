@@ -507,13 +507,6 @@ on_actions = {
 					activate_mission = Defense_of_the_southwest
 					activate_mission = Defense_of_the_Northwest
 					add_ideas = CHI_disorganized_military
-					
-				}
-				every_state = {
-					limit = {
-						region = 145
-					}
-					set_state_flag = xinjiang_might_defect
 				}
 				if = {
 					limit = {
@@ -976,15 +969,6 @@ on_actions = {
 					country_event = { id = VIE_Historical.9 days = 99 }
 					country_event = { id = VIE_Historical.10 days = 799 }
 					country_event = { id = VNA.3 days = 458 }
-					country_event = {
-						id = BaoDai.16
-						days = 684
-					}
-					country_event = {
-						id = CuongDe.17
-						days = 1224 #backstop for Cuong-De's death: the event's own trigger blocks it before 1952
-						random_days = 620
-					}
 				}
 				every_state = {
 					limit = {
@@ -1094,9 +1078,6 @@ on_actions = {
 				####PRC####
 
 				PRC = {
-
-					
-
 					news_event = { #毛主席逝世
 						id = PRC_Focus.10
 						days = 9971
