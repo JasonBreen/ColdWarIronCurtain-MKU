@@ -81,7 +81,6 @@
 
 country_event = {
 	id = VIE_Mechanics.1
-	immediate = { }
 	title = VIE_Mechanics.1.t
 	desc = VIE_Mechanics.1.d
 	picture = GFX_VIE_Mechanics.1
@@ -100,7 +99,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Mechanics.2
-	immediate = { }
 	title = VIE_Mechanics.2.t
 	desc = VIE_Mechanics.2.d
 	picture = GFX_VIE_Mechanics.2
@@ -117,7 +115,6 @@ country_event = {
 
 country_event = {
 	id = Elysee_Accord.1
-	immediate = { }
 	title = Elysee_Accords.1.t
 	desc = Elysee_Accords.1.d
 	picture = GFX_Elysee_Accords.1
@@ -135,7 +132,6 @@ country_event = {
 
 country_event = {
 	id = Elysee_Accord.2
-	immediate = { }
 	title = Elysee_Accords.2.t
 	desc = Elysee_Accords.2.d
 	picture = GFX_Elysee_Accords.2
@@ -154,7 +150,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification_Choices.1
-	immediate = { }
 	title = CCC_Unification_Choices.1.t
 	desc = CCC_Unification_Choices.1.d
 	picture = GFX_CCC_Unification_Choices.1
@@ -255,7 +250,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification_Choices.2
-	immediate = { }
 	title = CCC_Unification_Choices.2.t
 	desc = CCC_Unification_Choices.2.d
 	picture = GFX_CCC_Unification_Choices.2
@@ -392,7 +386,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.1
-	immediate = { }
 	title = CCC_Unification.1.t
 	desc = CCC_Unification.1.d
 	picture = GFX_CCC_Unification.1
@@ -409,7 +402,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.2
-	immediate = { }
 	title = CCC_Unification.2.t
 	desc = CCC_Unification.2.d
 	picture = GFX_CCC_Unification.1
@@ -426,7 +418,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.3
-	immediate = { }
 	title = CCC_Unification.3.t
 	desc = CCC_Unification.3.d
 	picture = GFX_CCC_Unification.1
@@ -500,7 +491,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.4
-	immediate = { }
 	title = CCC_Unification.4.t
 	desc = CCC_Unification.4.d
 	picture = GFX_CCC_Unification.2
@@ -530,7 +520,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.5
-	immediate = { }
 	title = CCC_Unification.5.t
 	desc = CCC_Unification.5.d
 	picture = GFX_CCC_Unification.3
@@ -549,7 +538,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.6
-	immediate = { }
 	title = CCC_Unification.6.t
 	desc = CCC_Unification.6.d
 	picture = GFX_CCC_Unification.4
@@ -566,7 +554,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.7
-	immediate = { }
 	title = CCC_Unification.7.t
 	desc = CCC_Unification.7.d
 	picture = GFX_CCC_Unification.5
@@ -647,7 +634,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.8
-	immediate = { }
 	title = CCC_Unification.8.t
 	desc = CCC_Unification.8.d
 	picture = GFX_CCC_Unification.6
@@ -694,7 +680,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.9
-	immediate = { }
 	title = CCC_Unification.9.t
 	desc = CCC_Unification.9.d
 	picture = GFX_CCC_Unification.7
@@ -735,7 +720,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Unification.10
-	immediate = { }
 	title = CCC_Unification.10.t
 	desc = CCC_Unification.10.d
 	picture = GFX_CCC_Unification.8
@@ -751,7 +735,6 @@ country_event = {
 
 country_event = {
 	id = CCC_Pol.1
-	immediate = { }
 	title = CCC_Pol.1.t
 	desc = CCC_Pol.1.d
 	picture = GFX_BaoDai.1
@@ -776,7 +759,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Unification.1
-	immediate = { }
 	title = FUL_Unification.1.t
 	desc = FUL_Unification.1.d
 	picture = GFX_FUL_Unification.1
@@ -825,7 +807,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Unification.2
-	immediate = { }
 	title = FUL_Unification.2.t
 	desc = FUL_Unification.2.d
 	picture = GFX_FUL_Unification.2
@@ -892,7 +873,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Unification.3
-	immediate = { }
 	title = FUL_Unification.3.t
 	desc = FUL_Unification.3.d
 	picture = GFX_FUL_Unification.3
@@ -911,7 +891,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Unification.4
-	immediate = { }
 	title = FUL_Unification.4.t
 	desc = FUL_Unification.4.d
 	picture = GFX_FUL_Unification.4
@@ -938,7 +917,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Unification.5
-	immediate = { }
 	title = FUL_Unification.5.t
 	desc = FUL_Unification.5.d
 	picture = GFX_FUL_Unification.5
@@ -971,7 +949,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Unification.6
-	immediate = { }
 	title = FUL_Unification.6.t
 	desc = FUL_Unification.6.d
 	picture = GFX_FUL_Unification.6
@@ -1049,7 +1026,6 @@ country_event = {
 
 country_event = {
 	id = NUN_Unification.1
-	immediate = { }
 	title = NUN_Unification.1.t
 	desc = NUN_Unification.1.d
 	picture = GFX_NUN_Unification.1
@@ -1097,7 +1073,6 @@ country_event = {
 
 country_event = {
 	id = NUN_Unification.2
-	immediate = { }
 	title = NUN_Unification.2.t
 	desc = NUN_Unification.2.d
 	picture = GFX_NUN_Unification.2
@@ -1152,7 +1127,6 @@ country_event = {
 
 country_event = {
 	id = NUN_Unification.3
-	immediate = { }
 	title = NUN_Unification.3.t
 	desc = NUN_Unification.3.d
 	picture = GFX_NUN_Unification.3
@@ -1169,7 +1143,6 @@ country_event = {
 
 country_event = {
 	id = Etat_du_Vietnam.1
-	immediate = { }
 	title = Etat_du_Vietnam.1.t
 	desc = Etat_du_Vietnam.1.d
 	picture = GFX_Etat_du_Vietnam.1
@@ -1219,7 +1192,6 @@ country_event = {
 
 country_event = {
 	id = Etat_du_Vietnam.2
-	immediate = { }
 	title = Etat_du_Vietnam.2.t
 	desc = Etat_du_Vietnam.2.d
 	picture = GFX_Etat_du_Vietnam.2
@@ -1238,7 +1210,6 @@ country_event = {
 
 country_event = {
 	id = Etat_du_Vietnam.3
-	immediate = { }
 	title = Etat_du_Vietnam.3.t
 	desc = Etat_du_Vietnam.3.d
 	picture = GFX_Etat_du_Vietnam.3
@@ -1303,7 +1274,6 @@ country_event = {
 
 country_event = {
 	id = Etat_du_Vietnam.4
-	immediate = { }
 	title = Etat_du_Vietnam.4.t
 	desc = Etat_du_Vietnam.4.d
 	picture = GFX_Etat_du_Vietnam.4
@@ -1318,7 +1288,6 @@ country_event = {
 
 country_event = {
 	id = Etat_du_Vietnam.5
-	immediate = { }
 	title = Etat_du_Vietnam.5.t
 	desc = Etat_du_Vietnam.5.d
 	picture = GFX_Etat_du_Vietnam.5
@@ -1355,7 +1324,6 @@ country_event = {
 
 country_event = {
 	id = Etat_du_Vietnam.6
-	immediate = { }
 	title = Etat_du_Vietnam.6.t
 	desc = Etat_du_Vietnam.6.d
 	picture = GFX_Etat_du_Vietnam.6
@@ -1380,7 +1348,6 @@ country_event = {
 }
 country_event = {
 	id = BaoDai.1
-	immediate = { }
 	title = BaoDai.1.t
 	desc = BaoDai.1.d
 	picture = GFX_BaoDai.1
@@ -1414,7 +1381,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.2
-	immediate = { }
 	title = BaoDai.2.t
 	desc = BaoDai.2.d
 	picture = GFX_BaoDai.2
@@ -1444,7 +1410,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.3
-	immediate = { }
 	title = BaoDai.3.t
 	desc = BaoDai.3.d
 	picture = GFX_BaoDai.3
@@ -1473,7 +1438,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.4
-	immediate = { }
 	title = BaoDai.4.t
 	desc = BaoDai.4.d
 	picture = GFX_BaoDai.4
@@ -1516,7 +1480,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.5
-	immediate = { }
 	title = BaoDai.5.t
 	desc = BaoDai.5.d
 	picture = GFX_BaoDai.5
@@ -1537,7 +1500,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.6
-	immediate = { }
 	title = BaoDai.6.t
 	desc = BaoDai.6.d
 	picture = GFX_BaoDai.6
@@ -1554,7 +1516,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.7
-	immediate = { }
 	title = BaoDai.7.t
 	desc = BaoDai.7.d
 	picture = GFX_BaoDai.7
@@ -1583,7 +1544,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.8
-	immediate = { }
 	title = BaoDai.8.t
 	desc = BaoDai.8.d
 	picture = GFX_BaoDai.8
@@ -1612,7 +1572,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.9
-	immediate = { }
 	title = BaoDai.9.t
 	desc = BaoDai.9.d
 	picture = GFX_BaoDai.9
@@ -1659,7 +1618,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.10
-	immediate = { }
 	title = BaoDai.10.t
 	desc = BaoDai.10.d
 	picture = GFX_BaoDai.10
@@ -1695,7 +1653,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.11
-	immediate = { }
 	title = BaoDai.11.t
 	desc = {
 		trigger = { has_global_flag = VIE_Republic_Proclaimed }
@@ -1740,7 +1697,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.12
-	immediate = { }
 	title = BaoDai.12.t
 	desc = BaoDai.12.d
 	picture = GFX_BaoDai.12
@@ -1754,7 +1710,6 @@ country_event = {
 }
 country_event = {
 	id = BaoDai.13
-	immediate = { }
 	title = BaoDai.13.t
 	desc = BaoDai.13.d
 	picture = GFX_BaoDai.13
@@ -1778,7 +1733,6 @@ country_event = {
 }
 country_event = {
 	id = BaoDai.14
-	immediate = { }
 	title = BaoDai.14.t
 	desc = BaoDai.14.d
 	picture = GFX_BaoDai.14
@@ -1793,7 +1747,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai.15
-	immediate = { }
 	title = BaoDai.15.t
 	desc = BaoDai.15.d
 	picture = GFX_BaoDai.15
@@ -1870,7 +1823,6 @@ country_event = {
 
 country_event = {
 	id = HoangLienRevolt.1
-	immediate = { }
 	title = HoangLienRevolt.1.t
 	desc = HoangLienRevolt.1.d
 	picture = GFX_BaoDai.10
@@ -1896,7 +1848,6 @@ country_event = {
 
 country_event = {
 	id = HoangLienRevolt.2
-	immediate = { }
 	title = HoangLienRevolt.2.t
 	desc = HoangLienRevolt.2.d
 	picture = GFX_BaoDai.10
@@ -1923,7 +1874,6 @@ country_event = {
 
 country_event = {
 	id = French_Coup.1
-	immediate = { }
 	title = French_Coup.1.t
 	desc = French_Coup.1.d
 	picture = GFX_French_Coup.1
@@ -1955,7 +1905,6 @@ country_event = {
 
 country_event = {
 	id = French_Coup.2
-	immediate = { }
 	title = French_Coup.2.t
 	desc = French_Coup.2.d
 	picture = GFX_French_Coup.2
@@ -2001,7 +1950,6 @@ country_event = {
 
 country_event = {
 	id = French_Hinh.1
-	immediate = { }
 	title = French_Hinh.1.t
 	desc = French_Hinh.1.d
 	picture = GFX_French_Hinh.1
@@ -2022,7 +1970,6 @@ country_event = {
 
 country_event = {
 	id = French_Hinh.2
-	immediate = { }
 	title = French_Hinh.2.t
 	desc = French_Hinh.2.d
 	picture = GFX_French_Hinh.2
@@ -2056,7 +2003,6 @@ country_event = {
 
 country_event = {
 	id = French_Hinh.3
-	immediate = { }
 	title = French_Hinh.3.t
 	desc = French_Hinh.3.d
 	picture = GFX_French_Hinh.3
@@ -2090,7 +2036,6 @@ country_event = {
 
 news_event = {
 	id = French_Hinh.0
-	immediate = { }
 	title = French_Hinh.0.t
 	desc = French_Hinh.0.d
 	picture = GFX_French_Hinh.0
@@ -2105,7 +2050,6 @@ news_event = {
 
 news_event = {
 	id = French_Hinh.100
-	immediate = { }
 	title = French_Hinh.100.t
 	desc = French_Hinh.100.d
 	picture = GFX_French_Hinh.100
@@ -2120,7 +2064,6 @@ news_event = {
 
 country_event = {
 	id = NgoDinh_Brothers.1
-	immediate = { }
 	title = NgoDinh_Brothers.1.t
 	desc = NgoDinh_Brothers.1.d
 	picture = GFX_NgoDinh_Brothers.1
@@ -2140,7 +2083,6 @@ country_event = {
 
 country_event = {
 	id = NgoDinh_Brothers.2
-	immediate = { }
 	title = NgoDinh_Brothers.2.t
 	desc = NgoDinh_Brothers.2.d
 	picture = GFX_NgoDinh_Brothers.2
@@ -2160,7 +2102,6 @@ country_event = {
 
 country_event = {
 	id = NgoDinh_Brothers.3
-	immediate = { }
 	title = NgoDinh_Brothers.3.t
 	desc = NgoDinh_Brothers.3.d
 	picture = GFX_NgoDinh_Brothers.3
@@ -2179,7 +2120,6 @@ country_event = {
 }
 country_event = {
 	id = NgoDinh_Brothers.4
-	immediate = { }
 	title = NgoDinh_Brothers.4.t
 	desc = NgoDinh_Brothers.4.d
 	picture = GFX_NgoDinh_Brothers.4
@@ -2208,7 +2148,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_PMs.1
-	immediate = { }
 	title = VIE_PMs.1.t
 	desc = VIE_PMs.1.d
 	picture = GFX_VIE_PMs.1
@@ -2239,7 +2178,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.2
-	immediate = { }
 	title = VIE_PMs.2.t
 	desc = VIE_PMs.2.d
 	picture = GFX_VIE_PMs.2
@@ -2258,7 +2196,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.3
-	immediate = { }
 	title = VIE_PMs.3.t
 	desc = VIE_PMs.3.d
 	picture = GFX_VIE_PMs.3
@@ -2277,7 +2214,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.4
-	immediate = { }
 	title = VIE_PMs.4.t
 	desc = VIE_PMs.4.d
 	picture = GFX_VIE_PMs.4
@@ -2296,7 +2232,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.5
-	immediate = { }
 	title = VIE_PMs.5.t
 	desc = VIE_PMs.5.d
 	picture = GFX_VIE_PMs.5
@@ -2320,7 +2255,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.6
-	immediate = { }
 	title = VIE_PMs.6.t
 	desc = VIE_PMs.6.d
 	picture = GFX_VIE_PMs.6
@@ -2349,7 +2283,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.7
-	immediate = { }
 	title = VIE_PMs.7.t
 	desc = VIE_PMs.7.d
 	picture = GFX_VIE_PMs.7
@@ -2368,7 +2301,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.8
-	immediate = { }
 	title = VIE_PMs.8.t
 	desc = VIE_PMs.8.d
 	picture = GFX_VIE_PMs.8
@@ -2387,7 +2319,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PMs.9
-	immediate = { }
 	title = VIE_PMs.9.t
 	desc = VIE_PMs.9.d
 	picture = GFX_VIE_PMs.9
@@ -2411,7 +2342,6 @@ country_event = {
 
 country_event = {
 	id = Diem.1
-	immediate = { }
 	title = Diem.1.t
 	desc = Diem.1.d
 	picture = GFX_Diem.1
@@ -2483,7 +2413,6 @@ country_event = {
 
 country_event = {
 	id = Diem.2
-	immediate = { }
 	title = Diem.2.t
 	desc = Diem.2.d
 	picture = GFX_BaoDai.13	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2520,7 +2449,6 @@ country_event = {
 
 country_event = {
 	id = Diem.42
-	immediate = { }
 	title = Diem.42.t
 	desc = Diem.42.d
 	picture = GFX_BaoDai.13	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2539,7 +2467,6 @@ country_event = {
 
 country_event = {
 	id = Diem.3
-	immediate = { }
 	title = Diem.3.t
 	desc = Diem.3.d
 	picture = GFX_BaoDai.9	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2578,7 +2505,6 @@ country_event = {
 
 country_event = {
 	id = Diem.4
-	immediate = { }
 	title = Diem.4.t
 	desc = Diem.4.d
 	picture = GFX_BaoDai.9
@@ -2601,7 +2527,6 @@ country_event = {
 
 country_event = {
 	id = Diem.5
-	immediate = { }
 	title = Diem.5.t
 	desc = Diem.5.d
 	picture = GFX_BaoDai.9
@@ -2633,7 +2558,6 @@ country_event = {
 
 country_event = {
 	id = Diem.6
-	immediate = { }
 	title = Diem.6.t
 	desc = Diem.6.d
 	picture = GFX_Diem.6
@@ -2659,7 +2583,6 @@ country_event = {
 
 country_event = {
 	id = Diem.20
-	immediate = { }
 	title = Diem.20.t
 	desc = Diem.20.d
 	picture = GFX_French_Coup.1	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2677,7 +2600,6 @@ country_event = {
 
 country_event = {
 	id = Diem.21
-	immediate = { }
 	title = Diem.21.t
 	desc = Diem.21.d
 	picture = GFX_BaoDai.13	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2704,7 +2626,6 @@ country_event = {
 
 country_event = {
 	id = Diem.22
-	immediate = { }
 	title = Diem.22.t
 	desc = Diem.22.d
 	picture = GFX_French_Coup.1	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2732,7 +2653,6 @@ country_event = {
 
 country_event = {
 	id = Diem.23
-	immediate = { }
 	title = Diem.23.t
 	desc = Diem.23.d
 	picture = GFX_French_Coup.2	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2749,7 +2669,6 @@ country_event = {
 
 country_event = {
 	id = Diem.24
-	immediate = { }
 	title = Diem.24.t
 	desc = Diem.24.d
 	picture = GFX_French_Coup.1	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2777,7 +2696,6 @@ country_event = {
 # branch. No >= in check_variable - compare against one less.
 country_event = {
 	id = Diem.30
-	immediate = { }
 	title = Diem.30.t
 	desc = Diem.30.d
 	picture = GFX_BaoDai.11	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2830,7 +2748,6 @@ country_event = {
 
 country_event = {
 	id = Diem.31
-	immediate = { }
 	title = Diem.31.t
 	desc = Diem.31.d
 	picture = GFX_BaoDai.11	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2851,7 +2768,6 @@ country_event = {
 
 country_event = {
 	id = Diem.40
-	immediate = { }
 	title = Diem.40.t
 	desc = Diem.40.d
 	picture = GFX_BaoDai.13	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2904,7 +2820,6 @@ country_event = {
 
 country_event = {
 	id = Diem.41
-	immediate = { }
 	title = Diem.41.t
 	desc = Diem.41.d
 	picture = GFX_BaoDai.13	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2944,7 +2859,6 @@ country_event = {
 
 country_event = {
 	id = Diem.50
-	immediate = { }
 	title = Diem.50.t
 	desc = Diem.50.d
 	picture = GFX_BaoDai.9	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2974,7 +2888,6 @@ country_event = {
 # VIE_50s_content_end_tt.
 country_event = {
 	id = Diem.60
-	immediate = { }
 	title = Diem.60.t
 	desc = Diem.60.d
 	picture = GFX_BaoDai.100	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -2991,7 +2904,6 @@ country_event = {
 
 country_event = {
 	id = Diem.61
-	immediate = { }
 	title = Diem.61.t
 	desc = Diem.61.d
 	picture = GFX_Diem.61
@@ -3008,7 +2920,6 @@ country_event = {
 
 country_event = {
 	id = Diem.62
-	immediate = { }
 	title = Diem.62.t
 	desc = Diem.62.d
 	picture = GFX_French_Hinh.0	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -3025,7 +2936,6 @@ country_event = {
 
 news_event = {
 	id = Diem.10	# the referendum deposes the Chief of State
-	immediate = { }
 	title = Diem.10.t
 	desc = Diem.10.d
 	picture = GFX_BaoDai.100
@@ -3040,7 +2950,6 @@ news_event = {
 
 news_event = {
 	id = Diem.11
-	immediate = { }
 	title = Diem.11.t
 	desc = Diem.11.d
 	picture = GFX_BaoDai.100	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -3056,7 +2965,6 @@ news_event = {
 
 news_event = {
 	id = Diem.12	# 16 July 1955, Saigon refuses the all-Vietnam vote
-	immediate = { }
 	title = Diem.12.t
 	desc = Diem.12.d
 	picture = GFX_BaoDai.100
@@ -3071,7 +2979,6 @@ news_event = {
 
 news_event = {
 	id = Can_Lao.1	# 2 September 1954, Sac-lenh 116/BNV/CT
-	immediate = { }
 	title = Can_Lao.1.t
 	desc = Can_Lao.1.d
 	picture = GFX_Can_Lao.1
@@ -3086,7 +2993,6 @@ news_event = {
 
 country_event = {
 	id = DaiViet.1
-	immediate = { }
 	title = DaiViet.1.t
 	desc = DaiViet.1.d
 	picture = GFX_French_Coup.1	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -3105,7 +3011,6 @@ country_event = {
 
 country_event = {
 	id = DaiViet.2
-	immediate = { }
 	title = DaiViet.2.t
 	desc = DaiViet.2.d
 	picture = GFX_French_Coup.2	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -3147,7 +3052,6 @@ country_event = {
 
 country_event = {
 	id = DaiViet.3
-	immediate = { }
 	title = DaiViet.3.t
 	desc = DaiViet.3.d
 	picture = GFX_French_Coup.2	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -3188,7 +3092,6 @@ country_event = {
 
 country_event = {
 	id = DaiViet.4
-	immediate = { }
 	title = DaiViet.4.t
 	desc = DaiViet.4.d
 	picture = GFX_BaoDai.13	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -3226,7 +3129,6 @@ country_event = {
 
 country_event = {
 	id = Sect_Crisis.1
-	immediate = { }
 	title = Sect_Crisis.1.t
 	desc = Sect_Crisis.1.d
 	picture = GFX_French_Coup.1	# placeholder art, see LogDocs/VIE_DIEM_ART_REQUESTS.md
@@ -3299,7 +3201,6 @@ country_event = {
 
 news_event = {
 	id = Sect_Crisis.2
-	immediate = { }
 	title = Sect_Crisis.2.t
 	desc = Sect_Crisis.2.d
 	picture = GFX_BaoDai.100
@@ -3314,7 +3215,6 @@ news_event = {
 
 country_event = {
 	id = VIE_Huu.1
-	immediate = { }
 	title = VIE_Huu.1.t
 	desc = VIE_Huu.1.d
 
@@ -3336,7 +3236,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.2
-	immediate = { }
 	title = VIE_Huu.2.t
 	desc = VIE_Huu.2.d
 
@@ -3361,7 +3260,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.3
-	immediate = { }
 	title = VIE_Huu.3.t
 	desc = VIE_Huu.3.d
 	picture = GFX_VIE_Huu.3
@@ -3386,7 +3284,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.4
-	immediate = { }
 	title = VIE_Huu.4.t
 	desc = VIE_Huu.4.d
 	picture = GFX_VIE_Huu.4
@@ -3413,7 +3310,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.5
-	immediate = { }
 	title = VIE_Huu.5.t
 	desc = VIE_Huu.5.d
 
@@ -3453,7 +3349,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.6
-	immediate = { }
 	title = VIE_Huu.6.t
 	desc = VIE_Huu.6.d
 
@@ -3492,7 +3387,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.7
-	immediate = { }
 	title = VIE_Huu.7.t
 	desc = VIE_Huu.7.d
 	picture = GFX_VIE_Huu.7
@@ -3527,7 +3421,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.8
-	immediate = { }
 	title = VIE_Huu.8.t
 	desc = VIE_Huu.8.d
 
@@ -3561,7 +3454,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.9
-	immediate = { }
 	title = VIE_Huu.9.t
 	desc = VIE_Huu.9.d
 
@@ -3595,7 +3487,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.10
-	immediate = { }
 	title = VIE_Huu.10.t
 	desc = VIE_Huu.10.d
 
@@ -3613,7 +3504,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.11
-	immediate = { }
 	title = VIE_Huu.11.t
 	desc = VIE_Huu.11.d
 	picture = GFX_VIE_Huu.11
@@ -3638,7 +3528,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.12
-	immediate = { }
 	title = VIE_Huu.12.t
 	desc = VIE_Huu.12.d
 
@@ -3673,7 +3562,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.13
-	immediate = { }
 	title = VIE_Huu.13.t
 	desc = VIE_Huu.13.d
 
@@ -3713,7 +3601,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Huu.14
-	immediate = { }
 	title = VIE_Huu.14.t
 	desc = VIE_Huu.14.d
 
@@ -3737,7 +3624,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Tam.1
-	immediate = { }
 	title = VIE_Tam.1.t
 	desc = VIE_Tam.1.d
 	picture = GFX_VIE_Tam.1
@@ -3757,7 +3643,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Tam.2
-	immediate = { }
 	title = VIE_Tam.2.t
 	desc = VIE_Tam.2.d
 	picture = GFX_VIE_Tam.2
@@ -3785,7 +3670,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Tam.3
-	immediate = { }
 	title = VIE_Tam.3.t
 	desc = VIE_Tam.3.d
 
@@ -3799,7 +3683,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.1
-	immediate = { }
 	title = VIE_Vinh.1.t
 	desc = VIE_Vinh.1.d
 	picture = GFX_VIE_Vinh.1
@@ -3816,7 +3699,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.2
-	immediate = { }
 	title = VIE_Vinh.2.t
 	desc = VIE_Vinh.2.d
 
@@ -3832,7 +3714,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.3
-	immediate = { }
 	title = VIE_Vinh.3.t
 	desc = VIE_Vinh.3.d
 
@@ -3851,7 +3732,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.4
-	immediate = { }
 	title = VIE_Vinh.4.t
 	desc = VIE_Vinh.4.d
 
@@ -3870,7 +3750,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.5
-	immediate = { }
 	title = VIE_Vinh.5.t
 	desc = VIE_Vinh.5.d
 
@@ -3895,7 +3774,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.6
-	immediate = { }
 	title = VIE_Vinh.6.t
 	desc = VIE_Vinh.6.d
 
@@ -3911,7 +3789,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.7
-	immediate = { }
 	title = VIE_Vinh.7.t
 	desc = VIE_Vinh.7.d
 
@@ -3946,7 +3823,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.8
-	immediate = { }
 	title = VIE_Vinh.8.t
 	desc = VIE_Vinh.8.d
 
@@ -3968,7 +3844,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.9
-	immediate = { }
 	title = VIE_Vinh.9.t
 	desc = VIE_Vinh.9.d
 
@@ -3993,7 +3868,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.10
-	immediate = { }
 	title = VIE_Vinh.10.t
 	desc = VIE_Vinh.10.d
 
@@ -4009,7 +3883,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.11
-	immediate = { }
 	title = VIE_Vinh.11.t
 	desc = VIE_Vinh.11.d
 
@@ -4031,7 +3904,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.12
-	immediate = { }
 	title = VIE_Vinh.12.t
 	desc = VIE_Vinh.12.d
 
@@ -4067,7 +3939,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.13
-	immediate = { }
 	title = VIE_Vinh.13.t
 	desc = VIE_Vinh.13.d
 
@@ -4083,7 +3954,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.14
-	immediate = { }
 	title = VIE_Vinh.14.t
 	desc = VIE_Vinh.14.d
 
@@ -4140,7 +4010,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Vinh.15
-	immediate = { }
 	title = VIE_Vinh.15.t
 	desc = VIE_Vinh.15.d
 
@@ -4156,7 +4025,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Toan.1
-	immediate = { }
 	title = VIE_Toan.1.t
 	desc = VIE_Toan.1.d
 	picture = GFX_VIE_Toan.1
@@ -4192,7 +4060,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Toan.2
-	immediate = { }
 	title = VIE_Toan.2.t
 	desc = VIE_Toan.2.d
 	picture = GFX_VIE_Toan.2
@@ -4228,7 +4095,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Toan.3
-	immediate = { }
 	title = VIE_Toan.3.t
 	desc = VIE_Toan.3.d
 	picture = GFX_VIE_Toan.3
@@ -4262,7 +4128,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Toan.4
-	immediate = { }
 	title = VIE_Toan.4.t
 	desc = VIE_Toan.4.d
 	picture = GFX_VIE_Toan.4
@@ -4285,7 +4150,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Quang.1
-	immediate = { }
 	title = VIE_Quang.1.t
 	desc = VIE_Quang.1.d
 	picture = GFX_VIE_Quang.1
@@ -4306,7 +4170,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Quang.2
-	immediate = { }
 	title = VIE_Quang.2.t
 	desc = VIE_Quang.2.d
 	picture = GFX_VIE_Quang.2
@@ -4324,7 +4187,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Quang.3
-	immediate = { }
 	title = VIE_Quang.3.t
 	desc = VIE_Quang.3.d
 	picture = GFX_VIE_Quang.3
@@ -4340,7 +4202,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Historical.1
-	immediate = { }
 	title = VIE_Historical.1.t
 	desc = VIE_Historical.1.d
 	picture = GFX_VIE_Historical.1
@@ -4363,7 +4224,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_Historical.2
-	immediate = { }
 	title = VIE_Historical.2.t
 	desc = VIE_Historical.2.d
 	picture = GFX_VIE_Historical.2
@@ -4379,7 +4239,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_Historical.3
-	immediate = { }
 	title = VIE_Historical.3.t
 	desc = VIE_Historical.3.d
 	picture = GFX_VIE_Historical.3
@@ -4409,7 +4268,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Historical.4
-	immediate = { }
 	title = VIE_Historical.4.t
 	desc = VIE_Historical.4.d
 	picture = GFX_VIE_Historical.4
@@ -4436,7 +4294,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_Historical.6
-	immediate = { }
 	title = VIE_Historical.6.t
 	desc = VIE_Historical.6.d
 	picture = GFX_VIE_Historical.6
@@ -4456,7 +4313,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_Historical.7
-	immediate = { }
 	title = VIE_Historical.7.t
 	desc = VIE_Historical.7.d
 	picture = GFX_VIE_Historical.7
@@ -4475,7 +4331,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_Historical.8
-	immediate = { }
 	title = VIE_Historical.8.t
 	desc = VIE_Historical.8.d
 	picture = GFX_VIE_Historical.8
@@ -4491,7 +4346,6 @@ country_event = {
 }
 country_event = {
     id = VIE_Historical.9
-	immediate = { }
 	title = VIE_Historical.9.t
 	desc = VIE_Historical.9.d
 	picture = GFX_VIE_Historical.9
@@ -4521,7 +4375,6 @@ country_event = {
 
 country_event = {
     id = VIE_Historical.10
-	immediate = { }
 	title = {
 		text = VIE_Historical.10.ta
 		trigger = {
@@ -4718,7 +4571,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.0
-	immediate = { }
 	title = Initial_CuongDe.0.t
 	desc = Initial_CuongDe.0.d
 	picture = GFX_Initial_CuongDe.0
@@ -4789,7 +4641,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.1
-	immediate = { }
 	title = Initial_CuongDe.1.t
 	desc = Initial_CuongDe.1.d
 	picture = GFX_Initial_CuongDe.1
@@ -4872,7 +4723,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.2
-	immediate = { }
 	title = Initial_CuongDe.2.t
 	desc = Initial_CuongDe.2.d
 
@@ -4886,7 +4736,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.3
-	immediate = { }
 	title = Initial_CuongDe.3.t
 	desc = Initial_CuongDe.3.d
 
@@ -4909,7 +4758,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.4
-	immediate = { }
 	title = Initial_CuongDe.4.t
 	desc = Initial_CuongDe.4.d
 	picture = GFX_Initial_CuongDe.4
@@ -4932,7 +4780,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.5
-	immediate = { }
 	title = Initial_CuongDe.5.t
 	desc = Initial_CuongDe.5.d
 	picture = GFX_Initial_CuongDe.5
@@ -4951,7 +4798,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.6
-	immediate = { }
 	title = Initial_CuongDe.6.t
 	desc = Initial_CuongDe.6.d
 	picture = GFX_Initial_CuongDe.6
@@ -4990,7 +4836,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.7
-	immediate = { }
 	title = Initial_CuongDe.7.t
 	desc = Initial_CuongDe.7.d
 	picture = GFX_Etat_du_Vietnam.1
@@ -5044,7 +4889,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.8
-	immediate = { }
 	title = Initial_CuongDe.8.t
 	desc = Initial_CuongDe.8.d
 	picture = GFX_Initial_CuongDe.8
@@ -5075,7 +4919,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.9
-	immediate = { }
 	title = Initial_CuongDe.9.t
 	desc = Initial_CuongDe.9.d
 	picture = GFX_Initial_CuongDe.9
@@ -5121,7 +4964,6 @@ country_event = {
 
 country_event = {
 	id = Initial_CuongDe.10
-	immediate = { }
 	title = Initial_CuongDe.10.t
 	desc = Initial_CuongDe.10.d
 	picture = GFX_Initial_CuongDe.10
@@ -5138,7 +4980,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.1
-	immediate = { }
 	title = CuongDe.1.t
 	desc = CuongDe.1.d
 	picture = GFX_CuongDe.1
@@ -5155,7 +4996,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.2
-	immediate = { }
 	title = CuongDe.2.t
 	desc = CuongDe.2.d
 	picture = GFX_CuongDe.2
@@ -5178,7 +5018,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.3
-	immediate = { }
 	title = CuongDe.3.t
 	desc = CuongDe.3.d
 	picture = GFX_CuongDe.3
@@ -5239,7 +5078,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.4
-	immediate = { }
 	title = CuongDe.4.t
 	desc = CuongDe.4.d
 	picture = GFX_CuongDe.4
@@ -5265,7 +5103,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.5
-	immediate = { }
 	title = CuongDe.5.t
 	desc = CuongDe.5.d
 	picture = GFX_CuongDe.5
@@ -5280,7 +5117,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.6
-	immediate = { }
 	title = CuongDe.6.t
 	desc = CuongDe.6.d
 	picture = GFX_CuongDe.6
@@ -5306,7 +5142,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.7
-	immediate = { }
 	title = CuongDe.7.t
 	desc = CuongDe.7.d
 	picture = GFX_CuongDe.7
@@ -5323,7 +5158,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.8
-	immediate = { }
 	title = CuongDe.8.t
 	desc = CuongDe.8.d
 	picture = GFX_CuongDe.8
@@ -5344,7 +5178,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.9
-	immediate = { }
 	title = CuongDe.9.t
 	desc = CuongDe.9.d
 	picture = GFX_CuongDe.9
@@ -5359,7 +5192,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.10
-	immediate = { }
 	title = CuongDe.10.t
 	desc = CuongDe.10.d
 	picture = GFX_CuongDe.10
@@ -5387,7 +5219,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.11
-	immediate = { }
 	title = CuongDe.11.t
 	desc = CuongDe.11.d
 	picture = GFX_Initial_CuongDe.3
@@ -5402,7 +5233,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.12
-	immediate = { }
 	title = CuongDe.12.t
 	desc = CuongDe.12.d
 	picture = GFX_CuongDe.12
@@ -5433,7 +5263,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.13
-	immediate = { }
 	title = CuongDe.13.t
 	desc = CuongDe.13.d
 	picture = GFX_CuongDe.13
@@ -5520,7 +5349,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.14
-	immediate = { }
 	title = CuongDe.14.t
 	desc = CuongDe.14.d
 	picture = GFX_CuongDe.14
@@ -5539,7 +5367,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.15
-	immediate = { }
 	title = CuongDe.15.t
 	desc = CuongDe.15.d
 	picture = GFX_CuongDe.15
@@ -5572,7 +5399,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe.16
-	immediate = { }
 	title = CuongDe.16.t
 	desc = CuongDe.16.d
 	picture = GFX_CuongDe.16
@@ -5587,7 +5413,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe.17 #Death of Nam-Hung
-	immediate = { }
 	title = CuongDe.17.t
 	desc = CuongDe.17.d
 	picture = GFX_CuongDe.17
@@ -5630,7 +5455,6 @@ country_event = {
 
 news_event = {
 	id = CuongDe.101 #Death of Nam-Hung
-	immediate = { }
 	title = CuongDe.101.t
 	desc = CuongDe.101.d
 	picture = GFX_CuongDe.101
@@ -5645,7 +5469,6 @@ news_event = {
 
 country_event = {
 	id = CuongDe_NgoDinh.1
-	immediate = { }
 	title = CuongDe_NgoDinh.1.t
 	desc = CuongDe_NgoDinh.1.d
 	picture = GFX_CuongDe_NgoDinh.1
@@ -5663,7 +5486,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_NgoDinh.2
-	immediate = { }
 	title = CuongDe_NgoDinh.2.t
 	desc = CuongDe_NgoDinh.2.d
 	picture = GFX_CuongDe_NgoDinh.2
@@ -5681,7 +5503,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_NgoDinh.3
-	immediate = { }
 	title = CuongDe_NgoDinh.3.t
 	desc = CuongDe_NgoDinh.3.d
 	picture = GFX_CuongDe_NgoDinh.3
@@ -5713,7 +5534,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.4
-	immediate = { }
 	title = CuongDe_NgoDinh.4.t
 	desc = CuongDe_NgoDinh.4.d
 	picture = GFX_CuongDe_NgoDinh.4
@@ -5734,7 +5554,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.5
-	immediate = { }
 	title = CuongDe_NgoDinh.5.t
 	desc = CuongDe_NgoDinh.5.d
 	picture = GFX_CuongDe_NgoDinh.5
@@ -5777,7 +5596,6 @@ country_event = {
 #}
 country_event = {
 	id = CuongDe_NgoDinh.8
-	immediate = { }
 	title = CuongDe_NgoDinh.8.t
 	desc = CuongDe_NgoDinh.8.d
 	picture = GFX_CuongDe_NgoDinh.8
@@ -5813,7 +5631,6 @@ country_event = {
 #}
 country_event = {
 	id = CuongDe_NgoDinh.11
-	immediate = { }
 	title = CuongDe_NgoDinh.11.t
 	desc = CuongDe_NgoDinh.11.d
 	picture = GFX_CuongDe_NgoDinh.11
@@ -5830,7 +5647,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.12
-	immediate = { }
 	title = CuongDe_NgoDinh.12.t
 	desc = CuongDe_NgoDinh.12.d
 	picture = GFX_CuongDe_NgoDinh.12
@@ -5890,7 +5706,6 @@ country_event = {
 #}
 country_event = {
 	id = CuongDe_NgoDinh.17
-	immediate = { }
 	title = CuongDe_NgoDinh.17.t
 	desc = CuongDe_NgoDinh.17.d
 	picture = GFX_CuongDe_NgoDinh.17
@@ -5914,7 +5729,6 @@ country_event = {
 #}
 country_event = {
 	id = CuongDe_NgoDinh.19
-	immediate = { }
 	title = CuongDe_NgoDinh.19.t
 	desc = CuongDe_NgoDinh.19.d
 	picture = GFX_CuongDe_NgoDinh.19
@@ -5926,7 +5740,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.20
-	immediate = { }
 	title = CuongDe_NgoDinh.20.t
 	desc = CuongDe_NgoDinh.20.d
 	picture = GFX_CuongDe_NgoDinh.20
@@ -5944,7 +5757,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.21
-	immediate = { }
 	title = CuongDe_NgoDinh.21.t
 	desc = CuongDe_NgoDinh.21.d
 	picture = GFX_CuongDe_NgoDinh.21
@@ -5956,7 +5768,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.22
-	immediate = { }
 	title = CuongDe_NgoDinh.22.t
 	desc = CuongDe_NgoDinh.22.d
 	picture = GFX_CuongDe_NgoDinh.22
@@ -5968,7 +5779,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.23
-	immediate = { }
 	title = CuongDe_NgoDinh.23.t
 	desc = CuongDe_NgoDinh.23.d
 	picture = GFX_CuongDe_NgoDinh.23
@@ -5992,7 +5802,6 @@ country_event = {
 #}
 country_event = {
 	id = CuongDe_NgoDinh.25
-	immediate = { }
 	title = CuongDe_NgoDinh.25.t
 	desc = CuongDe_NgoDinh.25.d
 	picture = GFX_CuongDe_NgoDinh.25
@@ -6004,7 +5813,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.26
-	immediate = { }
 	title = CuongDe_NgoDinh.26.t
 	desc = CuongDe_NgoDinh.26.d
 	picture = GFX_CuongDe_NgoDinh.26
@@ -6016,7 +5824,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.27
-	immediate = { }
 	title = CuongDe_NgoDinh.27.t
 	desc = CuongDe_NgoDinh.27.d
 	picture = GFX_CuongDe_NgoDinh.27
@@ -6028,7 +5835,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.28
-	immediate = { }
 	title = CuongDe_NgoDinh.28.t
 	desc = CuongDe_NgoDinh.28.d
 	picture = GFX_CuongDe_NgoDinh.28
@@ -6052,7 +5858,6 @@ country_event = {
 #}
 country_event = {
 	id = CuongDe_NgoDinh.30
-	immediate = { }
 	title = CuongDe_NgoDinh.30.t
 	desc = CuongDe_NgoDinh.30.d
 	picture = GFX_CuongDe_NgoDinh.30
@@ -6064,7 +5869,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.31
-	immediate = { }
 	title = CuongDe_NgoDinh.31.t
 	desc = CuongDe_NgoDinh.31.d
 	picture = GFX_CuongDe_NgoDinh.31
@@ -6076,7 +5880,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.32
-	immediate = { }
 	title = CuongDe_NgoDinh.32.t
 	desc = CuongDe_NgoDinh.32.d
 	picture = GFX_CuongDe_NgoDinh.32
@@ -6088,7 +5891,6 @@ country_event = {
 }
 country_event = {
 	id = CuongDe_NgoDinh.33
-	immediate = { }
 	title = CuongDe_NgoDinh.33.t
 	desc = CuongDe_NgoDinh.33.d
 	picture = GFX_CuongDe_NgoDinh.33
@@ -6102,7 +5904,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Coup.1
-	immediate = { }
 	title = CuongDe_Coup.1.t
 	desc = CuongDe_Coup.1.d
 	picture = GFX_CuongDe_Coup.1
@@ -6157,7 +5958,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Coup.2
-	immediate = { }
 	title = CuongDe_Coup.2.t
 	desc = CuongDe_Coup.2.d
 	picture = GFX_CuongDe_Coup.2
@@ -6174,7 +5974,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Coup.3
-	immediate = { }
 	title = CuongDe_Coup.3.t
 	desc = CuongDe_Coup.3.d
 	picture = GFX_CuongDe_Coup.3
@@ -6191,7 +5990,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Coup.4
-	immediate = { }
 	title = CuongDe_Coup.4.t
 	desc = CuongDe_Coup.4.d
 	picture = GFX_CuongDe_Coup.4
@@ -6222,7 +6020,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Coup.5
-	immediate = { }
 	title = CuongDe_Coup.5.t
 	desc = CuongDe_Coup.5.d
 	picture = GFX_CuongDe_Coup.5
@@ -6317,7 +6114,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Successor.1
-	immediate = { }
 	title = CuongDe_Successor.1.t
 	desc = CuongDe_Successor.1.d
 	picture = GFX_CuongDe_Successor.1
@@ -6474,7 +6270,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe.1
-	immediate = { }
 	title = NV_CuongDe.1.t
 	desc = NV_CuongDe.1.d
 
@@ -6490,7 +6285,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe.2
-	immediate = { }
 	title = NV_CuongDe.2.t
 	desc = NV_CuongDe.2.d
 
@@ -6509,7 +6303,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe.3
-	immediate = { }
 	title = NV_CuongDe.3.t
 	desc = NV_CuongDe.3.d
 
@@ -6547,7 +6340,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.1
-	immediate = { }
 	title = NV_CuongDe_Unification.1.t
 	desc = NV_CuongDe_Unification.1.d
 
@@ -6625,7 +6417,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.2
-	immediate = { }
 	title = NV_CuongDe_Unification.2.t
 	desc = NV_CuongDe_Unification.2.d
 	picture = GFX_NV_CuongDe_Unification.2
@@ -6641,7 +6432,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.3
-	immediate = { }
 	title = NV_CuongDe_Unification.3.t
 	desc = NV_CuongDe_Unification.3.d
 
@@ -6662,7 +6452,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.4
-	immediate = { }
 	title = NV_CuongDe_Unification.4.t
 	desc = NV_CuongDe_Unification.4.d
 	picture = GFX_NV_CuongDe_Unification.4
@@ -6678,7 +6467,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.6
-	immediate = { }
 	title = NV_CuongDe_Unification.6.t
 	desc = NV_CuongDe_Unification.6.d
 
@@ -6698,7 +6486,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.7
-	immediate = { }
 	title = NV_CuongDe_Unification.7.t
 	desc = NV_CuongDe_Unification.7.d
 
@@ -6732,7 +6519,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.8
-	immediate = { }
 	title = NV_CuongDe_Unification.8.t
 	desc = NV_CuongDe_Unification.8.d
 	picture = GFX_NV_CuongDe_Unification.8
@@ -6747,7 +6533,6 @@ country_event = {
 
 country_event = {
 	id = NV_CuongDe_Unification.9
-	immediate = { }
 	title = NV_CuongDe_Unification.9.t
 	desc = NV_CuongDe_Unification.9.d
 
@@ -6768,7 +6553,6 @@ country_event = {
 
 news_event = {
 	id = NV_CuongDe_Unification.5
-	immediate = { }
 	title = NV_CuongDe_Unification.5.t
 	desc = NV_CuongDe_Unification.5.d
 	picture = GFX_NV_CuongDe_Unification.5
@@ -6784,7 +6568,6 @@ news_event = {
 
 country_event = {
 	id = CD_Nhiep.1
-	immediate = { }
 	title = CD_Nhiep.1.t
 	desc = CD_Nhiep.1.d
 	picture = GFX_CD_Nhiep.1
@@ -6809,7 +6592,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.2
-	immediate = { }
 	title = CD_Nhiep.2.t
 	desc = CD_Nhiep.2.d
 
@@ -6826,7 +6608,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.3
-	immediate = { }
 	title = CD_Nhiep.3.t
 	desc = CD_Nhiep.3.d
 
@@ -6873,7 +6654,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.4
-	immediate = { }
 	title = CD_Nhiep.4.t
 	desc = CD_Nhiep.4.d
 	picture = GFX_CD_Nhiep.4
@@ -6906,7 +6686,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.5
-	immediate = { }
 	title = CD_Nhiep.5.t
 	desc = CD_Nhiep.5.d
 
@@ -6938,7 +6717,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.6
-	immediate = { }
 	title = CD_Nhiep.6.t
 	desc = CD_Nhiep.6.d
 
@@ -6957,7 +6735,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.7
-	immediate = { }
 	title = CD_Nhiep.7.t
 	desc = CD_Nhiep.7.d
 
@@ -6993,7 +6770,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.8
-	immediate = { }
 	title = CD_Nhiep.8.t
 	desc = CD_Nhiep.8.d
 
@@ -7009,7 +6785,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.9
-	immediate = { }
 	title = CD_Nhiep.9.t
 	desc = CD_Nhiep.9.d
 	picture = GFX_CD_Nhiep.9
@@ -7029,7 +6804,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.10
-	immediate = { }
 	title = CD_Nhiep.10.t
 	desc = CD_Nhiep.10.d
 
@@ -7052,7 +6826,6 @@ country_event = {
 
 country_event = {
 	id = CD_Nhiep.11
-	immediate = { }
 	title = CD_Nhiep.11.t
 	desc = CD_Nhiep.11.d
 	picture = GFX_CD_Nhiep.11
@@ -7109,7 +6882,6 @@ country_event = {
 
 country_event = {
 	id = Cocunut_Monk.1
-	immediate = { }
 	title = Cocunut_Monk.1.t
 	desc = Cocunut_Monk.1.d
 	picture = GFX_Cocunut_Monk.1
@@ -7128,7 +6900,6 @@ country_event = {
 
 country_event = {
 	id = VIE_USA_Support.1
-	immediate = { }
 	title = VIE_USA_Support.1.t
 	desc = VIE_USA_Support.1.d
 
@@ -7144,7 +6915,6 @@ country_event = {
 
 country_event = {
 	id = VIE_USA_Support.2
-	immediate = { }
 	title = VIE_USA_Support.2.t
 	desc = VIE_USA_Support.2.d
 
@@ -7169,7 +6939,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_Chinese_Cooperation.1
-	immediate = { }
 	title = VIE_Chinese_Cooperation.1.t
 	desc = VIE_Chinese_Cooperation.1.d
 	picture = GFX_VIE_Chinese_Cooperation.1
@@ -7194,7 +6963,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Chinese_Cooperation.2
-	immediate = { }
 	title = VIE_Chinese_Cooperation.2.t
 	desc = VIE_Chinese_Cooperation.2.d
 
@@ -7216,7 +6984,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Malaysia.1
-	immediate = { }
 	title = {
 		text = VIE_Malaysia.1.t.a
 		trigger = { original_tag = VIE }
@@ -7263,7 +7030,6 @@ country_event = {
 
 country_event = {
 	id = VIE_KOR.1
-	immediate = { }
 	title = VIE_KOR.1.t
 	desc = VIE_KOR.1.d
 	picture = GFX_VIE_KOR.1
@@ -7377,7 +7143,6 @@ country_event = {
 
 country_event = {
 	id = VIE_KOR.2
-	immediate = { }
 	title = VIE_KOR.2.t
 	desc = VIE_KOR.2.d
 
@@ -7393,7 +7158,6 @@ country_event = {
 
 country_event = {
 	id = VIE_KOR.3
-	immediate = { }
 	title = VIE_KOR.3.t
 	desc = VIE_KOR.3.d
 
@@ -7435,7 +7199,6 @@ country_event = {
 
 country_event = {
 	id = VIE_KOR.4
-	immediate = { }
 	title = VIE_KOR.4.t
 	desc = VIE_KOR.4.d
 
@@ -7460,7 +7223,6 @@ country_event = {
 
 country_event = {
 	id = VIE_KOR.5
-	immediate = { }
 	title = VIE_KOR.5.t
 	desc = VIE_KOR.5.d
 
@@ -7474,7 +7236,6 @@ country_event = {
 
 country_event = {
 	id = VIE_JAP.1
-	immediate = { }
 	title = VIE_JAP.1.t
 	desc = VIE_JAP.1.d
 
@@ -7496,7 +7257,6 @@ country_event = {
 
 country_event = {
 	id = VIE_JAP.2
-	immediate = { }
 	title = VIE_JAP.2.t
 	desc = VIE_JAP.2.d
 
@@ -7520,7 +7280,6 @@ country_event = {
 
 country_event = {
 	id = VIE_JAP.3
-	immediate = { }
 	title = VIE_JAP.3.t
 	desc = VIE_JAP.3.d
 	picture = GFX_VIE_JAP.3
@@ -7537,7 +7296,6 @@ country_event = {
 
 country_event = {
 	id = VIE_JAP.4
-	immediate = { }
 	title = VIE_JAP.4.t
 	desc = VIE_JAP.4.d
 
@@ -7562,7 +7320,6 @@ country_event = {
 
 country_event = {
 	id = VIE_JAP.5
-	immediate = { }
 	title = VIE_JAP.5.t
 	desc = VIE_JAP.5.d
 
@@ -7589,7 +7346,6 @@ country_event = {
 
 country_event = {
 	id = VIE_JAP.6
-	immediate = { }
 	title = VIE_JAP.6.t
 	desc = VIE_JAP.6.d
 	picture = GFX_VIE_JAP.6
@@ -7614,7 +7370,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC.1
-	immediate = { }
 	title = VIE_PQC.1.t
 	desc = VIE_PQC.1.d
 
@@ -7636,7 +7391,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC.2
-	immediate = { }
 	title = VIE_PQC.2.t
 	desc = VIE_PQC.2.d
 
@@ -7652,7 +7406,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC.3
-	immediate = { }
 	title = VIE_PQC.3.t
 	desc = VIE_PQC.3.d
 
@@ -7675,7 +7428,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC.4
-	immediate = { }
 	title = VIE_PQC.4.t
 	desc = VIE_PQC.4.d
 	picture = GFX_VIE_PQC.4
@@ -7698,7 +7450,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.1
-	immediate = { }
 	title = Brevert_Lines.1.t
 	desc = Brevert_Lines.1.d
 
@@ -7742,7 +7493,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.2
-	immediate = { }
 	title = Brevert_Lines.2.t
 	desc = Brevert_Lines.2.d
 	picture = GFX_Brevert_Lines.3
@@ -7769,7 +7519,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.3
-	immediate = { }
 	title = Brevert_Lines.3.t
 	desc = Brevert_Lines.3.d
 	picture = GFX_Brevert_Lines.3
@@ -7847,7 +7596,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.4
-	immediate = { }
 	title = Brevert_Lines.4.t
 	desc = Brevert_Lines.4.d
 	picture = GFX_Brevert_Lines.3
@@ -7871,7 +7619,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.5
-	immediate = { }
 	title = Brevert_Lines.5.t
 	desc = Brevert_Lines.5.d
 	picture = GFX_Brevert_Lines.3
@@ -7930,7 +7677,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.6
-	immediate = { }
 	title = {
 		text = Brevert_Lines.6.t.a
 		trigger = { original_tag = VIE }
@@ -7965,7 +7711,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.7
-	immediate = { }
 	title = Brevert_Lines.7.t
 	desc = Brevert_Lines.7.d
 	picture = GFX_Brevert_Lines.3
@@ -7984,7 +7729,6 @@ country_event = {
 
 country_event = {
 	id = Brevert_Lines.8
-	immediate = { }
 	title = Brevert_Lines.8.t
 	desc = Brevert_Lines.8.d
 	picture = GFX_Brevert_Lines.3
@@ -8002,7 +7746,6 @@ country_event = {
 
 country_event = {
 	id = French_Drawn_Borders.1
-	immediate = { }
 	title = French_Drawn_Borders.1.t
 	desc = French_Drawn_Borders.1.d
 	picture = GFX_French_Drawn_Borders.1
@@ -8066,7 +7809,6 @@ country_event = {
 
 country_event = {
 	id = Crown_Domains.1
-	immediate = { }
 	title = Crown_Domains.1.t
 	desc = Crown_Domains.1.d
 
@@ -8104,7 +7846,6 @@ country_event = {
 
 country_event = {
 	id = Crown_Domains.2
-	immediate = { }
 	title = Crown_Domains.2.t
 	desc = Crown_Domains.2.d
 	picture = GFX_Crown_Domains.2
@@ -8132,7 +7873,6 @@ country_event = {
 
 country_event = {
 	id = Crown_Domains.3
-	immediate = { }
 	title = Crown_Domains.3.t
 	desc = Crown_Domains.3.d
 	picture = GFX_Crown_Domains.3
@@ -8157,7 +7897,6 @@ country_event = {
 
 country_event = {
 	id = Crown_Domains.4
-	immediate = { }
 	title = Crown_Domains.4.t
 	desc = Crown_Domains.4.d
 
@@ -8179,7 +7918,6 @@ country_event = {
 
 country_event = {
 	id = Crown_Domains.5
-	immediate = { }
 	title = Crown_Domains.5.t
 	desc = Crown_Domains.5.d
 
@@ -8212,7 +7950,6 @@ country_event = {
 
 country_event = {
 	id = Crown_Domains.6
-	immediate = { }
 	title = Crown_Domains.6.t
 	desc = Crown_Domains.6.d
 
@@ -8358,7 +8095,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Sect_Militias.1
-	immediate = { }
 	title = VIE_Sect_Militias.1.t
 	desc = VIE_Sect_Militias.1.d
 
@@ -8372,7 +8108,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Sect_Militias.2
-	immediate = { }
 	title = VIE_Sect_Militias.2.t
 	desc = VIE_Sect_Militias.2.d
 	picture = GFX_VIE_Sect_Militias.2
@@ -8405,7 +8140,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Leroy.1
-	immediate = { }
 	title = VIE_Leroy.1.t
 	desc = VIE_Leroy.1.d
 	picture = GFX_VIE_Leroy.1
@@ -8439,7 +8173,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC_Mil.1
-	immediate = { }
 	title = VIE_PQC_Mil.1.t
 	desc = VIE_PQC_Mil.1.d
 
@@ -8461,7 +8194,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC_Mil.2
-	immediate = { }
 	title = VIE_PQC_Mil.2.t
 	desc = VIE_PQC_Mil.2.d
 	picture = GFX_VIE_PQC_Mil.2
@@ -8478,7 +8210,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC_Mil.3
-	immediate = { }
 	title = VIE_PQC_Mil.3.t
 	desc = VIE_PQC_Mil.3.d
 
@@ -8506,7 +8237,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC_Mil.4
-	immediate = { }
 	title = VIE_PQC_Mil.4.t
 	desc = VIE_PQC_Mil.4.d
 
@@ -8547,7 +8277,6 @@ country_event = {
 
 country_event = {
 	id = VIE_PQC_Mil.5
-	immediate = { }
 	title = VIE_PQC_Mil.5.t
 	desc = VIE_PQC_Mil.5.d
 
@@ -8581,7 +8310,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Northern_Question.1
-	immediate = { }
 	title = VIE_Northern_Question.1.t
 	desc = VIE_Northern_Question.1.d
 	picture = GFX_VIE_Northern_Question.1
@@ -8633,7 +8361,6 @@ country_event = {
 
 country_event = {
 	id = VIE_China_Civil_War.1
-	immediate = { }
 	title = VIE_China_Civil_War.1.t
 	desc = VIE_China_Civil_War.1.d
 
@@ -8671,7 +8398,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Econ_SelfDem.1
-	immediate = { }
 	title = VIE_Econ_SelfDem.1.t
 	desc = VIE_Econ_SelfDem.1.d
 
@@ -8687,7 +8413,6 @@ country_event = {
 
 country_event = {
 	id = VIE_Econ_SelfDem.2
-	immediate = { }
 	title = VIE_Econ_SelfDem.2.t
 	desc = VIE_Econ_SelfDem.2.d
 
@@ -8714,7 +8439,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_Econ_SelfDem.3
-	immediate = { }
 	title = VIE_Econ_SelfDem.3.t
 	desc = VIE_Econ_SelfDem.3.d
 	picture = GFX_VIE_Econ_SelfDem.3
@@ -8727,7 +8451,6 @@ country_event = {
 
 country_event = {
 	id = TruongSa_Islands.1
-	immediate = { }
 	title = TruongSa_Islands.1.t
 	desc = {
 		text = TruongSa_Islands.1.d
@@ -8786,7 +8509,6 @@ country_event = {
 
 country_event = {
 	id = MayDay_Parade.1
-	immediate = { }
 	title = MayDay_Parade.1.t
 	desc = MayDay_Parade.1.d
 	picture = GFX_MayDay_Parade.1
@@ -8837,7 +8559,6 @@ country_event = {
 
 country_event = {
 	id = MayDay_Parade.2
-	immediate = { }
 	title = MayDay_Parade.2.t
 	desc = MayDay_Parade.2.d
 	picture = GFX_MayDay_Parade.2
@@ -8863,7 +8584,6 @@ country_event = {
 
 news_event = {
 	id = Etat_du_Vietnam.0
-	immediate = { }
 	title = Etat_du_Vietnam.0.t
 	desc = Etat_du_Vietnam.0.d
 	picture = GFX_Etat_du_Vietnam.0
@@ -8878,7 +8598,6 @@ news_event = {
 
 news_event = {
 	id = BaoDai.0
-	immediate = { }
 	title = BaoDai.0.t
 	desc = BaoDai.0.d
 	picture = GFX_BaoDai.0
@@ -8893,7 +8612,6 @@ news_event = {
 
 news_event = {
 	id = BaoDai.100
-	immediate = { }
 	title = BaoDai.100.t
 	desc = BaoDai.100.d
 	picture = GFX_BaoDai.100
@@ -8908,7 +8626,6 @@ news_event = {
 
 news_event = {
 	id = VIE_Vinh.0
-	immediate = { }
 	title = VIE_Vinh.0.t
 	desc = VIE_Vinh.0.d
 	#picture = GFX_Vinh.0
@@ -8923,7 +8640,6 @@ news_event = {
 
 news_event = {
 	id = CuongDe.0
-	immediate = { }
 	title = CuongDe.0.t
 	desc = CuongDe.0.d
 	picture = GFX_CuongDe.0
@@ -8938,7 +8654,6 @@ news_event = {
 
 news_event = {
 	id = CuongDe.100
-	immediate = { }
 	title = CuongDe.100.t
 	desc = CuongDe.100.d
 	picture = GFX_CuongDe.100
@@ -8953,7 +8668,6 @@ news_event = {
 
 news_event = {
 	id = CuongDe_Coup.0
-	immediate = { }
 	title = CuongDe_Coup.0.t
 	desc = CuongDe_Coup.0.d
 	picture = GFX_CuongDe_Coup.0
@@ -8968,7 +8682,6 @@ news_event = {
 
 news_event = {
 	id = CuongDe_Successor.0
-	immediate = { }
 	title = CuongDe_Successor.0.t
 	desc = CuongDe_Successor.0.d
 
@@ -8982,7 +8695,6 @@ news_event = {
 
 news_event = {
 	id = CuongDe_Successor.100
-	immediate = { }
 	title = CuongDe_Successor.100.t
 	desc = CuongDe_Successor.100.d
 
@@ -8996,7 +8708,6 @@ news_event = {
 
 news_event = {
 	id = CuongDe_Successor.200
-	immediate = { }
 	title = CuongDe_Successor.200.t
 	desc = CuongDe_Successor.200.d
 
@@ -9010,7 +8721,6 @@ news_event = {
 
 news_event = {
 	id = VIE_JAP.0
-	immediate = { }
 	title = VIE_JAP.0.t
 	desc = VIE_JAP.0.d
 	picture = GFX_VIE_JAP.0
@@ -9025,7 +8735,6 @@ news_event = {
 
 news_event = {
 	id = VIE_JAP.100
-	immediate = { }
 	title = VIE_JAP.100.t
 	desc = VIE_JAP.100.d
 	picture = GFX_VIE_JAP.100
@@ -9040,7 +8749,6 @@ news_event = {
 
 news_event = {
 	id = VNA.0
-	immediate = { }
 	title = VNA.0.t
 	desc = VNA.0.d
 	picture = GFX_VNA.0
@@ -9056,7 +8764,6 @@ news_event = {
 
 country_event = {
 	id = VNA.3
-	immediate = { }
 	title = VNA.3.t
 	desc = {
 		text = VNA.3.da
@@ -9082,7 +8789,6 @@ country_event = {
 
 country_event = {
 	id = VNA.4
-	immediate = { }
 	title = VNA.4.t
 	desc = VNA.4.d
 	picture = GFX_VNA.4
@@ -9096,7 +8802,6 @@ country_event = {
 }
 country_event = {
 	id = VNA.5
-	immediate = { }
 	title = VNA.5.t
 	desc = {
 		text = VNA.5.da
@@ -9122,7 +8827,6 @@ country_event = {
 
 country_event = {
 	id = VNA.6
-	immediate = { }
 	title = VNA.6.t
 	desc = VNA.6.d
 	picture = GFX_VNA.6
@@ -9136,7 +8840,6 @@ country_event = {
 }
 country_event = {
 	id = VNA.7
-	immediate = { }
 	title = VNA.7.t
 	desc = VNA.7.d
 	picture = GFX_VNA.7
@@ -9150,7 +8853,6 @@ country_event = {
 }
 news_event = {
 	id = VNA.1
-	immediate = { }
 	title = VNA.1.t
 	desc = VNA.1.d
 	picture = GFX_VNA.0
@@ -9165,7 +8867,6 @@ news_event = {
 
 news_event = {
 	id = VNG.0
-	immediate = { }
 	title = VNG.0.t
 	desc = VNG.0.d
 	picture = GFX_VNG.0
@@ -9186,7 +8887,6 @@ news_event = {
 
 news_event = {
 	id = VNA.100
-	immediate = { }
 	title = VNA.100.t
 	desc = VNA.100.d
 	picture = GFX_VNA.100
@@ -9230,7 +8930,6 @@ news_event = {
 
 country_event = {
 	id = QuyChe_16.1
-	immediate = { }
 	title = QuyChe_16.1.t
 	desc = QuyChe_16.1.d
 	picture = GFX_QuyChe_16.1
@@ -9251,7 +8950,6 @@ country_event = {
 
 country_event = {
 	id = BaoDai_Personality_Cult.1
-	immediate = { }
 	title = BaoDai_Personality_Cult.1.t
 	desc = BaoDai_Personality_Cult.1.d
 	picture = GFX_BaoDai_Personality_Cult.1
@@ -9277,7 +8975,6 @@ country_event = {
 
 country_event = {
 	id = FireWater_Kings.1
-	immediate = { }
 	title = FireWater_Kings.1.t
 	desc = FireWater_Kings.1.d
 	picture = GFX_FireWater_Kings.1
@@ -9336,7 +9033,6 @@ country_event = {
 
 country_event = {
 	id = Montagnard_Administrative.1
-	immediate = { }
 	title = Montagnard_Administrative.1.t
 	desc = Montagnard_Administrative.1.d
 	picture = GFX_Montagnard_Administrative.1
@@ -9351,7 +9047,6 @@ country_event = {
 
 country_event = {
 	id = Du_So_21.1
-	immediate = { }
 	title = Du_So_21.1.t
 	desc = Du_So_21.1.d
 	picture = GFX_Du_So_21.1
@@ -9368,7 +9063,6 @@ country_event = {
 
 country_event = {
 	id = Du_So_21.2
-	immediate = { }
 	title = Du_So_21.2.t
 	desc = Du_So_21.2.d
 	picture = GFX_Du_So_21.1 # Reusing due to similarity
@@ -9389,7 +9083,6 @@ country_event = {
 
 country_event = {
 	id = Autonomous_FUL_Republic.1
-	immediate = { }
 	title = Autonomous_FUL_Republic.1.t
 	desc = Autonomous_FUL_Republic.1.d
 	picture = GFX_Autonomous_FUL_Republic.1
@@ -9407,7 +9100,6 @@ country_event = {
 
 country_event = {
 	id = Autonomous_FUL_Republic.2
-	immediate = { }
 	title = Autonomous_FUL_Republic.2.t
 	desc = Autonomous_FUL_Republic.2.d
 	picture = GFX_Autonomous_FUL_Republic.1 # Reuses Autonomous_FUL_Republic.1 due to similarity
@@ -9475,7 +9167,6 @@ country_event = {
 }
 country_event = {
 	id = Autonomous_FUL_Republic.3
-	immediate = { }
 	title = Autonomous_FUL_Republic.3.t
 	desc = Autonomous_FUL_Republic.3.d
 	picture = GFX_Autonomous_FUL_Republic.3
@@ -9492,7 +9183,6 @@ country_event = {
 
 country_event = {
 	id = Combat_CuongDe.1
-	immediate = { }
 	title = Combat_CuongDe.1.t
 	desc = Combat_CuongDe.1.d
 	picture = GFX_Combat_CuongDe.1
@@ -9511,7 +9201,6 @@ country_event = {
 
 country_event = {
 	id = FUL_DanVuong_Model.1
-	immediate = { }
 	title = FUL_DanVuong_Model.1.t
 	desc = {
 		text = FUL_DanVuong_Model.1.db
@@ -9547,7 +9236,6 @@ country_event = {
 
 country_event = {
 	id = FUL_DanVuong_Model.2
-	immediate = { }
 	title = FUL_DanVuong_Model.2.t
 	desc = {
 		text = FUL_DanVuong_Model.2.d
@@ -9599,7 +9287,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Annexation.1
-	immediate = { }
 	title = CuongDe_Annexation.1.t
 	desc = CuongDe_Annexation.1.d
 	picture = GFX_Du_So_21.1 # Reusing due to similarity
@@ -9616,7 +9303,6 @@ country_event = {
 
 country_event = {
 	id = CuongDe_Annexation.2
-	immediate = { }
 	title = CuongDe_Annexation.2.t
 	desc = CuongDe_Annexation.2.d
 	picture = GFX_Du_So_21.1 # Reusing due to similarity
@@ -9637,7 +9323,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Econ_Committee.1
-	immediate = { }
 	title = FUL_Econ_Committee.1.t
 	desc = FUL_Econ_Committee.1.d
 	picture = GFX_FUL_Econ_Committee.1
@@ -9655,7 +9340,6 @@ country_event = {
 
 country_event = {
 	id = Colonel_Massau.1
-	immediate = { }
 	title = Colonel_Massau.1.t
 	desc = Colonel_Massau.1.d
 	picture = GFX_Colonel_Massau.1
@@ -9697,7 +9381,6 @@ country_event = {
 
 country_event = {
 	id = French_Econ_Aid.1
-	immediate = { }
 	title = French_Econ_Aid.1.t
 	desc = French_Econ_Aid.1.d
 	#picture = French_Econ_Aid.1
@@ -9724,7 +9407,6 @@ country_event = {
 
 country_event = {
 	id = French_Econ_Aid.2
-	immediate = { }
 	title = French_Econ_Aid.2.t
 	desc = French_Econ_Aid.2.d
 	#picture = French_Econ_Aid.2
@@ -9746,7 +9428,6 @@ country_event = {
 
 country_event = {
 	id = French_Econ_Aid.3
-	immediate = { }
 	title = French_Econ_Aid.3.t
 	desc = French_Econ_Aid.3.d
 	#picture = French_Econ_Aid.3
@@ -9771,7 +9452,6 @@ country_event = {
 
 country_event = {
 	id = Central_Highland_Railway.1
-	immediate = { }
 	title = Central_Highland_Railway.1.t
 	desc = Central_Highland_Railway.1.d
 	picture = GFX_Central_Highland_Railway.1
@@ -9798,7 +9478,6 @@ country_event = {
 
 country_event = {
 	id = Central_Highland_Railway.2
-	immediate = { }
 	title = Central_Highland_Railway.2.t
 	desc = Central_Highland_Railway.2.d
 	#picture = Central_Highland_Railway.2
@@ -9824,7 +9503,6 @@ country_event = {
 
 country_event = {
 	id = Central_Highland_Railway.3
-	immediate = { }
 	title = Central_Highland_Railway.3.t
 	desc = Central_Highland_Railway.3.d
 	#picture = Central_Highland_Railway.3
@@ -9849,7 +9527,6 @@ country_event = {
 
 country_event = {
 	id = Central_Highland_Railway.4
-	immediate = { }
 	title = Central_Highland_Railway.4.t
 	desc = Central_Highland_Railway.4.d
 	#picture = Central_Highland_Railway.4
@@ -9874,7 +9551,6 @@ country_event = {
 
 country_event = {
 	id = Central_Highland_Railway.5
-	immediate = { }
 	title = Central_Highland_Railway.5.t
 	desc = Central_Highland_Railway.5.d
 	#picture = Central_Highland_Railway.5
@@ -9893,7 +9569,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Armed_Forces.1
-	immediate = { }
 	title = FUL_Armed_Forces.1.t
 	desc = FUL_Armed_Forces.1.d
 	#picture = FUL_Armed_Forces.1
@@ -9914,7 +9589,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Armed_Forces.2
-	immediate = { }
 	title = FUL_Armed_Forces.2.t
 	desc = FUL_Armed_Forces.2.d
 	picture = GFX_FUL_Armed_Forces.2
@@ -9952,7 +9626,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Armed_Forces.3
-	immediate = { }
 	title = FUL_Armed_Forces.3.t
 	desc = FUL_Armed_Forces.3.d
 	#picture = FUL_Armed_Forces.3
@@ -9987,7 +9660,6 @@ country_event = {
 
 country_event = {
 	id = FUL_Armed_Forces.4
-	immediate = { }
 	title = FUL_Armed_Forces.4.t
 	desc = FUL_Armed_Forces.4.d
 	#picture = FUL_Armed_Forces.4
@@ -10011,7 +9683,6 @@ country_event = {
 
 country_event = {
 	id = Militarize_Viet_Border.1
-	immediate = { }
 	title = Militarize_Viet_Border.1.t
 	desc = Militarize_Viet_Border.1.d
 	#picture = Militarize_Viet_Border.1
@@ -10035,7 +9706,6 @@ country_event = {
 
 country_event = {
 	id = DaLat_Question.1
-	immediate = { }
 	title = DaLat_Question.1.t
 	desc = DaLat_Question.1.d
 	#picture = DaLat_Question.1
@@ -10053,7 +9723,6 @@ country_event = {
 
 country_event = {
 	id = DaLat_Question.2
-	immediate = { }
 	title = DaLat_Question.2.t
 	desc = DaLat_Question.2.d
 	picture = GFX_DaLat_Question.2
@@ -10068,7 +9737,6 @@ country_event = {
 
 country_event = {
 	id = DaLat_Question.3
-	immediate = { }
 	title = DaLat_Question.3.t
 	desc = DaLat_Question.3.d
 	#picture = DaLat_Question.3
@@ -10085,7 +9753,6 @@ country_event = {
 
 country_event = {
 	id = DaLat_Question.4
-	immediate = { }
 	title = DaLat_Question.4.t
 	desc = DaLat_Question.4.d
 	picture = GFX_DaLat_Question.4
@@ -10146,7 +9813,6 @@ country_event = {
 
 country_event = {
 	id = DaLat_Question.5
-	immediate = { }
 	title = DaLat_Question.5.t
 	desc = DaLat_Question.5.d
 	#picture = DaLat_Question.5
@@ -10163,7 +9829,6 @@ country_event = {
 
 country_event = {
 	id = DaLat_Question.6
-	immediate = { }
 	title = DaLat_Question.6.t
 	desc = DaLat_Question.6.d
 	#picture = DaLat_Question.6
@@ -10196,7 +9861,6 @@ country_event = {
 
 country_event = {
 	id = DaLat_Question.7
-	immediate = { }
 	title = DaLat_Question.7.t
 	desc = DaLat_Question.7.d
 	#picture = DaLat_Question.7
@@ -10231,7 +9895,6 @@ country_event = {
 
 country_event = {
 	id = VIE_CD_Recruit.1
-	immediate = { }
 	title = VIE_CD_Recruit.1.t
 	desc = VIE_CD_Recruit.1.d
 	picture = GFX_VIE_CD_Recruit.1
@@ -10277,7 +9940,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_CD_Recruit.2
-	immediate = { }
 	title = VIE_CD_Recruit.2.t
 	desc = VIE_CD_Recruit.2.d
 	picture = GFX_VIE_CD_Recruit.2
@@ -10308,7 +9970,6 @@ country_event = {
 
 country_event = {
 	id = VIE_CD_Recruit.3
-	immediate = { }
 	title = VIE_CD_Recruit.3.t
 	desc = VIE_CD_Recruit.3.d
 	picture = GFX_VIE_CD_Recruit.3
@@ -10324,7 +9985,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_CD_Recruit.4
-	immediate = { }
 	title = VIE_CD_Recruit.4.t
 	desc = VIE_CD_Recruit.4.d
 	picture = GFX_VIE_CD_Recruit.4
@@ -10368,7 +10028,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_CD_Recruit.5
-	immediate = { }
 	title = VIE_CD_Recruit.5.t
 	desc = VIE_CD_Recruit.5.d
 	picture = GFX_VIE_CD_Recruit.5
@@ -10395,7 +10054,6 @@ country_event = {
 
 country_event = {
 	id = VIE_CD_Recruit.6
-	immediate = { }
 	title = VIE_CD_Recruit.6.t
 	desc = VIE_CD_Recruit.6.d
 	picture = GFX_VIE_CD_Recruit.6
@@ -10413,7 +10071,6 @@ country_event = {
 
 country_event = {
 	id = VIE_CD_Recruit.7
-	immediate = { }
 	title = VIE_CD_Recruit.7.t
 	desc = VIE_CD_Recruit.7.d
 	picture = GFX_VIE_CD_Recruit.7
@@ -10458,7 +10115,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_CD_Recruit.8
-	immediate = { }
 	title = VIE_CD_Recruit.8.t
 	desc = VIE_CD_Recruit.8.d
 	picture = GFX_VIE_CD_Recruit.8
@@ -10488,7 +10144,6 @@ country_event = {
 
 country_event = {
 	id = CD_Hung.1
-	immediate = { }
 	title = CD_Hung.1.t
 	desc = CD_Hung.1.d
 	picture = GFX_CD_Hung.1
@@ -10502,7 +10157,6 @@ country_event = {
 }
 country_event = {
 	id = CD_Hung.2
-	immediate = { }
 	title = CD_Hung.2.t
 	desc = CD_Hung.2.d
 	picture = GFX_CD_Hung.2
@@ -10516,7 +10170,6 @@ country_event = {
 }
 country_event = {
 	id = CD_Hung.3
-	immediate = { }
 	title = CD_Hung.3.t
 	desc = CD_Hung.3.d
 	picture = GFX_CD_Hung.3
@@ -10530,7 +10183,6 @@ country_event = {
 }
 country_event = {
 	id = CD_Hung.4
-	immediate = { }
 	title = CD_Hung.4.t
 	desc = CD_Hung.4.d
 	picture = GFX_CD_Hung.4
@@ -10545,7 +10197,6 @@ country_event = {
 
 country_event = {
 	id = NH_DIEMa.2
-	immediate = { }
 	title = NH_DIEMa.2.t
 	desc = NH_DIEMa.2.d
 	picture = GFX_NH_DIEMa.2
@@ -10559,7 +10210,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.3
-	immediate = { }
 	title = NH_DIEMa.3.t
 	desc = NH_DIEMa.3.d
 	picture = GFX_NH_DIEMa.3
@@ -10573,7 +10223,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.4
-	immediate = { }
 	title = NH_DIEMa.4.t
 	desc = NH_DIEMa.4.d
 	picture = GFX_NH_DIEMa.4
@@ -10587,7 +10236,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.5
-	immediate = { }
 	title = NH_DIEMa.5.t
 	desc = NH_DIEMa.5.d
 	picture = GFX_NH_DIEMa.5
@@ -10601,7 +10249,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.6
-	immediate = { }
 	title = NH_DIEMa.6.t
 	desc = NH_DIEMa.6.d
 	picture = GFX_NH_DIEMa.6
@@ -10615,7 +10262,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.7
-	immediate = { }
 	title = NH_DIEMa.7.t
 	desc = NH_DIEMa.7.d
 	picture = GFX_NH_DIEMa.7
@@ -10634,7 +10280,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.8
-	immediate = { }
 	title = NH_DIEMa.8.t
 	desc = NH_DIEMa.8.d
 	picture = GFX_NH_DIEMa.8
@@ -10648,7 +10293,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.9
-	immediate = { }
 	title = NH_DIEMa.9.t
 	desc = NH_DIEMa.9.d
 	picture = GFX_NH_DIEMa.9
@@ -10662,7 +10306,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.10
-	immediate = { }
 	title = NH_DIEMa.10.t
 	desc = NH_DIEMa.10.d
 	picture = GFX_NH_DIEMa.10
@@ -10676,7 +10319,6 @@ country_event = {
 }
 country_event = {
 	id = NH_DIEMa.11
-	immediate = { }
 	title = NH_DIEMa.11.t
 	desc = NH_DIEMa.11.d
 	picture = GFX_NH_DIEMa.11
@@ -10692,7 +10334,6 @@ country_event = {
 
 country_event = {
 	id = DiemLR.0
-	immediate = { }
 	title = DiemLR.0.t
 	desc = DiemLR.0.d
 	picture = GFX_DiemLR.0
@@ -10706,7 +10347,6 @@ country_event = {
 }
 country_event = {
 	id = DiemLR.1
-	immediate = { }
 	title = DiemLR.1.t
 	desc = DiemLR.1.d
 	picture = GFX_DiemLR.1
@@ -10720,7 +10360,6 @@ country_event = {
 }
 country_event = {
 	id = DiemLR.2
-	immediate = { }
 	title = DiemLR.2.t
 	desc = DiemLR.2.d
 	picture = GFX_DiemLR.2
@@ -10734,7 +10373,6 @@ country_event = {
 }
 country_event = {
 	id = DiemLR.3
-	immediate = { }
 	title = DiemLR.3.t
 	desc = DiemLR.3.d
 	picture = GFX_DiemLR.3
@@ -10748,7 +10386,6 @@ country_event = {
 }
 country_event = {
 	id = DiemMarx.1
-	immediate = { }
 	title = DiemMarx.1.t
 	desc = DiemMarx.1.d
 	picture = GFX_DiemMarx.1
@@ -10767,7 +10404,6 @@ country_event = {
 }
 country_event = {
 	id = VIE_CD_Recruit.9
-	immediate = { }
 	title = VIE_CD_Recruit.9.t
 	desc = VIE_CD_Recruit.9.d
 	picture = GFX_VIE_CD_Recruit.9
@@ -10784,7 +10420,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIE.1
-	immediate = { }
 	title = USA_VIE.1.t
 	desc = USA_VIE.1.d
 	picture = GFX_USA_VIE.1
@@ -10801,7 +10436,6 @@ country_event = {
 }
 country_event = {
 	id = USA_VIE.2
-	immediate = { }
 	title = USA_VIE.2.t
 	desc = USA_VIE.2.d
 	picture = GFX_USA_VIE.2
@@ -10832,7 +10466,6 @@ country_event = {
 }
 country_event = {
 	id = USA_VIE.3
-	immediate = { }
 	title = USA_VIE.3.t
 	desc = USA_VIE.3.d
 	picture = GFX_USA_VIE.3
@@ -10845,7 +10478,6 @@ country_event = {
 }
 country_event = {
 	id = USA_VIE.4
-	immediate = { }
 	title = USA_VIE.4.t
 	desc = USA_VIE.4.d
 
@@ -10857,7 +10489,6 @@ country_event = {
 }
 country_event = {
 	id = USA_VIE.5
-	immediate = { }
 	title = USA_VIE.5.t
 	desc = USA_VIE.5.d
 
@@ -10875,7 +10506,6 @@ country_event = {
 }
 country_event = {
 	id = USA_VIE.6
-	immediate = { }
 	title = USA_VIE.6.t
 	desc = USA_VIE.6.d
 
@@ -10909,7 +10539,6 @@ country_event = {
 }
 country_event = {
 	id = USA_VIE.7
-	immediate = { }
 	title = USA_VIE.7.t
 	desc = USA_VIE.7.d
 
@@ -10921,7 +10550,6 @@ country_event = {
 }
 country_event = {
 	id = USA_VIE.8
-	immediate = { }
 	title = USA_VIE.8.t
 	desc = USA_VIE.8.d
 
@@ -10942,7 +10570,6 @@ country_event = {
 }
 news_event = {
 	id = USA_VIE.9
-	immediate = { }
 	title = USA_VIE.9.t
 	desc = USA_VIE.9.d
 
@@ -10954,7 +10581,6 @@ news_event = {
 }
 country_event = {
 	id = USA_VIE.10
-	immediate = { }
 	title = USA_VIE.10.t
 	desc = USA_VIE.10.d
 
@@ -10967,7 +10593,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIE.11
-	immediate = { }
 	title = USA_VIE.11.t
 	desc = USA_VIE.11.d
 
@@ -10980,7 +10605,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIE.12
-	immediate = { }
 	title = USA_VIE.12.t
 	desc = USA_VIE.12.d
 	picture = GFX_USA_VIE.12
@@ -10994,7 +10618,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIE.13
-	immediate = { }
 	title = USA_VIE.13.t
 	desc = USA_VIE.13.d
 
@@ -11007,7 +10630,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIE_CuongDe_Installation.1
-	immediate = { }
 	title = USA_VIE_CuongDe_Installation.1.t
 	desc = USA_VIE_CuongDe_Installation.1.d
 	picture = GFX_USA_VIE_CuongDe_Installation.1
@@ -11069,7 +10691,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIE_CuongDe_Installation.2
-	immediate = { }
 	title = USA_VIE_CuongDe_Installation.2.t
 	desc = USA_VIE_CuongDe_Installation.2.d
 	picture = GFX_Cuong_De
@@ -11129,7 +10750,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.1
-	immediate = { }
 	title = USA_VIN_Reunification.1.t
 	desc = USA_VIN_Reunification.1.d
 	picture = GFX_USA_VIE.3
@@ -11154,7 +10774,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.2
-	immediate = { }
 	title = USA_VIN_Reunification.2.t
 	desc = USA_VIN_Reunification.2.d
 	picture = GFX_USA_VIE.3
@@ -11180,7 +10799,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.3
-	immediate = { }
 	title = USA_VIN_Reunification.3.t
 	desc = USA_VIN_Reunification.3.d
 	picture = GFX_USA_VIE.3
@@ -11199,7 +10817,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.4
-	immediate = { }
 	title = USA_VIN_Reunification.4.t
 	desc = USA_VIN_Reunification.4.d
 	picture = GFX_USA_VIE.3
@@ -11228,7 +10845,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.5
-	immediate = { }
 	title = USA_VIN_Reunification.5.t
 	desc = USA_VIN_Reunification.5.d
 	picture = GFX_USA_VIE.3
@@ -11265,7 +10881,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.6
-	immediate = { }
 	title = USA_VIN_Reunification.6.t
 	desc = USA_VIN_Reunification.6.d
 	picture = GFX_USA_VIE.3
@@ -11303,7 +10918,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.7
-	immediate = { }
 	title = USA_VIN_Reunification.7.t
 	desc = USA_VIN_Reunification.7.d
 	picture = GFX_USA_VIE.3
@@ -11329,7 +10943,6 @@ country_event = {
 
 country_event = {
 	id = USA_VIN_Reunification.8
-	immediate = { }
 	title = USA_VIN_Reunification.8.t
 	desc = USA_VIN_Reunification.8.d
 	picture = GFX_USA_VIE.3
@@ -11370,7 +10983,6 @@ country_event = {
 
 news_event = {
 	id = Autonomous_FUL_Republic.0
-	immediate = { }
 	title = Autonomous_FUL_Republic.0.t
 	desc = Autonomous_FUL_Republic.0.d
 	#picture = GFX_Autonomous_FUL_Republic.0

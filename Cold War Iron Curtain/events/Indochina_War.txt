@@ -7,7 +7,6 @@ add_namespace = VIN_Reform
 
 country_event = {
 	id = VINLAO.1
- immediate = { }
 	title = VINLAO.1.t2
 	desc = VINLAO.1.d
 	picture = GFX_VINLAO_1
@@ -19,7 +18,6 @@ country_event = {
 }
 country_event = {
 	id = KMT_BURMA.1
- immediate = { }
 	title = KMT_BURMA.1.t2
 	desc = KMT_BURMA.1.d
 	picture = GFX_kmt_burma
@@ -31,7 +29,6 @@ country_event = {
 }
 country_event = {
 	id = KMT_BURMA.2
- immediate = { }
 	title = KMT_BURMA.2.t2
 	desc = KMT_BURMA.2.d
 	picture = GFX_kmt_burma3
@@ -49,7 +46,6 @@ country_event = {
 }
 country_event = {
 	id = KMT_BURMA.3
- immediate = { }
 	title = KMT_BURMA.3.t2
 	desc = KMT_BURMA.3.d
 	picture = GFX_PRC_Burma_1
@@ -68,7 +64,6 @@ country_event = {
 
 country_event = {
 	id = KMT_BURMA.4
- immediate = { }
 	title = KMT_BURMA.4.t2
 	desc = KMT_BURMA.4.d
 	picture = GFX_kmt_burma2
@@ -80,7 +75,6 @@ country_event = {
 }
 country_event = {
 	id = KMT_BURMA.5
- immediate = { }
 	title = KMT_BURMA.5.t2
 	desc = KMT_BURMA.5.d
 	picture = GFX_PRC_Burma_2
@@ -92,7 +86,6 @@ country_event = {
 }
 country_event = {
 	id = KMT_BURMA.10
- immediate = { }
 	title = KMT_BURMA.10.t2
 	desc = KMT_BURMA.10.d
 	picture = GFX_kmt_burma_evac
@@ -106,7 +99,6 @@ country_event = {
 
 country_event = {
  	id = Indochina_War.4
- immediate = { }
  	hidden = yes
 
  	is_triggered_only = yes
@@ -132,7 +124,6 @@ country_event = {
 }
 news_event = {
 	id = 181246
-	immediate = { }
 	title = EVT181246_TITLE
 	desc = EVT181246_DESC
 	picture = GFX_VIN_First_Indochina_War
@@ -145,7 +136,6 @@ news_event = {
 }
 news_event = {
 	id = 831949
-	immediate = { }
 	title = EVT831949_TITLE
 	desc = EVT831949_DESC
 	picture = GFX_VIE_Elysee_Accord_News
@@ -158,7 +148,6 @@ news_event = {
 }
 news_event = {
 	id = 7554
-	immediate = { }
 	title = EVT7554_TITLE
 	desc = EVT7554_DESC
 	picture = GFX_VIN_Victory_at_Dien_Bien_Phu
@@ -171,7 +160,6 @@ news_event = {
 }
 news_event = {
 	id = 101954
-	immediate = { }
 	title = EVT101954_TITLE
 	desc = EVT101954_DESC
 	picture = GFX_VIN_Hanoi
