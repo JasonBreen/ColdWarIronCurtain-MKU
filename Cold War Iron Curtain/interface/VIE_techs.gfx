@@ -34,7 +34,7 @@ SpriteType = {
 
 #######ARMOR TAB
 
-    SpriteType = {
+	SpriteType = {
 		name = "GFX_VIE_iw_armored_vehicles_medium"
 		texturefile = "gfx/interface/technologies/VIE_army.png"
 	}
@@ -1785,13 +1785,13 @@ SpriteType = {
 		name = "GFX_VIE_jet_light1_medium"
 		texturefile = "gfx/interface/technologies/VIE_jet_light1.png"
 	}
-   
-    SpriteType = {
+
+	SpriteType = {
 		name = "GFX_VIE_jet_light2_medium"
 		texturefile = "gfx/interface/technologies/VIE_jet_light2.png"
 	}
-   
-    SpriteType = {
+
+	SpriteType = {
 		name = "GFX_VIE_jet_light3_medium"
 		texturefile = "gfx/interface/technologies/VIE_jet_light3.png"
 	}

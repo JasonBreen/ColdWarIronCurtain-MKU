@@ -528,916 +528,916 @@ Indochina_War_Rework = {
 
 	Indochina_Struggle_Border_Conflict_Anti_Commie = {
 		icon = border_war
-        state_target = yes
-        target_root_trigger = {
-            has_global_flag = Indochina_Ending_Failed_State
-            OR = {
-                is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = ROOT.id }
-                is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-            }
-        }
-        target_array = global.indochina_cores
-        target_trigger = {
-            FROM = {
-                has_border_war = no
-                NOT = {
-                    is_owned_by = ROOT
-                }
-                NOT = {
-                    is_controlled_by = ROOT
-                }
-                owner = {
-                    OR = {
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id }
-                    }
-                }
-                any_neighbor_state = {
-                    is_owned_by = ROOT
-                }
-            }
+		state_target = yes
+		target_root_trigger = {
+			has_global_flag = Indochina_Ending_Failed_State
+			OR = {
+				is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = ROOT.id }
+				is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+			}
+		}
+		target_array = global.indochina_cores
+		target_trigger = {
+			FROM = {
+				has_border_war = no
+				NOT = {
+					is_owned_by = ROOT
+				}
+				NOT = {
+					is_controlled_by = ROOT
+				}
+				owner = {
+					OR = {
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id }
+					}
+				}
+				any_neighbor_state = {
+					is_owned_by = ROOT
+				}
+			}
 
-        }
-        on_map_mode = map_and_decisions_view
-        cost = 5
-        complete_effect = {
-            indochina_border_war_start_gui_prompt_display = yes
-            FROM = {
-                set_variable = { ROOT.defender_state = THIS.id }
-                owner = {
-                    set_variable = { ROOT.defender_tag = THIS.id }
-                }
-            }
-            random_state = {
-                limit = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    has_border_war = no
-                    has_ROOT_at_least_1_div_in_current_state_scope = yes
-                    any_neighbor_state = {
-                        state = var:ROOT.defender_state
-                    }
-                }
-                set_variable = { ROOT.attacker_state = THIS.id }
-                set_variable = { ROOT.attacker_tag = ROOT.id }
-                set_temp_variable = { attacker_state_temp = id }
-                if = {
-                    limit = {
-                        FROM = {
-                            OWNER = {
-                                is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
-                            }
-                        }
-                    }
-                    if = {
-                        limit = {
-                            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = ROOT.id }
-                        }
-                        start_border_war = {
-                            change_state_after_war = yes
-                            attacker = {
-                                state = var:ROOT.attacker_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.1
-                                on_lose = Indochina_Border_War.2
-                                on_cancel = Indochina_Border_War.100
-                            }
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 5
+		complete_effect = {
+			indochina_border_war_start_gui_prompt_display = yes
+			FROM = {
+				set_variable = { ROOT.defender_state = THIS.id }
+				owner = {
+					set_variable = { ROOT.defender_tag = THIS.id }
+				}
+			}
+			random_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+					has_border_war = no
+					has_ROOT_at_least_1_div_in_current_state_scope = yes
+					any_neighbor_state = {
+						state = var:ROOT.defender_state
+					}
+				}
+				set_variable = { ROOT.attacker_state = THIS.id }
+				set_variable = { ROOT.attacker_tag = ROOT.id }
+				set_temp_variable = { attacker_state_temp = id }
+				if = {
+					limit = {
+						FROM = {
+							OWNER = {
+								is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = ROOT.id }
+						}
+						start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+								state = var:ROOT.attacker_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.1
+								on_lose = Indochina_Border_War.2
+								on_cancel = Indochina_Border_War.100
+							}
 
-                            defender = {
-                                state = var:ROOT.defender_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.3
-                                on_lose = Indochina_Border_War.4
-                                on_cancel = Indochina_Border_War.100
-                            }
-                        }
-                    }
-                    else_if = {
-                        limit = {
-                            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
-                        }
-                        start_border_war = {
-                            change_state_after_war = yes
-                            attacker = {
-                                state = var:ROOT.attacker_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.5
-                                on_lose = Indochina_Border_War.6
-                                on_cancel = Indochina_Border_War.100
-                            }
+							defender = {
+								state = var:ROOT.defender_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.3
+								on_lose = Indochina_Border_War.4
+								on_cancel = Indochina_Border_War.100
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
+						}
+						start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+								state = var:ROOT.attacker_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.5
+								on_lose = Indochina_Border_War.6
+								on_cancel = Indochina_Border_War.100
+							}
 
-                            defender = {
-                                state = var:ROOT.defender_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.3
-                                on_lose = Indochina_Border_War.4
-                                on_cancel = Indochina_Border_War.100
-                            }
-                        }
-                    }
-                    else_if = {
-                        limit = {
-                            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-                        }
-                        start_border_war = {
-                            change_state_after_war = yes
-                            attacker = {
-                                state = var:ROOT.attacker_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.7
-                                on_lose = Indochina_Border_War.8
-                                on_cancel = Indochina_Border_War.100
-                            }
+							defender = {
+								state = var:ROOT.defender_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.3
+								on_lose = Indochina_Border_War.4
+								on_cancel = Indochina_Border_War.100
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+						}
+						start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+								state = var:ROOT.attacker_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.7
+								on_lose = Indochina_Border_War.8
+								on_cancel = Indochina_Border_War.100
+							}
 
-                            defender = {
-                                state = var:ROOT.defender_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.3
-                                on_lose = Indochina_Border_War.4
-                                on_cancel = Indochina_Border_War.100
-                            }
-                        }
-                    }
-                    else = { }
-                }
-                else_if = {
-                    limit = {
-                        FROM = {
-                            OWNER = {
-                                is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id }
-                            }
-                        }
-                    }
-                    if = {
-                        limit = {
-                            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = ROOT.id }
-                        }
-                        start_border_war = {
-                            change_state_after_war = yes
-                            attacker = {
-                                state = var:ROOT.attacker_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.11
-                                on_lose = Indochina_Border_War.12
-                                on_cancel = Indochina_Border_War.100
-                            }
+							defender = {
+								state = var:ROOT.defender_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.3
+								on_lose = Indochina_Border_War.4
+								on_cancel = Indochina_Border_War.100
+							}
+						}
+					}
+					else = { }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OWNER = {
+								is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id }
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = ROOT.id }
+						}
+						start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+								state = var:ROOT.attacker_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.11
+								on_lose = Indochina_Border_War.12
+								on_cancel = Indochina_Border_War.100
+							}
 
-                            defender = {
-                                state = var:ROOT.defender_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.9
-                                on_lose = Indochina_Border_War.10
-                                on_cancel = Indochina_Border_War.100
-                            }
-                        }
-                    }
-                    else_if = {
-                        limit = {
-                            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
-                        }
-                        start_border_war = {
-                            change_state_after_war = yes
-                            attacker = {
-                                state = var:ROOT.attacker_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.13
-                                on_lose = Indochina_Border_War.14
-                                on_cancel = Indochina_Border_War.100
-                            }
+							defender = {
+								state = var:ROOT.defender_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.9
+								on_lose = Indochina_Border_War.10
+								on_cancel = Indochina_Border_War.100
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
+						}
+						start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+								state = var:ROOT.attacker_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.13
+								on_lose = Indochina_Border_War.14
+								on_cancel = Indochina_Border_War.100
+							}
 
-                            defender = {
-                                state = var:ROOT.defender_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.9
-                                on_lose = Indochina_Border_War.10
-                                on_cancel = Indochina_Border_War.100
-                            }
-                        }
-                    }
-                    else_if = {
-                        limit = {
-                            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-                        }
-                        start_border_war = {
-                            change_state_after_war = yes
-                            attacker = {
-                                state = var:ROOT.attacker_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.15
-                                on_lose = Indochina_Border_War.16
-                                on_cancel = Indochina_Border_War.100
-                            }
+							defender = {
+								state = var:ROOT.defender_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.9
+								on_lose = Indochina_Border_War.10
+								on_cancel = Indochina_Border_War.100
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+						}
+						start_border_war = {
+							change_state_after_war = yes
+							attacker = {
+								state = var:ROOT.attacker_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.15
+								on_lose = Indochina_Border_War.16
+								on_cancel = Indochina_Border_War.100
+							}
 
-                            defender = {
-                                state = var:ROOT.defender_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.9
-                                on_lose = Indochina_Border_War.10
-                                on_cancel = Indochina_Border_War.100
-                            }
-                        }
-                    }
-                    else = { }
-                }
-                else = { }
-            }
-        }
-    }
+							defender = {
+								state = var:ROOT.defender_state
+								num_provinces = 4
+								on_win = Indochina_Border_War.9
+								on_lose = Indochina_Border_War.10
+								on_cancel = Indochina_Border_War.100
+							}
+						}
+					}
+					else = { }
+				}
+				else = { }
+			}
+		}
+	}
 
 	Indochina_Struggle_Border_Conflict_Commie = {
 		icon = border_war
-        state_target = yes
-        target_root_trigger = {
-            has_global_flag = Indochina_Ending_Failed_State
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
-        }
-        target_array = global.indochina_cores
-        target_trigger = {
-            FROM = {
-                has_border_war = no
-                NOT = {
-                    is_owned_by = ROOT
-                }
-                owner = {
-                    OR = {
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id }
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id }
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id }
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id }
-                    }
-                }
-                any_neighbor_state = {
-                    is_owned_by = ROOT
-                }
-            }
+		state_target = yes
+		target_root_trigger = {
+			has_global_flag = Indochina_Ending_Failed_State
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
+		}
+		target_array = global.indochina_cores
+		target_trigger = {
+			FROM = {
+				has_border_war = no
+				NOT = {
+					is_owned_by = ROOT
+				}
+				owner = {
+					OR = {
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id }
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id }
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id }
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id }
+					}
+				}
+				any_neighbor_state = {
+					is_owned_by = ROOT
+				}
+			}
 
-        }
-        on_map_mode = map_and_decisions_view
-        cost = 5
-        complete_effect = {
-            indochina_border_war_start_gui_prompt_display = yes
-            FROM = {
-                set_variable = { ROOT.defender_state = THIS.id }
-                owner = {
-                    set_variable = { ROOT.defender_tag = THIS.id }
-                    set_variable = { ROOT.ic_bw_defender_bloc = 0 }	# ROOT is always Communist here, so the outcome events are chosen by who is being attacked
-                    if = {
-                        limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id } }
-                        set_variable = { ROOT.ic_bw_defender_bloc = 1 }
-                    }
-                    else_if = {
-                        limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id } }
-                        set_variable = { ROOT.ic_bw_defender_bloc = 2 }
-                    }
-                    else_if = {
-                        limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id } }
-                        set_variable = { ROOT.ic_bw_defender_bloc = 3 }
-                    }
-                    else_if = {
-                        limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id } }
-                        set_variable = { ROOT.ic_bw_defender_bloc = 4 }
-                    }
-                }
-            }
-            random_state = {
-                limit = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    has_border_war = no
-                    has_ROOT_at_least_1_div_in_current_state_scope = yes
-                    any_neighbor_state = {
-                        state = var:ROOT.defender_state
-                    }
-                }
-                set_variable = { ROOT.attacker_state = THIS.id }
-                set_variable = { ROOT.attacker_tag = ROOT.id }
-                set_temp_variable = { attacker_state_temp = id }
-                if = {
-                    limit = {
-                        check_variable = { ROOT.ic_bw_defender_bloc = 1 }
-                    }
-                    start_border_war = {
-                        change_state_after_war = yes
-                        attacker = {
-                            state = var:ROOT.attacker_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.20
-                            on_lose = Indochina_Border_War.21
-                            on_cancel = Indochina_Border_War.100
-                        }
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 5
+		complete_effect = {
+			indochina_border_war_start_gui_prompt_display = yes
+			FROM = {
+				set_variable = { ROOT.defender_state = THIS.id }
+				owner = {
+					set_variable = { ROOT.defender_tag = THIS.id }
+					set_variable = { ROOT.ic_bw_defender_bloc = 0 }	# ROOT is always Communist here, so the outcome events are chosen by who is being attacked
+					if = {
+						limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id } }
+						set_variable = { ROOT.ic_bw_defender_bloc = 1 }
+					}
+					else_if = {
+						limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id } }
+						set_variable = { ROOT.ic_bw_defender_bloc = 2 }
+					}
+					else_if = {
+						limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id } }
+						set_variable = { ROOT.ic_bw_defender_bloc = 3 }
+					}
+					else_if = {
+						limit = { is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = THIS.id } }
+						set_variable = { ROOT.ic_bw_defender_bloc = 4 }
+					}
+				}
+			}
+			random_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+					has_border_war = no
+					has_ROOT_at_least_1_div_in_current_state_scope = yes
+					any_neighbor_state = {
+						state = var:ROOT.defender_state
+					}
+				}
+				set_variable = { ROOT.attacker_state = THIS.id }
+				set_variable = { ROOT.attacker_tag = ROOT.id }
+				set_temp_variable = { attacker_state_temp = id }
+				if = {
+					limit = {
+						check_variable = { ROOT.ic_bw_defender_bloc = 1 }
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.20
+							on_lose = Indochina_Border_War.21
+							on_cancel = Indochina_Border_War.100
+						}
 
-                        defender = {
-                            state = var:ROOT.defender_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.22
-                            on_lose = Indochina_Border_War.23
-                            on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { ROOT.ic_bw_defender_bloc = 2 }
-                    }
-                    start_border_war = {
-                        change_state_after_war = yes
-                        attacker = {
-                            state = var:ROOT.attacker_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.24
-                            on_lose = Indochina_Border_War.25
-                            on_cancel = Indochina_Border_War.100
-                        }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.22
+							on_lose = Indochina_Border_War.23
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { ROOT.ic_bw_defender_bloc = 2 }
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.24
+							on_lose = Indochina_Border_War.25
+							on_cancel = Indochina_Border_War.100
+						}
 
-                        defender = {
-                            state = var:ROOT.defender_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.22
-                            on_lose = Indochina_Border_War.23
-                            on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                else_if = {
-                    limit = {
-                        check_variable = { ROOT.ic_bw_defender_bloc = 3 }
-                    }
-                    start_border_war = {
-                        change_state_after_war = yes
-                        attacker = {
-                            state = var:ROOT.attacker_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.38
-                            on_lose = Indochina_Border_War.39
-                            on_cancel = Indochina_Border_War.100
-                        }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.22
+							on_lose = Indochina_Border_War.23
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { ROOT.ic_bw_defender_bloc = 3 }
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.38
+							on_lose = Indochina_Border_War.39
+							on_cancel = Indochina_Border_War.100
+						}
 
-                        defender = {
-                            state = var:ROOT.defender_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.22
-                            on_lose = Indochina_Border_War.23
-                            on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                    else_if = {
-                        limit = {
-                        check_variable = { ROOT.ic_bw_defender_bloc = 4 }
-                        }
-                        start_border_war = {
-                            change_state_after_war = yes
-                            attacker = {
-                                state = var:ROOT.attacker_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.36
-                                on_lose = Indochina_Border_War.37
-                                on_cancel = Indochina_Border_War.100
-                            }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.22
+							on_lose = Indochina_Border_War.23
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { ROOT.ic_bw_defender_bloc = 4 }
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.36
+							on_lose = Indochina_Border_War.37
+							on_cancel = Indochina_Border_War.100
+						}
 
-                            defender = {
-                                state = var:ROOT.defender_state
-                                num_provinces = 4
-                                on_win = Indochina_Border_War.22
-                                on_lose = Indochina_Border_War.23
-                                on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                else = { }
-            }
-        }
-    }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.22
+							on_lose = Indochina_Border_War.23
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else = { }
+			}
+		}
+	}
 
 	Indochina_Struggle_Border_Conflict_Kuomintang = {
 		icon = border_war
-        state_target = yes
-        target_root_trigger = {
-            has_global_flag = Indochina_Ending_Failed_State
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = ROOT.id }
-        }
-        target_array = global.indochina_cores
-        target_trigger = {
-            FROM = {
-                has_border_war = no
-                NOT = {
-                    is_owned_by = ROOT
-                }
-                owner = {
-                    OR = {
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id }
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id }
-                        is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id }
-                    }
-                }
-                any_neighbor_state = {
-                    is_owned_by = ROOT
-                }
-            }
+		state_target = yes
+		target_root_trigger = {
+			has_global_flag = Indochina_Ending_Failed_State
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaKuomintang = ROOT.id }
+		}
+		target_array = global.indochina_cores
+		target_trigger = {
+			FROM = {
+				has_border_war = no
+				NOT = {
+					is_owned_by = ROOT
+				}
+				owner = {
+					OR = {
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id }
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id }
+						is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id }
+					}
+				}
+				any_neighbor_state = {
+					is_owned_by = ROOT
+				}
+			}
 
-        }
-        on_map_mode = map_and_decisions_view
-        cost = 5
-        complete_effect = {
-            indochina_border_war_start_gui_prompt_display = yes
-            FROM = {
-                set_variable = { ROOT.defender_state = THIS.id }
-                owner = {
-                    set_variable = { ROOT.defender_tag = THIS.id }
-                }
-            }
-            random_state = {
-                limit = {
-                    is_owned_by = ROOT
-                    is_controlled_by = ROOT
-                    has_border_war = no
-                    has_ROOT_at_least_1_div_in_current_state_scope = yes
-                    any_neighbor_state = {
-                        state = var:ROOT.defender_state
-                    }
-                }
-                set_variable = { ROOT.attacker_state = THIS.id }
-                set_variable = { ROOT.attacker_tag = ROOT.id }
-                set_temp_variable = { attacker_state_temp = id }
-                if = {
-                    limit = {
-                        FROM = {
-                            OWNER = {
-                                is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
-                            }
-                        }
-                    }
-                    start_border_war = {
-                        change_state_after_war = yes
-                        attacker = {
-                            state = var:ROOT.attacker_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.26
-                            on_lose = Indochina_Border_War.27
-                            on_cancel = Indochina_Border_War.100
-                        }
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 5
+		complete_effect = {
+			indochina_border_war_start_gui_prompt_display = yes
+			FROM = {
+				set_variable = { ROOT.defender_state = THIS.id }
+				owner = {
+					set_variable = { ROOT.defender_tag = THIS.id }
+				}
+			}
+			random_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+					has_border_war = no
+					has_ROOT_at_least_1_div_in_current_state_scope = yes
+					any_neighbor_state = {
+						state = var:ROOT.defender_state
+					}
+				}
+				set_variable = { ROOT.attacker_state = THIS.id }
+				set_variable = { ROOT.attacker_tag = ROOT.id }
+				set_temp_variable = { attacker_state_temp = id }
+				if = {
+					limit = {
+						FROM = {
+							OWNER = {
+								is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = THIS.id }
+							}
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.26
+							on_lose = Indochina_Border_War.27
+							on_cancel = Indochina_Border_War.100
+						}
 
-                        defender = {
-                            state = var:ROOT.defender_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.34
-                            on_lose = Indochina_Border_War.35
-                            on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                else_if = {
-                    limit = {
-                        FROM = {
-                            OWNER = {
-                                is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id }
-                            }
-                        }
-                    }
-                    start_border_war = {
-                        change_state_after_war = yes
-                        attacker = {
-                            state = var:ROOT.attacker_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.28
-                            on_lose = Indochina_Border_War.29
-                            on_cancel = Indochina_Border_War.100
-                        }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.34
+							on_lose = Indochina_Border_War.35
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OWNER = {
+								is_in_array = { FRA.StruggleInvolvedNationsIndochinaProEthnic = THIS.id }
+							}
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.28
+							on_lose = Indochina_Border_War.29
+							on_cancel = Indochina_Border_War.100
+						}
 
-                        defender = {
-                            state = var:ROOT.defender_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.34
-                            on_lose = Indochina_Border_War.35
-                            on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                else_if = {
-                    limit = {
-                        FROM = {
-                            OWNER = {
-                                is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id }
-                            }
-                        }
-                    }
-                    start_border_war = {
-                        change_state_after_war = yes
-                        attacker = {
-                            state = var:ROOT.attacker_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.30
-                            on_lose = Indochina_Border_War.31
-                            on_cancel = Indochina_Border_War.100
-                        }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.34
+							on_lose = Indochina_Border_War.35
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OWNER = {
+								is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = THIS.id }
+							}
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.30
+							on_lose = Indochina_Border_War.31
+							on_cancel = Indochina_Border_War.100
+						}
 
-                        defender = {
-                            state = var:ROOT.defender_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.34
-                            on_lose = Indochina_Border_War.35
-                            on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                else_if = {
-                    limit = {
-                        FROM = {
-                            OWNER = {
-                                is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id }
-                            }
-                        }
-                    }
-                    start_border_war = {
-                        change_state_after_war = yes
-                        attacker = {
-                            state = var:ROOT.attacker_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.32
-                            on_lose = Indochina_Border_War.33
-                            on_cancel = Indochina_Border_War.100
-                        }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.34
+							on_lose = Indochina_Border_War.35
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							OWNER = {
+								is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = THIS.id }
+							}
+						}
+					}
+					start_border_war = {
+						change_state_after_war = yes
+						attacker = {
+							state = var:ROOT.attacker_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.32
+							on_lose = Indochina_Border_War.33
+							on_cancel = Indochina_Border_War.100
+						}
 
-                        defender = {
-                            state = var:ROOT.defender_state
-                            num_provinces = 4
-                            on_win = Indochina_Border_War.34
-                            on_lose = Indochina_Border_War.35
-                            on_cancel = Indochina_Border_War.100
-                        }
-                    }
-                }
-                else = { }
-            }
-        }
-    }
+						defender = {
+							state = var:ROOT.defender_state
+							num_provinces = 4
+							on_win = Indochina_Border_War.34
+							on_lose = Indochina_Border_War.35
+							on_cancel = Indochina_Border_War.100
+						}
+					}
+				}
+				else = { }
+			}
+		}
+	}
 
-    ############################################################
-    # Struggle Diplomacy
-    ############################################################
+	############################################################
+	# Struggle Diplomacy
+	############################################################
 
-    Indochina_Struggle_ProInd_Backchannel_Talks = {
-        icon = generic_civil_support
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_proindependence }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_pro_independence_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_proindependence value = 1 days = 45 }
-            add_stability = 0.01
-            add_war_support = -0.01
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_ProInd_Backchannel_Talks = {
+		icon = generic_civil_support
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_proindependence }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_pro_independence_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_proindependence value = 1 days = 45 }
+			add_stability = 0.01
+			add_war_support = -0.01
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_ProInd_International_Appeal = {
-        icon = generic_propaganda
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_proindependence }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_pro_independence_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_proindependence value = 1 days = 45 }
-            add_stability = 0.01
-            add_war_support = -0.02
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_ProInd_International_Appeal = {
+		icon = generic_propaganda
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_proindependence }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_pro_independence_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_proindependence value = 1 days = 45 }
+			add_stability = 0.01
+			add_war_support = -0.02
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_ProInd_Prisoner_Exchange = {
-        icon = generic_trade
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_proindependence }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_pro_independence_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_proindependence value = 1 days = 45 }
-            add_stability = 0.02
-            add_manpower = 500	# our own men come home with the exchange
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_ProInd_Prisoner_Exchange = {
+		icon = generic_trade
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_proindependence }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_pro_independence_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_proindependence value = 1 days = 45 }
+			add_stability = 0.02
+			add_manpower = 500	# our own men come home with the exchange
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_ProInd_Denounce_Infiltration = {
-        icon = generic_prepare_civil_war
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        cost = 50
-        days_re_enable = 90
-        complete_effect = {
-            indochina_struggle_add_pro_independence_military_points = yes
-            add_war_support = 0.02
-            add_stability = -0.01
-            army_experience = 5
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	Indochina_Struggle_ProInd_Denounce_Infiltration = {
+		icon = generic_prepare_civil_war
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		cost = 50
+		days_re_enable = 90
+		complete_effect = {
+			indochina_struggle_add_pro_independence_military_points = yes
+			add_war_support = 0.02
+			add_stability = -0.01
+			army_experience = 5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    Indochina_Struggle_ProInd_Propose_Peace_Conference = {
-        icon = generic_prepare_civil_war
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
-            indochina_struggle_diplomacy_actor_trigger = yes
-            check_variable = { global.Indochina_War_Active_Phase = 8 }
-            NOT = { has_global_flag = Geneva_Conference_Preparations }
-            NOT = { has_global_flag = Indochina_War_Over }
-            country_exists = FRA
-        }
-        available = {
-            date > 1954.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Propose_Conference_TT
-                check_variable = { global.Indochina_War_Next_Phase_B_Points > 299 }
-            }
-        }
-        cost = 50
-        days_re_enable = 120
-        complete_effect = {
-            FRA = {
-                country_event = { id = Geneva_Conference_Invitation.5 days = 3 }
-            }
-            add_stability = 0.02
-            add_war_support = -0.02
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_ProInd_Propose_Peace_Conference = {
+		icon = generic_prepare_civil_war
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProIndependence = ROOT.id }
+			indochina_struggle_diplomacy_actor_trigger = yes
+			check_variable = { global.Indochina_War_Active_Phase = 8 }
+			NOT = { has_global_flag = Geneva_Conference_Preparations }
+			NOT = { has_global_flag = Indochina_War_Over }
+			country_exists = FRA
+		}
+		available = {
+			date > 1954.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Propose_Conference_TT
+				check_variable = { global.Indochina_War_Next_Phase_B_Points > 299 }
+			}
+		}
+		cost = 50
+		days_re_enable = 120
+		complete_effect = {
+			FRA = {
+				country_event = { id = Geneva_Conference_Invitation.5 days = 3 }
+			}
+			add_stability = 0.02
+			add_war_support = -0.02
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_Com_Peace_Overtures = {
-        icon = generic_civil_support
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_communist }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_communist_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_communist value = 1 days = 45 }
-            add_stability = 0.01
-            add_war_support = -0.01
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_Com_Peace_Overtures = {
+		icon = generic_civil_support
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_communist }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_communist_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_communist value = 1 days = 45 }
+			add_stability = 0.01
+			add_war_support = -0.01
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_Com_Call_For_Elections = {
-        icon = generic_propaganda
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_communist }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_communist_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_communist value = 1 days = 45 }
-            add_stability = 0.02
-            add_war_support = -0.01
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_Com_Call_For_Elections = {
+		icon = generic_propaganda
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_communist }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_communist_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_communist value = 1 days = 45 }
+			add_stability = 0.02
+			add_war_support = -0.01
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_Com_Release_Prisoners = {
-        icon = generic_trade
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_communist }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_communist_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_communist value = 1 days = 45 }
-            add_stability = 0.02
-            add_war_support = -0.02
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_Com_Release_Prisoners = {
+		icon = generic_trade
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_communist }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_communist_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_communist value = 1 days = 45 }
+			add_stability = 0.02
+			add_war_support = -0.02
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_Com_Intensify_Struggle = {
-        icon = generic_operation
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        cost = 50
-        days_re_enable = 90
-        complete_effect = {
-            indochina_struggle_add_communist_military_points = yes
-            add_war_support = 0.02
-            add_stability = -0.01
-            army_experience = 5
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	Indochina_Struggle_Com_Intensify_Struggle = {
+		icon = generic_operation
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaCommunist = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		cost = 50
+		days_re_enable = 90
+		complete_effect = {
+			indochina_struggle_add_communist_military_points = yes
+			add_war_support = 0.02
+			add_stability = -0.01
+			army_experience = 5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    Indochina_Struggle_ProFra_Ceasefire_Lines = {
-        icon = generic_civil_support
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_profrance }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_pro_france_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_profrance value = 1 days = 45 }
-            add_stability = 0.01
-            add_war_support = -0.01
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_ProFra_Ceasefire_Lines = {
+		icon = generic_civil_support
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_profrance }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_pro_france_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_profrance value = 1 days = 45 }
+			add_stability = 0.01
+			add_war_support = -0.01
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_ProFra_Court_Opinion = {
-        icon = generic_propaganda
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_profrance }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_pro_france_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_profrance value = 1 days = 45 }
-            add_stability = 0.02
-            add_war_support = -0.01
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_ProFra_Court_Opinion = {
+		icon = generic_propaganda
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_profrance }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_pro_france_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_profrance value = 1 days = 45 }
+			add_stability = 0.02
+			add_war_support = -0.01
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_ProFra_Amnesty_Programme = {
-        icon = generic_trade
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        available = {
-            date > 1953.1.1
-            custom_trigger_tooltip = {
-                tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
-                NOT = { has_global_flag = indochina_diplomacy_lock_profrance }
-            }
-        }
-        cost = 25
-        days_re_enable = 70
-        complete_effect = {
-            indochina_struggle_add_pro_france_diplomatic_points = yes
-            set_global_flag = { flag = indochina_diplomacy_lock_profrance value = 1 days = 45 }
-            add_stability = 0.02
-            add_war_support = -0.02
-        }
-        ai_will_do = {
-            base = 1
-            modifier = {
-                factor = 10
-                date > 1953.1.1
-            }
-        }
-    }
+	Indochina_Struggle_ProFra_Amnesty_Programme = {
+		icon = generic_trade
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		available = {
+			date > 1953.1.1
+			custom_trigger_tooltip = {
+				tooltip = Indochina_Struggle_Diplomacy_Cooldown_TT
+				NOT = { has_global_flag = indochina_diplomacy_lock_profrance }
+			}
+		}
+		cost = 25
+		days_re_enable = 70
+		complete_effect = {
+			indochina_struggle_add_pro_france_diplomatic_points = yes
+			set_global_flag = { flag = indochina_diplomacy_lock_profrance value = 1 days = 45 }
+			add_stability = 0.02
+			add_war_support = -0.02
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				date > 1953.1.1
+			}
+		}
+	}
 
-    Indochina_Struggle_ProFra_Show_Of_Force = {
-        icon = generic_operation
-        visible = {
-            is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
-            indochina_struggle_diplomacy_window_trigger = yes
-        }
-        cost = 50
-        days_re_enable = 90
-        complete_effect = {
-            indochina_struggle_add_pro_france_military_points = yes
-            add_war_support = 0.02
-            add_stability = -0.01
-            army_experience = 5
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	Indochina_Struggle_ProFra_Show_Of_Force = {
+		icon = generic_operation
+		visible = {
+			is_in_array = { FRA.StruggleInvolvedNationsIndochinaProFrance = ROOT.id }
+			indochina_struggle_diplomacy_window_trigger = yes
+		}
+		cost = 50
+		days_re_enable = 90
+		complete_effect = {
+			indochina_struggle_add_pro_france_military_points = yes
+			add_war_support = 0.02
+			add_stability = -0.01
+			army_experience = 5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 	Indochina_Struggle_ProEth_Petition_The_Crown = {
 		icon = generic_civil_support

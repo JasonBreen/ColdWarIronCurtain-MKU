@@ -1147,7 +1147,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = VIE_Military_Southern_Victory
 				AND = {
-				    NOT = {
+					NOT = {
 						country_exists = VIN
 					}
 					NOT = {
@@ -1276,7 +1276,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-		    add_political_power = 25
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -2701,7 +2701,7 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-		    add_political_power = 50
+			add_political_power = 50
 			add_popularity = {
 				ideology = Social_Democratic
 				popularity = 0.05
@@ -2721,7 +2721,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-		    country_event = { id = VIE_Toan.1 hours = 12 }
+			country_event = { id = VIE_Toan.1 hours = 12 }
 		}
 	}
 	focus = {
@@ -2741,68 +2741,68 @@ focus_tree = {
 				popularity = 0.10
 			}
 			CAM = {
-			    add_timed_idea = {
+				add_timed_idea = {
 					idea = Social_Democratic_drift_5
 					days = 90
 				}
 			}
-            add_political_power = -50
-            # Annex Hoa-Hao
-    		set_variable = { VIE_Warlord_Status_4 = 4 }
-    		set_variable = { VIE_Warlord_Status_5 = 4 }
-    		set_variable = { VIE_Warlord_Status_6 = 4 }
-    		set_variable = { VIE_Warlord_Status_7 = 4 }
-    		set_variable = { VIE_Region_15_Faction = 1 } #15 - Kien Tuong
-    		set_variable = { VIE_Region_6_Faction = 1 }  #6 -   An Giang
-    		set_variable = { VIE_Region_7_Faction = 1 }  #7 -   Chau Doc
-    		set_variable = { VIE_Region_10_Faction = 1 } #10 - Sa Dec
-    		set_variable = { VIE_Region_11_Faction = 1 } #11 - Kien Phong
-    		if = {
-    			limit = {
-    				VIE = {
-    					NOT = {
-    						has_character = CCC_Nguyen_Giac_Ngo
-    						has_character = CCC_Ba_Cut
-    						has_character = CCC_Lam_Thanh_Nguyen
-    						has_character = CCC_Tran_Van_Soai
-    					}
-    				}
-    			}
-    			CCC = {
-    				CCC_Nguyen_Giac_Ngo = {
-    					set_nationality = VIE
-    				}
-    				CCC_Ba_Cut = {
-    					set_nationality = VIE
-    				}
-    				CCC_Lam_Thanh_Nguyen = {
-    					set_nationality = VIE
-    				}
-    				CCC_Tran_Van_Soai = {
-    					set_nationality = VIE
-    				}
-    			}
-    		}
-    		army_experience = 25
-    		add_command_power = 25
-    		every_owned_state = {
-    			limit = {
-    				has_dynamic_modifier = { modifier = Hoa_Hao_warlord_modifier }
-    			}
-    			remove_dynamic_modifier = {
-    				modifier = Hoa_Hao_warlord_modifier
-    			}
-    		}
-    		1285 = {
-    			add_extra_state_shared_building_slots = 2
-    			add_building_construction = {
-    				type = arms_factory
-    				level = 2
-    				instant_build = yes
-    			}
-    		}
-    		set_country_flag = integrated_hoa_hao
-    		custom_effect_tooltip = integrate_hoa_hao_TT
+			add_political_power = -50
+			# Annex Hoa-Hao
+			set_variable = { VIE_Warlord_Status_4 = 4 }
+			set_variable = { VIE_Warlord_Status_5 = 4 }
+			set_variable = { VIE_Warlord_Status_6 = 4 }
+			set_variable = { VIE_Warlord_Status_7 = 4 }
+			set_variable = { VIE_Region_15_Faction = 1 } #15 - Kien Tuong
+			set_variable = { VIE_Region_6_Faction = 1 }  #6 -   An Giang
+			set_variable = { VIE_Region_7_Faction = 1 }  #7 -   Chau Doc
+			set_variable = { VIE_Region_10_Faction = 1 } #10 - Sa Dec
+			set_variable = { VIE_Region_11_Faction = 1 } #11 - Kien Phong
+			if = {
+				limit = {
+					VIE = {
+						NOT = {
+							has_character = CCC_Nguyen_Giac_Ngo
+							has_character = CCC_Ba_Cut
+							has_character = CCC_Lam_Thanh_Nguyen
+							has_character = CCC_Tran_Van_Soai
+						}
+					}
+				}
+				CCC = {
+					CCC_Nguyen_Giac_Ngo = {
+						set_nationality = VIE
+					}
+					CCC_Ba_Cut = {
+						set_nationality = VIE
+					}
+					CCC_Lam_Thanh_Nguyen = {
+						set_nationality = VIE
+					}
+					CCC_Tran_Van_Soai = {
+						set_nationality = VIE
+					}
+				}
+			}
+			army_experience = 25
+			add_command_power = 25
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = Hoa_Hao_warlord_modifier }
+				}
+				remove_dynamic_modifier = {
+					modifier = Hoa_Hao_warlord_modifier
+				}
+			}
+			1285 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_country_flag = integrated_hoa_hao
+			custom_effect_tooltip = integrate_hoa_hao_TT
 		}
 	}
 	focus = {
@@ -2816,7 +2816,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-		    country_event = { id = VIE_Toan.2 hours = 12 }
+			country_event = { id = VIE_Toan.2 hours = 12 }
 		}
 	}
 	focus = {
@@ -2830,9 +2830,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-		    every_owned_state = {
+			every_owned_state = {
 				add_state_modifier = {
-				    modifier = {
+					modifier = {
 						compliance_gain = 0.15
 						resistance_decay = 0.15
 						local_resources = 0.15
@@ -2852,12 +2852,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-		    add_stability = -0.1
+			add_stability = -0.1
 			set_temp_variable = { money_to_gain = 1.5 }
 			add_money_with_tooltip_effect = yes
-    		add_to_variable = { Toan_Radicalism = 1 }
-            add_to_variable = { DanXa_SF = 0.02 }
-    		add_to_variable = { DanXa_RP = 0.02 }
+			add_to_variable = { Toan_Radicalism = 1 }
+			add_to_variable = { DanXa_SF = 0.02 }
+			add_to_variable = { DanXa_RP = 0.02 }
 		}
 	}
 	focus = {
@@ -2871,12 +2871,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-		    add_political_power = 25
+			add_political_power = 25
 			set_temp_variable = { favoritism_change = 5 }
 			VIE_Change_Main_Favoritism = yes
 			add_to_variable = { Toan_Radicalism = 1 }
-            add_to_variable = { DanXa_SF = 0.02 }
-    		add_to_variable = { DanXa_CG = -0.02 }
+			add_to_variable = { DanXa_SF = 0.02 }
+			add_to_variable = { DanXa_CG = -0.02 }
 		}
 	}
 	focus = {
@@ -2890,10 +2890,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-    		add_to_variable = { Toan_Radicalism = 1 }
-    		add_to_variable = { DanXa_RS = 0.02 }
-            add_tech_bonus = {
-                name = industrial_bonus
+			add_to_variable = { Toan_Radicalism = 1 }
+			add_to_variable = { DanXa_RS = 0.02 }
+			add_tech_bonus = {
+				name = industrial_bonus
 				bonus = 0.2
 				uses = 1
 				category = industry
@@ -2920,7 +2920,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-		    country_event = { id = VIE_Toan.3 hours = 12 }
+			country_event = { id = VIE_Toan.3 hours = 12 }
 		}
 	}
 	focus = {
@@ -2937,7 +2937,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
-		    country_event = { id = VIE_Toan.4 hours = 12 }
+			country_event = { id = VIE_Toan.4 hours = 12 }
 		}
 	}
 	focus = {

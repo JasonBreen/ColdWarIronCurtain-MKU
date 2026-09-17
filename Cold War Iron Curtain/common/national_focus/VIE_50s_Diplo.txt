@@ -294,12 +294,12 @@ shared_focus = {
 	x = 1
 	y = 1
 	available = {
-	    OR = {
+		OR = {
 			controls_state = 1760
 		VIN = {
 			controls_state = 1760
 		}
-        }
+		}
 	}
 	completion_reward = {
 		hidden_effect = {
@@ -384,13 +384,13 @@ shared_focus = {
 	y = 1
 	available = {
 		OR = {
-		    AND = {
-			    has_country_flag = VIE_PM_Nguyen_Phan_Long
-			    has_completed_focus = VIE_Long_Accept_French_Rulership
+			AND = {
+				has_country_flag = VIE_PM_Nguyen_Phan_Long
+				has_completed_focus = VIE_Long_Accept_French_Rulership
 			}
 			AND = {
-			    has_country_flag = VIE_PM_Tran_Van_Huu
-			    has_completed_focus = VIE_Huu_Winning_French_Favoritism
+				has_country_flag = VIE_PM_Tran_Van_Huu
+				has_completed_focus = VIE_Huu_Winning_French_Favoritism
 			}
 		}
 	}
@@ -478,7 +478,7 @@ shared_focus = {
 		}
 	}
 	completion_reward = {
-	    add_political_power = 25
+		add_political_power = 25
 	}
 }
 shared_focus = {

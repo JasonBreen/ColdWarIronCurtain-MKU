@@ -2017,15 +2017,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-		    OR = {
-    		    check_variable = { VIE_STATE_DISPLAY = 2 }
-    			check_variable = { VIE_STATE_DISPLAY = 14 }
-    			check_variable = { VIE_STATE_DISPLAY = 19 }
-    			check_variable = { VIE_STATE_DISPLAY = 24 }
-    			check_variable = { VIE_STATE_DISPLAY = 25 }
-    			check_variable = { VIE_STATE_DISPLAY = 27 }
-    			check_variable = { VIE_STATE_DISPLAY = 35 }
-    			check_variable = { VIE_STATE_DISPLAY = 36 }
+			OR = {
+				check_variable = { VIE_STATE_DISPLAY = 2 }
+				check_variable = { VIE_STATE_DISPLAY = 14 }
+				check_variable = { VIE_STATE_DISPLAY = 19 }
+				check_variable = { VIE_STATE_DISPLAY = 24 }
+				check_variable = { VIE_STATE_DISPLAY = 25 }
+				check_variable = { VIE_STATE_DISPLAY = 27 }
+				check_variable = { VIE_STATE_DISPLAY = 35 }
+				check_variable = { VIE_STATE_DISPLAY = 36 }
 			}
 		}
 		localization_key = GetVieOpenDiplomacyReq2_tt
@@ -2127,15 +2127,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-		    OR = {
-    		    check_variable = { VIE_STATE_DISPLAY = 2 }
-    			check_variable = { VIE_STATE_DISPLAY = 14 }
-    			check_variable = { VIE_STATE_DISPLAY = 19 }
-    			check_variable = { VIE_STATE_DISPLAY = 24 }
-    			check_variable = { VIE_STATE_DISPLAY = 25 }
-    			check_variable = { VIE_STATE_DISPLAY = 27 }
-    			check_variable = { VIE_STATE_DISPLAY = 35 }
-    			check_variable = { VIE_STATE_DISPLAY = 36 }
+			OR = {
+				check_variable = { VIE_STATE_DISPLAY = 2 }
+				check_variable = { VIE_STATE_DISPLAY = 14 }
+				check_variable = { VIE_STATE_DISPLAY = 19 }
+				check_variable = { VIE_STATE_DISPLAY = 24 }
+				check_variable = { VIE_STATE_DISPLAY = 25 }
+				check_variable = { VIE_STATE_DISPLAY = 27 }
+				check_variable = { VIE_STATE_DISPLAY = 35 }
+				check_variable = { VIE_STATE_DISPLAY = 36 }
 			}
 		}
 		localization_key = GetViePromiseFundsReq2_tt

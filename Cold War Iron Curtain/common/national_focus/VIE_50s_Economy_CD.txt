@@ -465,7 +465,7 @@ shared_focus = {
 		}
 		swap_ideas = {
 			remove_idea = fiscal_collapse_3
-    		add_idea = Dong_Currency
+			add_idea = Dong_Currency
 		}
 		custom_effect_tooltip = Dong_Currency_Adopted_tt
 	}

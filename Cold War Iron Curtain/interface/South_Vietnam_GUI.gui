@@ -1,5 +1,5 @@
 guiTypes = {
-   #Full GUI
+	#Full GUI
 	containerWindowType = {
 		name = "VIE_Sectarian_Conflict_GUI"
 		position = {x=300 y=75}
@@ -518,7 +518,7 @@ guiTypes = {
 			position = { x = 63 y = 275 }
 			pdx_tooltip = LOYALTY_TT
 		}
- 		iconType = {
+		iconType = {
 			name = "Sect_Slot_1_Bar_2_Frame"
 			spriteType ="GFX_electoral_progressbar_kor_frame"
 			position = { x = 98 y = 275 }
@@ -569,7 +569,7 @@ guiTypes = {
 			position = { x = 188 y = 275 }
 			pdx_tooltip = LOYALTY_TT
 		}
- 		iconType = {
+		iconType = {
 			name = "Sect_Slot_2_Bar_2_Frame"
 			spriteType ="GFX_electoral_progressbar_kor_frame"
 			position = { x = 223 y = 275 }
@@ -621,7 +621,7 @@ guiTypes = {
 			position = { x = 313 y = 275 }
 			pdx_tooltip = LOYALTY_TT
 		}
- 		iconType = {
+		iconType = {
 			name = "Sect_Slot_3_Bar_2_Frame"
 			spriteType ="GFX_electoral_progressbar_kor_frame"
 			position = { x = 348 y = 275 }
@@ -673,7 +673,7 @@ guiTypes = {
 			position = { x = 438 y = 275 }
 			pdx_tooltip = LOYALTY_TT
 		}
- 		iconType = {
+		iconType = {
 			name = "Sect_Slot_4_Bar_2_Frame"
 			spriteType ="GFX_electoral_progressbar_kor_frame"
 			position = { x = 473 y = 275 }
@@ -725,13 +725,13 @@ guiTypes = {
 			position = { x = 563 y = 275 }
 			pdx_tooltip = LOYALTY_TT
 		}
- 		iconType = {
+		iconType = {
 			name = "Sect_Slot_5_Bar_2_Frame"
 			spriteType ="GFX_electoral_progressbar_kor_frame"
 			position = { x = 598 y = 275 }
 			pdx_tooltip = ANNIHILATION_TT
 		}
- 		iconType = {
+		iconType = {
 			name = "Warlord_Chart"
 			spriteType ="GFX_VIE_Chart_Frame"
 			position = { x = 60 y = 571 } #+33
@@ -1140,10 +1140,10 @@ guiTypes = {
 		#   maxHeight = 25
 		#   format = left
 		#}
-   }
+	}
 
 
-    containerWindowType = {
+	containerWindowType = {
 		name = "vietnam_factionalism_decisions_list_menu"
 		position = { x = 1135 y = 38 }
 		size = { width = 195 height = 360 }
@@ -1376,7 +1376,7 @@ guiTypes = {
 			maxHeight = 30
 			format = center
 		}
-    }
+	}
 	containerWindowType = {
 		name = "VIE_Conflict_Prompt"
 		position = { x = 550 y = 200 }
@@ -1702,7 +1702,7 @@ guiTypes = {
 				position = { x = -154 y = 59 }
 				pdx_tooltip = "VIE_State_35_tt"
 			}
-            buttonType = {
+			buttonType = {
 				name = "VIE_State_36"
 				spriteType = "GFX_VIE_State_36"
 				position = { x = -100 y = 239 }

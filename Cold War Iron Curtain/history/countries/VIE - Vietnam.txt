@@ -47,7 +47,7 @@ set_technology = {
 
 ##### INFRA #####
 	ww_infra = 1
-        basic_train = 1
+	basic_train = 1
 
 
 ##Infantry##
@@ -838,8 +838,8 @@ add_to_array = { influence_array = SIA.id }
 add_to_array = { influence_array_val = 50 }
 startup_influence = yes
 add_to_array = {
-    array = SOV.disputed_countries
-    value = this
+	array = SOV.disputed_countries
+	value = this
 }
 add_dynamic_modifier = {
 	modifier = VIE_disorganized_land_ownership

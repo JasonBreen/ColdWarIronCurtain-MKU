@@ -1287,7 +1287,7 @@ scripted_gui = {
 		}
 		ai_test_interval = 24
 		ai_max_weight_taken_per_test = 1
-        ai_weights = {
+		ai_weights = {
 			VIE_State_1_click = {
 				ai_will_do = {
 					base = 1
@@ -2182,7 +2182,7 @@ scripted_gui = {
 					}
 				}
 			}
-        }
+		}
 
 		triggers = {
 			SendTroops_Option_click_enabled = {
@@ -2505,11 +2505,11 @@ scripted_gui = {
 		}
 		effects = {
 			okay_button_click = {
-    			set_country_flag = {
-                    flag = VIE_ProFrench_Coup_Warning_Dismissed
-                    days = 14 # 2 week cooldown
-                    value = 1
-                }
+				set_country_flag = {
+					flag = VIE_ProFrench_Coup_Warning_Dismissed
+					days = 14 # 2 week cooldown
+					value = 1
+				}
 			}
 		}
 	}

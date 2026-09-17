@@ -10,16 +10,16 @@ add_namespace = SWF_Indochina_War
 # Opening campaign
 # ----------------------------------------------------------------
 country_event = {
-    id = SWF_Indochina_War.0
-    title = SWF_Indochina_War.0.t
-    desc = SWF_Indochina_War.0.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.0
+	title = SWF_Indochina_War.0.t
+	desc = SWF_Indochina_War.0.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.0.a
-    }
+	option = {
+		name = SWF_Indochina_War.0.a
+	}
 }
 
 
@@ -27,154 +27,154 @@ country_event = {
 # Northwest / Muong offensive
 # ----------------------------------------------------------------
 country_event = {
-    id = SWF_Indochina_War.1
-    title = SWF_Indochina_War.1.t
-    desc = SWF_Indochina_War.1.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.1
+	title = SWF_Indochina_War.1.t
+	desc = SWF_Indochina_War.1.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
-        hidden_effect = {
-        if = {
-            limit = {
-                tag = VIN
-            }
-                clr_country_flag = VIN_Campaign_Hoa_Binh_Active
-                set_country_flag = VIN_Campaign_Cooldown_Hoa_Binh
-                if = {
-                    limit = {
-                        TAM = { exists = yes }
-                    }
-                    annex_country = {	# Hoa Binh is the Muong federation's only state, so taking it ends the tag
-                        target = TAM
-                        transfer_troops = no
-                    }
-                }
-                if = {
-                    limit = {
-                        NOT = { has_global_flag = Indochina_War_Over }
-                    }
-                    FRA = {
-                        add_to_variable = {
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = VIN
+				}
+				clr_country_flag = VIN_Campaign_Hoa_Binh_Active
+				set_country_flag = VIN_Campaign_Cooldown_Hoa_Binh
+				if = {
+					limit = {
+						TAM = { exists = yes }
+					}
+					annex_country = {	# Hoa Binh is the Muong federation's only state, so taking it ends the tag
+						target = TAM
+						transfer_troops = no
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_global_flag = Indochina_War_Over }
+					}
+					FRA = {
+						add_to_variable = {
 							StruggleInvolvedNationsIndochinaCommunistScore = 50
-                            tooltip = Add_to_Communist_Victory_Points_TT
-                        }
-                        add_to_variable = {
-                            global.Indochina_War_Next_Phase_A_Points = 50
-                            tooltip = Add_to_Escalation_Phase_TT
-                        }
-                    }
-                }
-            }
-        }
-    }
+							tooltip = Add_to_Communist_Victory_Points_TT
+						}
+						add_to_variable = {
+							global.Indochina_War_Next_Phase_A_Points = 50
+							tooltip = Add_to_Escalation_Phase_TT
+						}
+					}
+				}
+			}
+		}
+	}
 
-    option = {
-        name = SWF_Indochina_War.1.a
-    }
+	option = {
+		name = SWF_Indochina_War.1.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.2
-    title = SWF_Indochina_War.2.t
-    desc = SWF_Indochina_War.2.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.2
+	title = SWF_Indochina_War.2.t
+	desc = SWF_Indochina_War.2.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
-        if = {
-            limit = {
-                tag = VIN
-            }
-            clr_country_flag = VIN_Campaign_Hoa_Binh_Active
-            set_country_flag = VIN_Campaign_Cooldown_Hoa_Binh
-            if = {
-                limit = {
-                    NOT = { has_global_flag = Indochina_War_Over }
-                }
-            FRA = {
-                    add_to_variable = {
+	immediate = {
+		if = {
+			limit = {
+				tag = VIN
+			}
+			clr_country_flag = VIN_Campaign_Hoa_Binh_Active
+			set_country_flag = VIN_Campaign_Cooldown_Hoa_Binh
+			if = {
+				limit = {
+					NOT = { has_global_flag = Indochina_War_Over }
+				}
+				FRA = {
+					add_to_variable = {
 						StruggleInvolvedNationsIndochinaCommunistScore = -25
-                        tooltip = Add_to_Communist_Victory_Points_TT
-                }
-                    add_to_variable = {
-                        global.Indochina_War_Next_Phase_A_Points = 25
-                        tooltip = Add_to_Escalation_Phase_TT
-                }
-            }
-            }
-        }
-        hidden_effect = {
-            vin_restore_tam_to_french_command = yes
-            TAM = {
-                leave_faction = yes
+						tooltip = Add_to_Communist_Victory_Points_TT
+					}
+					add_to_variable = {
+						global.Indochina_War_Next_Phase_A_Points = 25
+						tooltip = Add_to_Escalation_Phase_TT
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			vin_restore_tam_to_french_command = yes
+			TAM = {
+				leave_faction = yes
 
 
-                set_politics = {
-                    ruling_party = nationalist
-                    last_election = "1949.1.1"
-                    election_frequency = 48
-                    elections_allowed = no
-                }
+				set_politics = {
+					ruling_party = nationalist
+					last_election = "1949.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
 
-                set_popularities = {
-                    maoism = 0
-                    communism = 0
-                    trotskyism = 0
-                    socialist = 0
-                    Social_Democratic = 0
+				set_popularities = {
+					maoism = 0
+					communism = 0
+					trotskyism = 0
+					socialist = 0
+					Social_Democratic = 0
 
-                    democratic = 0
-                    Social_Liberalism = 0
-                    liberal = 0
-                    centrist = 0
+					democratic = 0
+					Social_Liberalism = 0
+					liberal = 0
+					centrist = 0
 
-                    Liberal_Conservatism = 0
-                    Christian_Democratic = 0
-                    conservative = 0
+					Liberal_Conservatism = 0
+					Christian_Democratic = 0
+					conservative = 0
 
-                    neutrality = 0
-                    nationalist = 100
-                    monarchism = 0
-                    fascism = 0
+					neutrality = 0
+					nationalist = 100
+					monarchism = 0
+					fascism = 0
 
-                    islamism = 0
-                    radical_shiaism = 0
-                    Salafism = 0
-                }
-            }
-        }
-    }
+					islamism = 0
+					radical_shiaism = 0
+					Salafism = 0
+				}
+			}
+		}
+	}
 
-    option = {
-        name = SWF_Indochina_War.2.a
-    }
+	option = {
+		name = SWF_Indochina_War.2.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.3
-    title = SWF_Indochina_War.3.t
-    desc = SWF_Indochina_War.3.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.3
+	title = SWF_Indochina_War.3.t
+	desc = SWF_Indochina_War.3.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.3.a
-    }
+	option = {
+		name = SWF_Indochina_War.3.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.4
-    title = SWF_Indochina_War.4.t
-    desc = SWF_Indochina_War.4.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.4
+	title = SWF_Indochina_War.4.t
+	desc = SWF_Indochina_War.4.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
+	immediate = {
 		if = {	# shared cancel event: every live campaign exits through the common resolver
 			limit = {
 				tag = VIN
@@ -183,19 +183,19 @@ country_event = {
 			set_temp_variable = { vin_camp_outcome = 3 }
 			vin_campaign_resolve = yes
 		}
-        if = {	# the relief battalions go home with the Tai whatever the outcome
-            limit = {
-                country_exists = TAI
-            }
-            TAI = {
-                fre_tai_highlands_relief_disband = yes
-            }
-        }
-    }
+		if = {	# the relief battalions go home with the Tai whatever the outcome
+			limit = {
+				country_exists = TAI
+			}
+			TAI = {
+				fre_tai_highlands_relief_disband = yes
+			}
+		}
+	}
 
-    option = {
-        name = SWF_Indochina_War.4.a
-    }
+	option = {
+		name = SWF_Indochina_War.4.a
+	}
 }
 
 
@@ -203,164 +203,164 @@ country_event = {
 # Tay Autonomous Region
 # ----------------------------------------------------------------
 country_event = {
-    id = SWF_Indochina_War.5
-    title = SWF_Indochina_War.5.t
-    desc = SWF_Indochina_War.5.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.5
+	title = SWF_Indochina_War.5.t
+	desc = SWF_Indochina_War.5.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
-        if = {
-            limit = {
-                tag = VIN
-            }
-            clr_country_flag = VIN_Campaign_Tay_Bac_Active
-            set_country_flag = VIN_Campaign_Cooldown_Tay_Bac
-            if = {
-                limit = {
-                    TAI = { owns_state = 671 }
-                }
-                transfer_state = 1761	# the highlands fall, but the Tai regime holds on in the Dien Bien Phu valley
-                TAI = {
-                    set_capital = { state = 671 }
-                }
-            }
-            else_if = {
-                limit = {
-                TAI = { exists = yes }
-            }
-                annex_country = {	# the valley is already lost, so Hoang Lien Son was the federation's last state
-                target = TAI
-                transfer_troops = no
-                }
-            }
-            if = {
-                limit = {
-                    NOT = { has_global_flag = Indochina_War_Over }
-                }
-                FRA = {
-                    add_to_variable = {
+	immediate = {
+		if = {
+			limit = {
+				tag = VIN
+			}
+			clr_country_flag = VIN_Campaign_Tay_Bac_Active
+			set_country_flag = VIN_Campaign_Cooldown_Tay_Bac
+			if = {
+				limit = {
+					TAI = { owns_state = 671 }
+				}
+				transfer_state = 1761	# the highlands fall, but the Tai regime holds on in the Dien Bien Phu valley
+				TAI = {
+					set_capital = { state = 671 }
+				}
+			}
+			else_if = {
+				limit = {
+					TAI = { exists = yes }
+				}
+				annex_country = {	# the valley is already lost, so Hoang Lien Son was the federation's last state
+					target = TAI
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = Indochina_War_Over }
+				}
+				FRA = {
+					add_to_variable = {
 						StruggleInvolvedNationsIndochinaCommunistScore = 50
-                        tooltip = Add_to_Communist_Victory_Points_TT
-                    }
-                    add_to_variable = {
-                        global.Indochina_War_Next_Phase_A_Points = 50
-                        tooltip = Add_to_Escalation_Phase_TT
-                    }
-                }
-            }
-        }
-        hidden_effect = {
-            if = {
-                limit = {
-                    country_exists = TAI
-                }
-                TAI = {
-                    fre_tai_highlands_relief_disband = yes
-                }
-                vin_restore_tai_to_french_command = yes	# the rump federation shelters back under French command while CEFEO digs in around the airstrip
-                if = {
-                    limit = {
-                        country_exists = FRE
-                    }
-                    FRE = {
-                        give_guarantee = TAI
-                    }
-                }
-            }
-        }
-    }
+						tooltip = Add_to_Communist_Victory_Points_TT
+					}
+					add_to_variable = {
+						global.Indochina_War_Next_Phase_A_Points = 50
+						tooltip = Add_to_Escalation_Phase_TT
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = TAI
+				}
+				TAI = {
+					fre_tai_highlands_relief_disband = yes
+				}
+				vin_restore_tai_to_french_command = yes	# the rump federation shelters back under French command while CEFEO digs in around the airstrip
+				if = {
+					limit = {
+						country_exists = FRE
+					}
+					FRE = {
+						give_guarantee = TAI
+					}
+				}
+			}
+		}
+	}
 
-    option = {
-        name = SWF_Indochina_War.5.a
-    }
+	option = {
+		name = SWF_Indochina_War.5.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.6
-    title = SWF_Indochina_War.6.t
-    desc = SWF_Indochina_War.6.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.6
+	title = SWF_Indochina_War.6.t
+	desc = SWF_Indochina_War.6.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
-        if = {
-            limit = {
-                tag = VIN
-            }
-            clr_country_flag = VIN_Campaign_Tay_Bac_Active
-            set_country_flag = VIN_Campaign_Cooldown_Tay_Bac
-            if = {
-                limit = {
-                    NOT = { has_global_flag = Indochina_War_Over }
-                }
-            FRA = {
-                    add_to_variable = {
+	immediate = {
+		if = {
+			limit = {
+				tag = VIN
+			}
+			clr_country_flag = VIN_Campaign_Tay_Bac_Active
+			set_country_flag = VIN_Campaign_Cooldown_Tay_Bac
+			if = {
+				limit = {
+					NOT = { has_global_flag = Indochina_War_Over }
+				}
+				FRA = {
+					add_to_variable = {
 						StruggleInvolvedNationsIndochinaCommunistScore = -25
-                        tooltip = Add_to_Communist_Victory_Points_TT
-            }
-                    add_to_variable = {
-                        global.Indochina_War_Next_Phase_A_Points = 25
-                        tooltip = Add_to_Escalation_Phase_TT
-            }
-        }
-            }
-        }
-        hidden_effect = {
-            if = {
-                limit = {
-                    country_exists = TAI
-                }
-                TAI = {
-                    fre_tai_highlands_relief_disband = yes
-                }
-            }
-            vin_restore_tai_to_french_command = yes
-        TAI = {
-            leave_faction = yes
+						tooltip = Add_to_Communist_Victory_Points_TT
+					}
+					add_to_variable = {
+						global.Indochina_War_Next_Phase_A_Points = 25
+						tooltip = Add_to_Escalation_Phase_TT
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = TAI
+				}
+				TAI = {
+					fre_tai_highlands_relief_disband = yes
+				}
+			}
+			vin_restore_tai_to_french_command = yes
+			TAI = {
+				leave_faction = yes
 
 
-            set_politics = {
-                ruling_party = nationalist
-                last_election = "1949.1.1"
-                election_frequency = 48
-                elections_allowed = no
-            }
+				set_politics = {
+					ruling_party = nationalist
+					last_election = "1949.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
 
-            set_popularities = {
-                maoism = 0
-                communism = 0
-                trotskyism = 0
-                socialist = 0
-                Social_Democratic = 0
+				set_popularities = {
+					maoism = 0
+					communism = 0
+					trotskyism = 0
+					socialist = 0
+					Social_Democratic = 0
 
-                democratic = 0
-                Social_Liberalism = 0
-                liberal = 0
-                centrist = 0
+					democratic = 0
+					Social_Liberalism = 0
+					liberal = 0
+					centrist = 0
 
-                Liberal_Conservatism = 0
-                Christian_Democratic = 0
-                conservative = 0
+					Liberal_Conservatism = 0
+					Christian_Democratic = 0
+					conservative = 0
 
-                neutrality = 0
-                nationalist = 100
-                monarchism = 0
-                fascism = 0
+					neutrality = 0
+					nationalist = 100
+					monarchism = 0
+					fascism = 0
 
-                islamism = 0
-                radical_shiaism = 0
-                Salafism = 0
-            }
-        }
-        }
-    }
+					islamism = 0
+					radical_shiaism = 0
+					Salafism = 0
+				}
+			}
+		}
+	}
 
-    option = {
-        name = SWF_Indochina_War.6.a
-    }
+	option = {
+		name = SWF_Indochina_War.6.a
+	}
 }
 
 
@@ -368,42 +368,42 @@ country_event = {
 # Defender outcomes - these fire on Tai and Muong, never on Hanoi
 # ----------------------------------------------------------------
 country_event = {
-    id = SWF_Indochina_War.11
-    title = SWF_Indochina_War.11.t
-    desc = SWF_Indochina_War.11.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.11
+	title = SWF_Indochina_War.11.t
+	desc = SWF_Indochina_War.11.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.11.a
-    }
+	option = {
+		name = SWF_Indochina_War.11.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.12
-    title = SWF_Indochina_War.12.t
-    desc = SWF_Indochina_War.12.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.12
+	title = SWF_Indochina_War.12.t
+	desc = SWF_Indochina_War.12.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.12.a
-    }
+	option = {
+		name = SWF_Indochina_War.12.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.13
-    title = SWF_Indochina_War.13.t
-    desc = SWF_Indochina_War.13.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.13
+	title = SWF_Indochina_War.13.t
+	desc = SWF_Indochina_War.13.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.13.a
-    }
+	option = {
+		name = SWF_Indochina_War.13.a
+	}
 }
 
 
@@ -412,234 +412,234 @@ country_event = {
 # the French airhead. This chain only runs when the CEFEO never fortified it.
 # ----------------------------------------------------------------
 country_event = {
-    id = SWF_Indochina_War.14
-    hidden = yes
+	id = SWF_Indochina_War.14
+	hidden = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
-        if = {
-            limit = {
-                tag = VIN
-                country_exists = TAI
-                NOT = { owns_state = 671 }
-                NOT = { date > 1956.1.1 }	# hard stop: past this the war is decided elsewhere
-                VIN_indochina_campaign_window_trigger = yes
-                NOT = {
-                    AND = {
-                        country_exists = FRE
-                        FRE = { has_country_flag = FRE_Dien_Bien_Phu_Established }
-                    }
-                }
-            }
-            if = {
-                limit = { # Castor may still establish the camp; wait only while its result is unresolved
-                    country_exists = FRE
-                    FRE = {
-                        OR = {
-                            has_country_flag = FRE_Mission_Operation_Castor_Activated
-                            AND = {
-                                has_country_flag = FRE_Operation_Castor_Launched
-                                NOT = { date > 1954.9.1 }
-                                NOT = {
-                                    OR = {
-                                        has_country_flag = FRE_Operation_Castor_Result_Success
-                                        has_country_flag = FRE_Operation_Castor_Result_Failure
-                                        has_country_flag = FRE_Operation_Castor_Result_Superseded
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                country_event = { id = SWF_Indochina_War.14 days = 60 }
-            }
-            else_if = {
-                limit = {	# the divisions are not in position, or another campaign is still in the field
-                    OR = {
-                        NOT = { owns_state = 1761 }
-                        NOT = { VIN_no_campaign_running_trigger = yes }
-                        NOT = { VIN_campaign_cooldown_ready_trigger = yes }
-                    }
-                }
-                country_event = { id = SWF_Indochina_War.14 days = 45 }
-            }
-            else = {
-                country_event = { id = SWF_Indochina_War.17 days = 1 }
-            }
-        }
-    }
+	immediate = {
+		if = {
+			limit = {
+				tag = VIN
+				country_exists = TAI
+				NOT = { owns_state = 671 }
+				NOT = { date > 1956.1.1 }	# hard stop: past this the war is decided elsewhere
+				VIN_indochina_campaign_window_trigger = yes
+				NOT = {
+					AND = {
+						country_exists = FRE
+						FRE = { has_country_flag = FRE_Dien_Bien_Phu_Established }
+					}
+				}
+			}
+			if = {
+				limit = { # Castor may still establish the camp; wait only while its result is unresolved
+					country_exists = FRE
+					FRE = {
+						OR = {
+							has_country_flag = FRE_Mission_Operation_Castor_Activated
+							AND = {
+								has_country_flag = FRE_Operation_Castor_Launched
+								NOT = { date > 1954.9.1 }
+								NOT = {
+									OR = {
+										has_country_flag = FRE_Operation_Castor_Result_Success
+										has_country_flag = FRE_Operation_Castor_Result_Failure
+										has_country_flag = FRE_Operation_Castor_Result_Superseded
+									}
+								}
+							}
+						}
+					}
+				}
+				country_event = { id = SWF_Indochina_War.14 days = 60 }
+			}
+			else_if = {
+				limit = {	# the divisions are not in position, or another campaign is still in the field
+					OR = {
+						NOT = { owns_state = 1761 }
+						NOT = { VIN_no_campaign_running_trigger = yes }
+						NOT = { VIN_campaign_cooldown_ready_trigger = yes }
+					}
+				}
+				country_event = { id = SWF_Indochina_War.14 days = 45 }
+			}
+			else = {
+				country_event = { id = SWF_Indochina_War.17 days = 1 }
+			}
+		}
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.17
-    title = SWF_Indochina_War.17.t
-    desc = SWF_Indochina_War.17.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.17
+	title = SWF_Indochina_War.17.t
+	desc = SWF_Indochina_War.17.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    trigger = {	# re-checked on arrival: a scheduled copy must not fire into a valley the French have since taken
-        tag = VIN
-        country_exists = TAI
-        NOT = { owns_state = 671 }
-        owns_state = 1761
-        VIN_indochina_campaign_window_trigger = yes
-        VIN_no_campaign_running_trigger = yes
-        VIN_campaign_cooldown_ready_trigger = yes
-        NOT = {
-            AND = {
-                country_exists = FRE
-                FRE = { has_country_flag = FRE_Dien_Bien_Phu_Established }
-            }
-        }
-    }
+	trigger = {	# re-checked on arrival: a scheduled copy must not fire into a valley the French have since taken
+		tag = VIN
+		country_exists = TAI
+		NOT = { owns_state = 671 }
+		owns_state = 1761
+		VIN_indochina_campaign_window_trigger = yes
+		VIN_no_campaign_running_trigger = yes
+		VIN_campaign_cooldown_ready_trigger = yes
+		NOT = {
+			AND = {
+				country_exists = FRE
+				FRE = { has_country_flag = FRE_Dien_Bien_Phu_Established }
+			}
+		}
+	}
 
-    option = {	# take the valley
-        name = SWF_Indochina_War.17.a
-        ai_chance = { base = 85 }
-        if = {
-            limit = {
-                country_exists = FRE
-            }
-            fre_tai_highlands_relief = yes
-            fre_dbp_fortify_camp = yes	# the valley is dug in: province 4529 is the objective, not the state
-        }
-        set_country_flag = VIN_Campaign_Dien_Bien_Active
-        set_temp_variable = { vin_camp_id = 3 }
-        vin_campaign_begin = yes
-        custom_effect_tooltip = VIN_Camp_War_Dien_Bien_tt
-        vin_campaign_declare_war = yes
-        if = {
-            limit = {
-                NOT = { has_global_flag = Indochina_War_Over }
-            }
-            FRA = {
-                add_to_variable = {
+	option = {	# take the valley
+		name = SWF_Indochina_War.17.a
+		ai_chance = { base = 85 }
+		if = {
+			limit = {
+				country_exists = FRE
+			}
+			fre_tai_highlands_relief = yes
+			fre_dbp_fortify_camp = yes	# the valley is dug in: province 4529 is the objective, not the state
+		}
+		set_country_flag = VIN_Campaign_Dien_Bien_Active
+		set_temp_variable = { vin_camp_id = 3 }
+		vin_campaign_begin = yes
+		custom_effect_tooltip = VIN_Camp_War_Dien_Bien_tt
+		vin_campaign_declare_war = yes
+		if = {
+			limit = {
+				NOT = { has_global_flag = Indochina_War_Over }
+			}
+			FRA = {
+				add_to_variable = {
 					StruggleInvolvedNationsIndochinaCommunistScore = 15
-                    tooltip = Add_to_Communist_Victory_Points_TT
-                }
-                add_to_variable = {
+					tooltip = Add_to_Communist_Victory_Points_TT
+				}
+				add_to_variable = {
 					global.Indochina_War_Next_Phase_A_Points = 25
-                    tooltip = Add_to_Escalation_Phase_TT
-                }
-            }
-        }
-    }
+					tooltip = Add_to_Escalation_Phase_TT
+				}
+			}
+		}
+	}
 
-    option = {	# leave the highlands alone
-        name = SWF_Indochina_War.17.b
-        ai_chance = { base = 15 }
-    }
+	option = {	# leave the highlands alone
+		name = SWF_Indochina_War.17.b
+		ai_chance = { base = 15 }
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.15
-    title = SWF_Indochina_War.15.t
-    desc = SWF_Indochina_War.15.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.15
+	title = SWF_Indochina_War.15.t
+	desc = SWF_Indochina_War.15.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
-        if = {
-            limit = {
-                tag = VIN
-            }
-            clr_country_flag = VIN_Campaign_Dien_Bien_Active
-            set_country_flag = VIN_Campaign_Cooldown_Dien_Bien
-            if = {
-                limit = {
-                    TAI = { exists = yes }
-                }
-                annex_country = {	# the valley is the federation's last state
-                    target = TAI
-                    transfer_troops = no
-                }
-            }
-            if = {
-                limit = {
-                    NOT = { has_global_flag = Indochina_War_Over }
-                }
-                FRA = {
-                    add_to_variable = {
+	immediate = {
+		if = {
+			limit = {
+				tag = VIN
+			}
+			clr_country_flag = VIN_Campaign_Dien_Bien_Active
+			set_country_flag = VIN_Campaign_Cooldown_Dien_Bien
+			if = {
+				limit = {
+					TAI = { exists = yes }
+				}
+				annex_country = {	# the valley is the federation's last state
+					target = TAI
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = Indochina_War_Over }
+				}
+				FRA = {
+					add_to_variable = {
 						StruggleInvolvedNationsIndochinaCommunistScore = 50
-                        tooltip = Add_to_Communist_Victory_Points_TT
-                    }
-                    add_to_variable = {
-                        global.Indochina_War_Next_Phase_A_Points = 50
-                        tooltip = Add_to_Escalation_Phase_TT
-                    }
-                }
-            }
-        }
-    }
+						tooltip = Add_to_Communist_Victory_Points_TT
+					}
+					add_to_variable = {
+						global.Indochina_War_Next_Phase_A_Points = 50
+						tooltip = Add_to_Escalation_Phase_TT
+					}
+				}
+			}
+		}
+	}
 
-    option = {
-        name = SWF_Indochina_War.15.a
-    }
+	option = {
+		name = SWF_Indochina_War.15.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.16
-    title = SWF_Indochina_War.16.t
-    desc = SWF_Indochina_War.16.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.16
+	title = SWF_Indochina_War.16.t
+	desc = SWF_Indochina_War.16.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    immediate = {
-        if = {
-            limit = {
-                tag = VIN
-            }
-            clr_country_flag = VIN_Campaign_Dien_Bien_Active
-            set_country_flag = VIN_Campaign_Cooldown_Dien_Bien
-            if = {
-                limit = {
-                    NOT = { has_global_flag = Indochina_War_Over }
-                }
-                FRA = {
-                    add_to_variable = {
+	immediate = {
+		if = {
+			limit = {
+				tag = VIN
+			}
+			clr_country_flag = VIN_Campaign_Dien_Bien_Active
+			set_country_flag = VIN_Campaign_Cooldown_Dien_Bien
+			if = {
+				limit = {
+					NOT = { has_global_flag = Indochina_War_Over }
+				}
+				FRA = {
+					add_to_variable = {
 						StruggleInvolvedNationsIndochinaCommunistScore = -25
-                        tooltip = Add_to_Communist_Victory_Points_TT
-                    }
-                    add_to_variable = {
-                        global.Indochina_War_Next_Phase_A_Points = 25
-                        tooltip = Add_to_Escalation_Phase_TT
-                    }
-                }
-            }
-        }
-        hidden_effect = {
-            if = {
-                limit = {
-                    country_exists = TAI
-                }
-                TAI = {
-                    fre_tai_highlands_relief_disband = yes
-                }
-                vin_restore_tai_to_french_command = yes
-            }
-        }
-    }
+						tooltip = Add_to_Communist_Victory_Points_TT
+					}
+					add_to_variable = {
+						global.Indochina_War_Next_Phase_A_Points = 25
+						tooltip = Add_to_Escalation_Phase_TT
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = TAI
+				}
+				TAI = {
+					fre_tai_highlands_relief_disband = yes
+				}
+				vin_restore_tai_to_french_command = yes
+			}
+		}
+	}
 
-    option = {
-        name = SWF_Indochina_War.16.a
-    }
+	option = {
+		name = SWF_Indochina_War.16.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.18
-    title = SWF_Indochina_War.18.t
-    desc = SWF_Indochina_War.18.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.18
+	title = SWF_Indochina_War.18.t
+	desc = SWF_Indochina_War.18.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.18.a
-    }
+	option = {
+		name = SWF_Indochina_War.18.a
+	}
 }
 
 
@@ -648,55 +648,55 @@ country_event = {
 # campaign and took over the .1-.4 outcome set
 # ----------------------------------------------------------------
 country_event = {
-    id = SWF_Indochina_War.7
-    title = SWF_Indochina_War.7.t
-    desc = SWF_Indochina_War.7.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.7
+	title = SWF_Indochina_War.7.t
+	desc = SWF_Indochina_War.7.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.7.a
-    }
+	option = {
+		name = SWF_Indochina_War.7.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.8
-    title = SWF_Indochina_War.8.t
-    desc = SWF_Indochina_War.8.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.8
+	title = SWF_Indochina_War.8.t
+	desc = SWF_Indochina_War.8.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.8.a
-    }
+	option = {
+		name = SWF_Indochina_War.8.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.9
-    title = SWF_Indochina_War.9.t
-    desc = SWF_Indochina_War.9.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.9
+	title = SWF_Indochina_War.9.t
+	desc = SWF_Indochina_War.9.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.9.a
-    }
+	option = {
+		name = SWF_Indochina_War.9.a
+	}
 }
 
 country_event = {
-    id = SWF_Indochina_War.10
-    title = SWF_Indochina_War.10.t
-    desc = SWF_Indochina_War.10.d
-    picture = GFX_report_event_tanks_vietnam
+	id = SWF_Indochina_War.10
+	title = SWF_Indochina_War.10.t
+	desc = SWF_Indochina_War.10.d
+	picture = GFX_report_event_tanks_vietnam
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = SWF_Indochina_War.10.a
-    }
+	option = {
+		name = SWF_Indochina_War.10.a
+	}
 }
 
 
@@ -707,79 +707,79 @@ country_event = {
 # once the attached defensive response begins.
 # ----------------------------------------------------------------
 news_event = {
-    id = SWF_Indochina_War.30 # The Camp Falls
-    title = SWF_Indochina_War.30.t
-    desc = SWF_Indochina_War.30.d
-    picture = GFX_VIN_Victory_at_Dien_Bien_Phu
+	id = SWF_Indochina_War.30 # The Camp Falls
+	title = SWF_Indochina_War.30.t
+	desc = SWF_Indochina_War.30.d
+	picture = GFX_VIN_Victory_at_Dien_Bien_Phu
 
-    is_triggered_only = yes
-    major = yes
+	is_triggered_only = yes
+	major = yes
 
-    option = {
-        name = SWF_Indochina_War.30.a
-        trigger = { tag = VIN }
-    }
-    option = {
-        name = SWF_Indochina_War.30.b
-        trigger = {
-            OR = {
-                tag = FRE
-                tag = FRA
-                tag = VIE
-            }
-        }
-    }
-    option = {
-        name = SWF_Indochina_War.30.c
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = VIN
-                    tag = FRE
-                    tag = FRA
-                    tag = VIE
-                }
-            }
-        }
-    }
+	option = {
+		name = SWF_Indochina_War.30.a
+		trigger = { tag = VIN }
+	}
+	option = {
+		name = SWF_Indochina_War.30.b
+		trigger = {
+			OR = {
+				tag = FRE
+				tag = FRA
+				tag = VIE
+			}
+		}
+	}
+	option = {
+		name = SWF_Indochina_War.30.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = VIN
+					tag = FRE
+					tag = FRA
+					tag = VIE
+				}
+			}
+		}
+	}
 }
 
 news_event = {
-    id = SWF_Indochina_War.31 # The Camp Holds
-    title = SWF_Indochina_War.31.t
-    desc = SWF_Indochina_War.31.d
-    picture = GFX_VIN_Loss_at_Dien_Bien_Phu
+	id = SWF_Indochina_War.31 # The Camp Holds
+	title = SWF_Indochina_War.31.t
+	desc = SWF_Indochina_War.31.d
+	picture = GFX_VIN_Loss_at_Dien_Bien_Phu
 
-    is_triggered_only = yes
-    major = yes
+	is_triggered_only = yes
+	major = yes
 
-    option = {
-        name = SWF_Indochina_War.31.a
-        trigger = {
-            OR = {
-                tag = FRE
-                tag = FRA
-                tag = VIE
-            }
-        }
-    }
-    option = {
-        name = SWF_Indochina_War.31.b
-        trigger = { tag = VIN }
-    }
-    option = {
-        name = SWF_Indochina_War.31.c
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = VIN
-                    tag = FRE
-                    tag = FRA
-                    tag = VIE
-                }
-            }
-        }
-    }
+	option = {
+		name = SWF_Indochina_War.31.a
+		trigger = {
+			OR = {
+				tag = FRE
+				tag = FRA
+				tag = VIE
+			}
+		}
+	}
+	option = {
+		name = SWF_Indochina_War.31.b
+		trigger = { tag = VIN }
+	}
+	option = {
+		name = SWF_Indochina_War.31.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = VIN
+					tag = FRE
+					tag = FRA
+					tag = VIE
+				}
+			}
+		}
+	}
 }
 
 # ----------------------------------------------------------------
@@ -787,37 +787,37 @@ news_event = {
 # is fortified, so the world sees the CEFEO commit before the siege starts.
 # ----------------------------------------------------------------
 news_event = {
-    id = SWF_Indochina_War.32 # The Groupement Operationnel du Nord-Ouest
-    title = SWF_Indochina_War.32.t
-    desc = SWF_Indochina_War.32.d
-    picture = GFX_VIN_Dien_Bien_Phu
+	id = SWF_Indochina_War.32 # The Groupement Operationnel du Nord-Ouest
+	title = SWF_Indochina_War.32.t
+	desc = SWF_Indochina_War.32.d
+	picture = GFX_VIN_Dien_Bien_Phu
 
-    is_triggered_only = yes
-    major = yes
+	is_triggered_only = yes
+	major = yes
 
-    option = {
-        name = SWF_Indochina_War.32.a
-        trigger = {
-            OR = {
-                tag = FRE
-                tag = FRA
-            }
-        }
-    }
-    option = {
-        name = SWF_Indochina_War.32.b
-        trigger = { tag = VIN }
-    }
-    option = {
-        name = SWF_Indochina_War.32.c
-        trigger = {
-            NOT = {
-                OR = {
-                    tag = VIN
-                    tag = FRE
-                    tag = FRA
-                }
-            }
-        }
-    }
+	option = {
+		name = SWF_Indochina_War.32.a
+		trigger = {
+			OR = {
+				tag = FRE
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = SWF_Indochina_War.32.b
+		trigger = { tag = VIN }
+	}
+	option = {
+		name = SWF_Indochina_War.32.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = VIN
+					tag = FRE
+					tag = FRA
+				}
+			}
+		}
+	}
 }

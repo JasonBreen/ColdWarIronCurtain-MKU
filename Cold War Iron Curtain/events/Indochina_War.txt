@@ -98,14 +98,14 @@ country_event = {
 
 
 country_event = {
- 	id = Indochina_War.4
- 	hidden = yes
+	id = Indochina_War.4
+	hidden = yes
 
- 	is_triggered_only = yes
+	is_triggered_only = yes
 
 }
 country_event = {
- 	id = Indochina_War.104
+	id = Indochina_War.104
 	title = Indochina_War.104.t
 	desc = Indochina_War.104.d
 	picture = GFX_Indochina_War.104
@@ -118,9 +118,9 @@ country_event = {
 		}
 	}
 
- 	option = {
- 		name = Indochina_War.104.a
- 	}
+	option = {
+		name = Indochina_War.104.a
+	}
 }
 news_event = {
 	id = 181246
@@ -131,8 +131,8 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
- 		name = EVT181246_OPTA
- 	}
+		name = EVT181246_OPTA
+	}
 }
 news_event = {
 	id = 831949
@@ -143,8 +143,8 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
- 		name = EVT831949_OPTA
- 	}
+		name = EVT831949_OPTA
+	}
 }
 news_event = {
 	id = 7554
@@ -155,8 +155,8 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
- 		name = EVT7554_OPTA
- 	}
+		name = EVT7554_OPTA
+	}
 }
 news_event = {
 	id = 101954
@@ -167,8 +167,8 @@ news_event = {
 	is_triggered_only = yes
 
 	option = {
- 		name = EVT101954_OPTA
- 	}
+		name = EVT101954_OPTA
+	}
 }
 
 

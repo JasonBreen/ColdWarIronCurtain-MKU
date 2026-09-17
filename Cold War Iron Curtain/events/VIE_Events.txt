@@ -1917,10 +1917,10 @@ country_event = {
 
 		reset_Hinh_favoritism_minigame = yes
 		hidden_effect = {
-		    add_popularity = {
-    			ideology = neutrality
-    			popularity = 0.2
-    		}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
 			keep_current_politics = yes
 			set_temp_variable = { percent_change = 5 }
 			set_temp_variable = { tag_index = FRA.id }
@@ -1981,10 +1981,10 @@ country_event = {
 		name = French_Hinh.2.a
 
 		hidden_effect = {
-		    add_popularity = {
-    			ideology = neutrality
-    			popularity = 0.25
-    		}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
 			keep_current_politics = yes
 			set_temp_variable = { percent_change = 5 }
 			set_temp_variable = { tag_index = FRA.id }
@@ -2014,10 +2014,10 @@ country_event = {
 		name = French_Hinh.3.a
 
 		hidden_effect = {
-		    add_popularity = {
-    			ideology = neutrality
-    			popularity = 0.1
-    		}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
 			keep_current_politics = yes
 			set_temp_variable = { percent_change = 5 }
 			set_temp_variable = { tag_index = FRA.id }
@@ -2126,10 +2126,10 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		NOT = {
-		    AND = {
-    			has_country_flag = VIE_Nhu_Jailed
-    			has_country_flag = VIE_CuongDe_Succeeds
-            }
+			AND = {
+				has_country_flag = VIE_Nhu_Jailed
+				has_country_flag = VIE_CuongDe_Succeeds
+			}
 		}
 		date > 1952.1.1
 		date < 1960.1.1
@@ -4052,7 +4052,7 @@ country_event = {
 			ideology = Social_Democratic
 			popularity = 0.15
 		}
-        add_to_variable = { VIE_toan_radicalism = 1 }
+		add_to_variable = { VIE_toan_radicalism = 1 }
 		set_temp_variable = { favoritism_change = 10 }
 			VIE_Change_Main_Favoritism = yes
 	}
@@ -4345,27 +4345,27 @@ country_event = {
 	}
 }
 country_event = {
-    id = VIE_Historical.9
+	id = VIE_Historical.9
 	title = VIE_Historical.9.t
 	desc = VIE_Historical.9.d
 	picture = GFX_VIE_Historical.9
 
 	fire_only_once = yes
 	trigger = {
-	    date > 1949.9.1
-	    date < 1949.9.31
+		date > 1949.9.1
+		date < 1949.9.31
 		original_tag = VIE
 	}
 
 	option = {
-	    name = VIE_Historical.9.a
+		name = VIE_Historical.9.a
 
 		add_stability = 0.05
 		add_war_support = 0.08
-    }
+	}
 
 	option = {
-	    name = VIE_Historical.9.b
+		name = VIE_Historical.9.b
 
 		add_political_power = 50
 		set_temp_variable = { influence_change = -5 }
@@ -4374,7 +4374,7 @@ country_event = {
 }
 
 country_event = {
-    id = VIE_Historical.10
+	id = VIE_Historical.10
 	title = {
 		text = VIE_Historical.10.ta
 		trigger = {
@@ -4491,7 +4491,7 @@ country_event = {
 	fire_only_once = no
 
 	option = {
-	    name = VIE_Historical.10.a
+		name = VIE_Historical.10.a
 
 		add_stability = 0.02
 		add_popularity = {
@@ -4509,7 +4509,7 @@ country_event = {
 				}
 			}
 		}
-    }
+	}
 
 	option = {
 		name = VIE_Historical.10.b
@@ -8349,7 +8349,7 @@ country_event = {
 				factor = 0
 			}
 			modifier = {
-			    strength_ratio = {
+				strength_ratio = {
 					tag = VIN
 					ratio > 1.5
 				}

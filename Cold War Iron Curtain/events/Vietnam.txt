@@ -1,4 +1,4 @@
- #############################
+#############################
 # Vietnam events
 #############################
 
@@ -91,7 +91,7 @@ country_event = {
 			transfer_state = 592
 			transfer_state = 591
 		}
-	  ai_chance = {
+		ai_chance = {
 			factor = 50
 		}
 	}
@@ -99,12 +99,12 @@ country_event = {
 	# Nope
 	option = {
 		name = vietnam_exp.1.b
-	  ai_chance = {
-		  factor = 50
+		ai_chance = {
+			factor = 50
 		}
 	}
 }country_event = {
-  id = vin_ref.1 
+	id = vin_ref.1 
 	title = vin_ref.1.t
 	desc = vin_ref.1.d
 
@@ -116,7 +116,7 @@ country_event = {
 		VIN = { change_tag_from = VIE }
 		VIN = { annex_country = { target = VIE } }
 		set_global_flag = vietnam_war_over
-	  ai_chance = {
+		ai_chance = {
 			factor = 75
 		}
 	}
@@ -124,12 +124,12 @@ country_event = {
 	# Nope
 	option = {
 		name = vin_ref.1.b
-	  ai_chance = {
-		  factor = 25
+		ai_chance = {
+			factor = 25
 		}
 	}
 }country_event = {
-  id = vie_peace.1 
+	id = vie_peace.1 
 	title = vie_peace.1.t
 	desc = vie_peace.1.d
 
@@ -140,7 +140,7 @@ country_event = {
 		name = vie_peace.1.a
 		white_peace = VIN
 		set_global_flag = vietnam_war_over
-	  ai_chance = {
+		ai_chance = {
 			factor = 75
 		}
 	}
@@ -148,12 +148,12 @@ country_event = {
 	# Nope
 	option = {
 		name = vie_peace.1.b
-	  ai_chance = {
-		  factor = 25
+		ai_chance = {
+			factor = 25
 		}
 	}
 }country_event = {
-  id = join_vietnam_war.1 
+	id = join_vietnam_war.1 
 	title = join_vietnam_war.1.t
 	desc = join_vietnam_war.1.d
 
@@ -163,7 +163,7 @@ country_event = {
 	option = {
 		name = join_vietnam_war.1.a
 		add_to_war = { targeted_alliance = VIE enemy = VIN }
-	  ai_chance = {
+		ai_chance = {
 			factor = 85
 		}
 	}
@@ -171,8 +171,8 @@ country_event = {
 	# Nope
 	option = {
 		name = join_vietnam_war.1.b
-	  ai_chance = {
-		  factor = 15
+		ai_chance = {
+			factor = 15
 		}
 	}
 }

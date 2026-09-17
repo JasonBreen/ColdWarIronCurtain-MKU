@@ -3,15 +3,15 @@ guiTypes = {
 		name = "CWIC_North_Vietnamese_Factionalism"
 		position = { x = 800 y = 150 }
 		size = { height = 100%% width = 100%% }
-        fade_time = 300
-        fade_type = linear
-        moveable = yes
-        clipping = no
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		clipping = no
 
-        background = {
-            name = "Background"
-            quadTextureSprite = "GFX_VIN_Factional_Background"
-        }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_VIN_Factional_Background"
+		}
 		#position = { x = 880 y = 85 } Top Center
 		#Down Y = 71
 		#Left/Right X = 71 
@@ -87,92 +87,92 @@ guiTypes = {
 		iconType = { name ="Portrait_Frame" spriteType = "GFX_Portrait_Outline" position = { x = 120 y = 150 } Orientation = "UPPER_LEFT" }
 
 		#Government
-        buttonType = {
-            name ="Government_Canon"
-            spriteType = "GFX_VIN_Factional_Canon1"
-            position = { x = 880 y = 227 }
-            Orientation = "UPPER_LEFT"
-        }	
-        buttonType = {
-            name ="Government_Chariot"
-            spriteType = "GFX_VIN_Factional_Chariot1"
-            position = { x = 1022 y = 85 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Government_Elephant"
-            spriteType = "GFX_VIN_Factional_Elephant1"
-            position = { x = 0 y = 0 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Government_General"
-            spriteType = "GFX_VIN_Factional_General1"
-            position = { x = 880 y = 85 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Government_Horse"
-            spriteType = "GFX_VIN_Factional_Horse1"
-            position = { x = 738 y = 85 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Government_Soldier_Front"
-            spriteType = "GFX_VIN_Factional_Front_Soldier1"
-            position = { x = 880 y = 298 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Government_Soldier"
-            spriteType = "GFX_VIN_Factional_Soldier1"
-            position = { x = 809 y = 156 }
-            Orientation = "UPPER_LEFT"
-        }	
+		buttonType = {
+			name ="Government_Canon"
+			spriteType = "GFX_VIN_Factional_Canon1"
+			position = { x = 880 y = 227 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Government_Chariot"
+			spriteType = "GFX_VIN_Factional_Chariot1"
+			position = { x = 1022 y = 85 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Government_Elephant"
+			spriteType = "GFX_VIN_Factional_Elephant1"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Government_General"
+			spriteType = "GFX_VIN_Factional_General1"
+			position = { x = 880 y = 85 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Government_Horse"
+			spriteType = "GFX_VIN_Factional_Horse1"
+			position = { x = 738 y = 85 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Government_Soldier_Front"
+			spriteType = "GFX_VIN_Factional_Front_Soldier1"
+			position = { x = 880 y = 298 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Government_Soldier"
+			spriteType = "GFX_VIN_Factional_Soldier1"
+			position = { x = 809 y = 156 }
+			Orientation = "UPPER_LEFT"
+		}	
 
 		#Opposition
-	    buttonType = {
-            name ="Reformist_General"
-            spriteType = "GFX_VIN_Factional_General2"
-            position = { x = 880 y = 710 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Reformist_Soldier"
-            spriteType = "GFX_VIN_Factional_Soldier2"
-            position = { x = 809 y = 639 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Reformist_Elephant"
-            spriteType = "GFX_VIN_Factional_Elephant2"
-            position = { x = 951 y = 639 }
-            Orientation = "UPPER_LEFT"
-        }	
-        buttonType = {
-            name ="Reformist_Chariot"
-            spriteType = "GFX_VIN_Factional_Chariot2"
-            position = { x = 1022 y = 710 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = {
-            name ="Reformist_Horse"
-            spriteType = "GFX_VIN_Factional_Horse2"
-            position = { x = 738 y = 710 }
-            Orientation = "UPPER_LEFT"
-        }	
-        buttonType = {
-            name ="Reformist_Canon"
-            spriteType = "GFX_VIN_Factional_Canon2"
-            position = { x = 880 y = 568 }
-            Orientation = "UPPER_LEFT"
-        }	
-	    buttonType = { 
-            name ="Reformist_Soldier_Front"
-            spriteType = "GFX_VIN_Factional_Front_Soldier2"
-            position = { x = 880 y = 497 }   
-            Orientation = "UPPER_LEFT"
-        }	
+		buttonType = {
+			name ="Reformist_General"
+			spriteType = "GFX_VIN_Factional_General2"
+			position = { x = 880 y = 710 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Reformist_Soldier"
+			spriteType = "GFX_VIN_Factional_Soldier2"
+			position = { x = 809 y = 639 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Reformist_Elephant"
+			spriteType = "GFX_VIN_Factional_Elephant2"
+			position = { x = 951 y = 639 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Reformist_Chariot"
+			spriteType = "GFX_VIN_Factional_Chariot2"
+			position = { x = 1022 y = 710 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Reformist_Horse"
+			spriteType = "GFX_VIN_Factional_Horse2"
+			position = { x = 738 y = 710 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = {
+			name ="Reformist_Canon"
+			spriteType = "GFX_VIN_Factional_Canon2"
+			position = { x = 880 y = 568 }
+			Orientation = "UPPER_LEFT"
+		}	
+		buttonType = { 
+			name ="Reformist_Soldier_Front"
+			spriteType = "GFX_VIN_Factional_Front_Soldier2"
+			position = { x = 880 y = 497 }   
+			Orientation = "UPPER_LEFT"
+		}	
 
 		buttonType = { name ="Potential_Move_1"  spriteType = "GFX_VIN_Factional_Guide_Circle" position = { x = 0 y = 0 } Orientation = "UPPER_LEFT" }
 		buttonType = { name ="Potential_Move_2"  spriteType = "GFX_VIN_Factional_Guide_Circle" position = { x = 0 y = 0 } Orientation = "UPPER_LEFT" }
@@ -255,13 +255,13 @@ guiTypes = {
 			text = PLAY_VIN_EXIT  
 			pdx_tooltip = ""
 		}
-        iconType = {
-            name ="Frame"
-            spriteType = "GFX_VIN_Factional_TV_Frame"
-            position = { x = -80 y = -60 }
-            Orientation = "UPPER_LEFT"
+		iconType = {
+			name ="Frame"
+			spriteType = "GFX_VIN_Factional_TV_Frame"
+			position = { x = -80 y = -60 }
+			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
-        }	
+		}	
 		#Fallen Pieces
 		containerWindowType = {
 			name = "reformist_fallen_pieces_list_grid"

@@ -1,15 +1,15 @@
 division_template = {
 	name = "ARVN Rangers"
 	priority = 2
-        is_locked = yes
+	is_locked = yes
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-	  	mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 2 }
 	}
 	support = {
-	 	engineer = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
 		recon = { x = 0 y = 1 }
 	}
 }
