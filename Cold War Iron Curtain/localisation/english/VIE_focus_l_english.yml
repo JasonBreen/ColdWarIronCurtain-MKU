@@ -100,6 +100,7 @@
  VIE_Mimic_Northerns_Economic_Reforms_desc: "In improving our economy, we must look to see what others do, In the North, we have recognized that many methods may be implemented in our strategies to help make our industries run better."
 
  VIE_Open_IBM_Service_Office: "Open the IBM Service Office in Saigon"
+ VIE_Open_IBM_Service_Office_desc: "The Americans propose a service office in Saigon for their tabulating machines - punched cards for the census, the customs rolls and the army's payroll. It is an expensive convenience and the machines will need their own building. But a state that cannot count its own people and its own revenue cannot govern them, and we have been relying on French figures for too long."
  VIE_Open_IBM_Service_Office_decs: "For a number of years, the US Computer Giant IBM has been looking to expand its operations into Vietnam. With so many military operations, they think their products could be of assistance. Looking at the current mess that is our Joint Staffs, they could be right. By established a head office, it will allow us to communicate and order from IBM quickly. Perhaps we might get a bulk discount?"
 
  VIE_Further_Inveset_in_Saigon: "Invest Further in Saigon"
@@ -133,11 +134,13 @@
  VIE_Export_Rubber_Natural_Resources_desc: "With our new capabilities, we can now increase rubber production and exportation, and our other resources have also caught up with other countries, meaning we can now afford to open up larger trade ports and trading laws."
 
  VIE_National_Tourism_Office: "Establish the National Office of Tourism"
+ VIE_National_Tourism_Office_desc: "Vietnam has the coast, the ruins and the climate to draw foreign visitors, and at present it has no office to tell anyone so. A national tourism bureau in Gia-Dinh would advertise the country abroad, license the hotels, and begin earning hard currency from something other than rubber and rice. It will also open a number of commercial levers to the government."
 
  VIE_Establish_DacPhu_DanTien_Cuoc_Commission_Econ: "Establish the \"Dac-Phu Dan-Tien Cuoc\" Commission"
  VIE_Establish_DacPhu_DanTien_Cuoc_Commission_Econ_desc: "The Dac-Phu Dan-Tien Cuoc Commission will be established to oversee economic development and coordinate industrial planning. This commission will work to integrate Cuong-De's economic vision with practical development goals, ensuring that our economic policies serve both the people and the state's strategic interests."
 
  VIE_CD_Auction_off_Imperial_Treasures: "Auction Off Imperial Treasures"
+ VIE_CD_Auction_off_Imperial_Treasures_desc: "The treasury is empty and the palace storerooms are not. Selling the imperial collection abroad would raise a great deal of money quickly, and would cost us something that cannot be bought back at any price. The court will call it desecration and a good many ordinary people will agree with them."
  VIE_CD_Electrify_Rural_Nam_Phan: "Electrifying Nam-Phan"
  VIE_CD_Electrify_Rural_Nam_Phan_desc: "The rural regions of Nam-phan have always been backwards and outdated for centuries and largely still are. Thus electrification would be the foundation for further Industrialization and investments in the Region."
 
@@ -181,6 +184,7 @@
  VIE_CD_Mimic_Northerns_Economic_Reforms_desc: "In improving our economy, we must look to see what others do, In the North, we have recognized that many methods may be implemented in our strategies to help make our industries run better."
 
  VIE_CD_Open_IBM_Service_Office: "Open the IBM Service Office in Saigon"
+ VIE_CD_Open_IBM_Service_Office_desc: "The Americans propose a service office in Saigon for their tabulating machines - punched cards for the census, the customs rolls and the army's payroll. It is an expensive convenience and the machines will need their own building. But a state that cannot count its own people and its own revenue cannot govern them, and we have been relying on French figures for too long."
  VIE_CD_Open_IBM_Service_Office_decs: "For a number of years, the US Computer Giant IBM has been looking to expand its operations into Vietnam. With so many military operations, they think their products could be of assistance. Looking at the current mess that is our Joint Staffs, they could be right. By established a head office, it will allow us to communicate and order from IBM quickly. Perhaps we might get a bulk discount?"
 
  VIE_CD_Further_Inveset_in_Saigon: "Invest Further in Saigon"
@@ -214,12 +218,15 @@
  VIE_CD_Export_Rubber_Natural_Resources_desc: "With our new capabilities, we can now increase rubber production and exportation, and our other resources have also caught up with other countries, meaning we can now afford to open up larger trade ports and trading laws."
 
  VIE_CD_National_Tourism_Office: "Establish the National Office of Tourism"
+ VIE_CD_National_Tourism_Office_desc: "Vietnam has the coast, the ruins and the climate to draw foreign visitors, and at present it has no office to tell anyone so. A national tourism bureau in Gia-Dinh would advertise the country abroad, license the hotels, and begin earning hard currency from something other than rubber and rice. It will also open a number of commercial levers to the government."
 
  VIE_Second_Elysee_Accords: "The 2nd Article of the Elysee Accords"
+ VIE_Second_Elysee_Accords_desc: "The Accords of March 1949 gave us the form of a state without the substance of one. Foreign policy, the army, the currency and the courts all remain in French hands, held back under the fiction of the French Union. A second article must be negotiated to transfer what the first withheld, and until the question of our internal unity is settled, Paris will not sit down to discuss it. This matter will resolve itself as events force it to."
  VIE_Western_Desk: "Western Desk"
  VIE_Western_Desk_desc: "It's a sad reality that it is difficult to operate in this world without the backing of the West. Although the age of imperialism is supposedly dying, it seems that it is not dying but simply morphing into something new. We need to prep our diplomats so that they can get the Western powers on our side. With their support, we will have their industrial might and diplomatic sway behind our nation, and we will be able to expand our influence worldwide."
 
  VIE_Establish_UK_USA_Diplomacy: "Establish Diplomatic Relations With the UK & USA"
+ VIE_Establish_UK_USA_Diplomacy_desc: "Our legations in Washington and London have until now been extensions of the French embassy in all but name. We will open direct channels to the Anglo-Saxon powers, accredited to our government and answering to Saigon rather than to the Quai d'Orsay. The Americans and British will look on us more warmly for it; Moscow and Peking will draw the obvious conclusion and look on us a good deal less warmly."
  VIE_Sign_Autonomous_Forex_Agreement: "Sign the Autonomous Foreign Exchange Agrement"
  VIE_Sign_Autonomous_Forex_Agreement_desc: "With our agreement with the French, we have on our plate the ability to sign an agreement that will allow us to open the trading and exchanging of currency. Another step in our financial freedom is secured, and Vietnam can finally begin to pull away from our colonial roots."
 
@@ -254,11 +261,17 @@
  VIE_Criticize_Mao_Success_desc: "Mao and the Communists have won the Chinese Civil War. Let us join our western allies in condemning Mao and his new government and find way to help the KMT in exile."
 
  VIE_Establish_ROC_Embassy: "Establish the Republic of China Embassy in Saigon"
+ VIE_Establish_ROC_Embassy_desc: "With the civil war in China settled one way or the other, the question of which Chinese government we deal with can no longer be deferred. A chancery on the Rue Catinat, accredited to us and not to the High Commission, would be a small building carrying a large meaning. There are also a hundred thousand Chinese in Cholon whose affairs must be handled by somebody."
  VIE_ROC_Army_Cooperation: "Cooperate With the Republic of China's Armed Forces"
+ VIE_ROC_Army_Cooperation_desc: "The Nationalists have fought the Communists longer than any army in Asia and have learned hard lessons in the doing. Joint exercises with their forces would let our officers study those lessons without paying for them in the field. Both armies face the same enemy and the same tactics, and there is no reason each should learn them separately."
  VIE_ROC_Material_Support: "Ask for Material Support"
+ VIE_ROC_Material_Support_desc: "Goodwill between governments is pleasant, but our battalions cannot be armed with communiques. We will ask Taipei directly for rifles, guns and transport out of their own stocks. Two thousand rifles, a few hundred artillery pieces and enough trucks to move a brigade would close gaps in our order of battle that French deliveries have left open for two years."
  VIE_Refuse_Mao_Recognition: "Refuse to Recognize Mao's Regime"
+ VIE_Refuse_Mao_Recognition_desc: "Peking will demand recognition as the price of quiet on our northern approaches. We will refuse it. The regime that arms and shelters the Viet Minh cannot also be treated as a friendly neighbour, and to pretend otherwise would tell every anti-communist in Asia exactly what our word is worth. Peking will not forgive the insult, but Washington and Taipei will remember the stand."
  VIE_Malaysian_Insurgency: "The Malaysian Insurgency"
+ VIE_Malaysian_Insurgency_desc: "The British are fighting in the Malayan jungles the same war we are fighting in the delta, against an enemy using the same methods and drawing on the same Chinese communities for support. Our staff will study their Emergency closely: the resettlement schemes, the food control, the long patient patrolling. What works in Perak may well work in Tay-Ninh."
  VIE_Recognize_MAL_FED: "Recognize [MAL.GetNameDef]"
+ VIE_Recognize_MAL_FED_desc: "The Federation is the nearest thing in Southeast Asia to our own situation - a plural society emerging from European rule with a communist insurgency at its throat. Formal recognition costs us nothing and gains us a neighbour who understands our position better than most, and who has no interest in seeing the insurgents win anywhere."
  VIE_Denounce_ChinPeng_Victory: "Denounce Chin Peng's Victory"
  VIE_Denounce_ChinPeng_Victory_desc: "Chin Peng's victory in Malaya strikes a disatrous blow to our anti-communist allies, and we cannot let this victory motivate our enemies. We will denounce his victory and seek to crush any of his allied forces that threaten our country."
 
@@ -278,8 +291,11 @@
  VIE_Korean_War_desc: "Korea is embroiled in a conflict similar to our own; a power vacuum has been created, and the evil forces of communism are seeking to sink their teeth into the newly established nation. We must do something to prevent this, but how much can we really spare in our intervention? If we allow South Korea to fall, a domino effect might occur across Asia and new republics like our own might be snuffed out by the menace of Marxism."
 
  VIE_Korea_Send_Advisory_Mission: "Send an Advisory Mission"
+ VIE_Korea_Send_Advisory_Mission_desc: "We cannot spare divisions for Korea, but we can spare officers. A small advisory mission attached to the Republic of Korea's forces would give our staff their first sight of a conventional war fought with modern equipment, and would put a quantity of our surplus rifles and transport into hands that will use them. The mission costs us little and teaches us a great deal."
  VIE_Recognize_SK_Sovereignty: "Recognize South Korea's Sovereignty"
+ VIE_Recognize_SK_Sovereignty_desc: "Recognition of the Republic of Korea is the cheapest form of solidarity available to us and, for a state whose own sovereignty is still argued over in Paris, the most pointed. To insist that a divided nation's southern government is the legitimate one is to make an argument about Korea and an argument about ourselves in the same breath. It will steady opinion at home."
  VIE_Korean_Send_DaiHan_Expedition_Force: "Send the Dai-han Expedition Force"
+ VIE_Korean_Send_DaiHan_Expedition_Force_desc: "Advisors are a gesture; an expeditionary force is a commitment. The Dai-han force would put Vietnamese soldiers into a shooting war on the other side of Asia, where they would learn more in a year than a decade of garrison duty in the delta could teach them. The cost will be paid at home, where few will understand why our sons are dying for Seoul while Tonkin burns."
  VIE_Korean_Intervention: "South Korean Intervention?"
  VIE_Korean_Intervention_desc: "Our efforts to supply the Korean soldiers in their effort against the communists are not enough. Our national defense administration has committed themselves to preparing an expeditionary force to help solidify the defense of liberty against the Chinese and their North Korean puppets."
 
@@ -290,9 +306,13 @@
  VIE_Ignore_Rhee_Proposal_desc: "Syngman Rhee and Chiang Kai-shek, two of the largest movers and shakers in the region, have let our people know that they are prepared to offer us a hand in a movement to unite many of the countries of Asia under a unified banner of political cooperation in the face of communism. Though interesting, it is not within the goals of our nation to cooperate currently with foreign bodies. Indeed, their interference would only damage our ability to run the war as we see fit."
 
  VIE_Congratulate_SK_Reunification: "Congratulate the Republic of Korea on Their Reunification"
+ VIE_Congratulate_SK_Reunification_desc: "Korea has been made whole under a government we recognised when it was worth nothing to do so. We will say so publicly and at length. A reunified anti-communist Korea is proof that partition need not be permanent and that the northern half of a divided country can be recovered - a precedent we intend to cite often."
  VIE_Denounce_Kim_Reunification: "Denounce Kim's Reunification of the Korean Peninsula"
+ VIE_Denounce_Kim_Reunification_desc: "The peninsula has been united by force under Kim, and the powers that guaranteed the Republic of Korea have let it happen. We will denounce the conquest without reservation. There is no profit in tact here: what was done to Seoul is precisely what is intended for Saigon, and silence now would be read in Hanoi as permission."
  VIE_Recognize_Jeju_Republic: "Recognize the Republic in Jeju"
+ VIE_Recognize_Jeju_Republic_desc: "The Republic of Korea survives on Jeju, a government of an island claiming a peninsula. Every other capital is quietly deciding that the question is closed. We will recognise the exiles instead, and go on recognising them, because a government driven onto an island is exactly what we would become and we would wish to be remembered."
  VIE_Recognize_Samoa_Republic: "Recognize the Republic in Samoa"
+ VIE_Recognize_Samoa_Republic_desc: "The Korean government in exile has been resettled in Samoa, half a world from the country it claims, and the practical men in every foreign ministry have written it off. We will extend recognition regardless. The cause of a divided nation does not become illegitimate because its government has been driven from the map."
  VIE_Demand_Japanese_Deport_CuongDe: "Demand Japan's Deportation of Cuong-De"
  VIE_Demand_Japanese_Deport_CuongDe_desc: "It is disturbing enough to know of the efforts of Cuong-De to undermine our government, but it is insulting to know that the Japanese government refused to repudiate his attempts. Utilizing political pressure, we must demand that he be deported back to Vietnam, to answer for himself."
 
@@ -303,6 +323,7 @@
  VIE_Look_up_to_Japan_desc: "The affairs of the Japanese in developing a stable post-war government and their way of government have influenced our way of thinking. It is time for us to consider following their lead more closely, in order to ensure continued success."
 
  VIE_Promote_JAP_Tech_Exchanges: "Promote Technology Exchanges"
+ VIE_Promote_JAP_Tech_Exchanges_desc: "Japan has rebuilt itself in five years on American capital and its own engineers, and it is the one Asian power with industry worth studying. Technical exchanges would bring their methods and their machinery into our workshops, along with enough trucks to matter. The occupation is over; there is no reason to keep treating Tokyo as an enemy when its factories are the nearest ones that work."
  VIE_Promote_PanAsianism: "Promote Pan-Asianism"
  VIE_Promote_PanAsianism_desc: "Our roots have always been mixed with our Asian brothers, and with the world finally beginning to come together to achieve common goals, it is time for us to enter the world as a positive influence in our global community."
 
@@ -310,6 +331,7 @@
  VIE_Allow_Japanese_Investments_desc: "Allow Japanese Invesetments"
 
  VIE_Indochina_Desk: "Indochina Desk"
+ VIE_Indochina_Desk_desc: "Cambodia and Laos left the same empire we did, at the same time, under the same terms, and we have no standing apparatus for dealing with either. A dedicated Indochina desk in the foreign ministry would handle the border questions, the Vietnamese minorities in both kingdoms, and the coordination that Paris has always done on our behalf and in its own interest."
  VIE_Demand_PhuQuoc_Ownership: "Demand Ownership Over Phu-Quoc"
  VIE_Demand_PhuQuoc_Ownership_desc: "The Nationalist Chinese have gone too far, first in posturing that the island of Phu-Quoc is theirs, and now we have seen armed military personnel moving in positions on and nearby the islands. This is far too much for our government to stand by and accept. We must make strong statements to dispel the illusions that the Kuomintang suffer from."
 
@@ -869,6 +891,7 @@
  VIE_Toan_Launch_AntiFrench_AntiCommie_desc: "We will launch a comprehensive campaign against both French colonialism and communism, positioning ourselves as the true path to Vietnamese independence. This dual-front struggle requires careful coordination of all our forces and allies."
 
  VIE_Toan_Success: "We Have Succeeded!"
+ VIE_Toan_Success_desc: "Nguyen-Bao-Toan set out to prove that a government could stand against the French and the Viet Minh at once, and against expectation he has managed it. Having made his point, he intends to leave office on it rather than wait to be pushed. The Chief of State must now choose a successor, and the two men available could hardly be less alike."
  VIE_Toan_Assassination: "A Total Failure..."
  VIE_Toan_Assassination_desc: "In a desperate move, we may resort to assassination of key opponents to advance our revolutionary cause. This extreme measure reflects the high stakes of our struggle for Vietnamese independence and social transformation."
 
@@ -1226,52 +1249,94 @@
  VIE_NH_Diem_2nd_Mil_Reforms_desc: "A second round of military reforms will be implemented, further modernizing and improving the armed forces. These reforms will address remaining weaknesses, adopt new technologies, and improve organization. The second round will build on previous reforms and continue the military's transformation."
 
  VIE_NH_Nhiep_PM: "Prime Minister Nguyen-Rinh-Nhiep"
+ VIE_NH_Nhiep_PM_desc: "Nguyen-Rinh-Nhiep spent the exile years in Tokyo at the late Emperor's side, and he returns with the Phuc-Quoc-Hoi's machinery behind him and a long list of Japanese debts to call in. He is the continuity candidate: the man who can tell the court that nothing has changed and tell the ministries that everything has. Tokyo will be pleased, and the constitutionalists will hold their noses and accept him."
  VIE_NH_Nhiep_Request_Crownlands: "Request the Crown Domains"
+ VIE_NH_Nhiep_Request_Crownlands_desc: "The Central Highlands and the southern autonomous territories are still crown domains answering to the High Commission rather than to us. We will ask Paris to hand them over, framing it as the consolidation the southern command needs against the Viet Minh. The northern councils - Tai, Nung, Muong, Tho - sit on CEFEO's operational ground and will not be included; that fight can wait for a quieter year."
  VIE_NH_Nhiep_Repatriate_JAP_Families: "Repatriate Japanese Families"
+ VIE_NH_Nhiep_Repatriate_JAP_Families_desc: "Several dozen families followed the Emperor into exile and have been waiting in Japan ever since, many of them now elderly and most of them with nothing to come back to. We will bring them home at state expense. It is owed to them, and a court without its household is a court in name only."
  VIE_NH_Nhiep_Establish_VIE_JAP_Friendship: "Establish Vietnamese-Japanese Friendship"
+ VIE_NH_Nhiep_Establish_VIE_JAP_Friendship_desc: "A formal friendship association with Japan would put our relationship on an institutional footing instead of resting it on the personal ties of a dead emperor. Education, trade and technical exchange would all run through it. It would be the first body of its kind in Southeast Asia, and Tokyo must decide whether it wishes to be seen sponsoring one."
  VIE_NH_Nhiep_Modernize_PhuXuan: "Modernize Phu-Xuan"
+ VIE_NH_Nhiep_Modernize_PhuXuan_desc: "Phu-Xuan is a walled imperial town being asked to serve as the administrative centre of a modern state, and it is not equipped for the job. The Prime Minister proposes new districts, new ministries and the infrastructure to support them. The court will complain that the old city is being buried; the civil service will point out that it currently works out of converted mandarin residences."
  VIE_NH_Nhiep_Build_PhuXuan_Metro: "Build the Phu-Xuan Metro"
+ VIE_NH_Nhiep_Build_PhuXuan_Metro_desc: "An underground railway linking the Citadel to the new administrative and commercial quarters would be the first in Southeast Asia, and we cannot build a metre of it alone. The proposal goes to Tokyo for the engineering and most of the money. It is an extravagance for a country at war, and it is meant to be seen as one - by our own people and by everyone else."
  VIE_NH_Nhiep_Prepare_Mausoleum: "Prepare the Imperial Mausoleum"
+ VIE_NH_Nhiep_Prepare_Mausoleum_desc: "Nam-Hung died in exile after half a century of waiting, and he has no tomb worthy of the throne he never sat on. A mausoleum in Phu-Xuan, built to the old proportions with modern methods, would settle the question of whose legacy this government claims. Monuments are arguments, and this one argues that the restoration was legitimate."
  VIE_NH_Nhiep_Rebuild_Imperial_Citadel: "Rebuild the Imperial Citadel"
+ VIE_NH_Nhiep_Rebuild_Imperial_Citadel_desc: "The Citadel has been shelled, garrisoned and neglected by three successive regimes. Rebuilding it means more than masonry: the arsenal workshops inside the walls can be put back into production, and the Phu-Xuan rifle works with them. A restored citadel gives us a symbol and a small-arms industry in the same set of buildings."
  VIE_NH_Nhiep_Expand_PQH: "Expand the Phuc-Quoc-Hoi"
+ VIE_NH_Nhiep_Expand_PQH_desc: "The Phuc-Quoc-Hoi carried the restoration and is now a party of exiles and old conspirators trying to govern a country most of them have not lived in for thirty years. A national conference would bring in delegates from every province, broaden the membership beyond the Tokyo circle, and let the government claim a mandate that does not rest entirely on a dead man's name."
  VIE_NH_Nhiep_Contain_Diem: "Contain Diem"
+ VIE_NH_Nhiep_Contain_Diem_desc: "Ngo-Dinh-Diem has a following among the Catholics, a brother with an organisation behind him, and no intention of serving under a Japanese-sponsored restoration. Better to clip the family's reach now, while it is still a matter of appointments and transfers, than to face them later when it is a matter of troops. Nhu will be the first to go."
  VIE_NH_Nhiep_Adopt_KMT_Org: "Adopt Kuomintang Organization"
+ VIE_NH_Nhiep_Adopt_KMT_Org_desc: "The Kuomintang built a party that could hold a state together through twenty years of war, and lost anyway - but the machinery worked even where the politics failed. Chinese advisors would rebuild the Phuc-Quoc-Hoi on those lines: cells, cadres and a party apparatus parallel to the civil service. Peking will read it exactly as it is meant."
  VIE_NH_Nhiep_Disband_XacTe: "Disband the Xac-Te"
+ VIE_NH_Nhiep_Disband_XacTe_desc: "The Xac-Te were useful when the restoration needed men who would not ask questions, and they have become a liability now that it needs a government that can answer them. They will be dissolved and their reliable elements folded into two proper security battalions under the Ve-Binh. The rest can go home."
  VIE_NH_Nhiep_Permit_VNQDD: "Permit the VNQDD"
+ VIE_NH_Nhiep_Permit_VNQDD_desc: "The Viet-Nam Quoc-Dan Dang has been proscribed under every administration since the French put a price on its leaders' heads, and it has outlasted all of them. Legalising Khanh's faction brings a genuine nationalist party into the open where it can be argued with, and brings Vu-Hong-Khanh himself back from the border with whatever he has been commanding out there."
  VIE_NH_Diem_Forming_Tay_Ninh_Revolutionary_Training_Base: "Form the Tay-Ninh Revolutionary Training Base"
+ VIE_NH_Diem_Forming_Tay_Ninh_Revolutionary_Training_Base_desc: "The revolutionary youth movements need somewhere to be trained, and Tay-Ninh offers ground, cover and a population already organised by the Cao-Dai. A permanent base there would turn the movements from a slogan into cadres. The methods being taught are frankly borrowed from the other side, and some of the students will draw the obvious conclusions."
  VIE_NH_Hung_Form_AntiCommunist_Front_tt: "§RThe communist movements of Vietnam will greatly resent us§!"
  VIE_NH_Hung_Modernizing_War_Tactics_tt: "§GThe naval installations of Gia-Dinh will be expanded§!"
  Enable_Ideological_Decision_TT: "§GUnlocks the Marxist Organization decisions, and grants §Y5§G pools of rehabilitated Chieu-Hoi cadres§!"
 
  VIE_NH_Vinh_PM: "Prime Minister Tran-quang-Vinh"
+ VIE_NH_Vinh_PM_desc: "Tran-quang-Vinh commands the Cao-Dai and, through them, Tay-Ninh and a great deal of the country between it and the capital. Making him Prime Minister buys the government a standing army and a mass organisation at the price of putting a religious hierarchy at the head of the state. General Hinh's return to French service is the first bill to come due."
  VIE_NH_Vinh_Bring_other_faiths_together: "Bring Other Faiths Together"
+ VIE_NH_Vinh_Bring_other_faiths_together_desc: "A Cao-Dai premiership will be read by the Buddhists, the Catholics and the Hoa-Hao as the beginning of their exclusion, and they will act accordingly unless we move first. Public money to every congregation, roads and works in the districts each of them holds, and a seat at the table for all of them. Ecumenism is cheaper than another sect war."
  VIE_NH_Vinh_Purge_Phuong: "Purge General Phuong's factions"
+ VIE_NH_Vinh_Purge_Phuong_desc: "General Nguyen-Thanh-Phuong holds Tay-Ninh with Cao-Dai troops who answer to him rather than to the Holy See or to us, and he has been conducting his own policy for some time. The Prime Minister, as a Cao-Dai himself, is the only man who can move against him without it becoming a war of religion. It will still be a dangerous week."
  VIE_NH_Vinh_Promote_Phuc_quoc_and_Cao_daiism: "Promote Phuc-Quoc and Cao-Daoism's Teachings"
+ VIE_NH_Vinh_Promote_Phuc_quoc_and_Cao_daiism_desc: "The government will put its weight behind Cao-Dai teaching and the restorationist cause together, preaching them as one doctrine through the Holy See's own networks. In the districts we hold but do not yet own, this reaches further than any administrator could. It also ties the state's legitimacy to a religion most of the country does not practise."
  VIE_NH_Vinh_Expand_the_Holy_See: "Expand the Holy-see"
+ VIE_NH_Vinh_Expand_the_Holy_See_desc: "Tay-Ninh is the capital of a faith and looks like a provincial market town. Expanding the Holy See - roads, works, and the fortifications a seat of government needs in this war - makes it a genuine second city. The hierarchy will note that the improvements arrived alongside a garrison, and that the state now has a permanent presence in their heartland."
  VIE_NH_Vinh_Expand_Countryside_Roads: "Expand Countryside Roads"
+ VIE_NH_Vinh_Expand_Countryside_Roads_desc: "Every village the Viet Minh reach first is a village we must later take back, and they reach them first because they walk and we cannot drive. Roads into the delta and the Tay-Ninh districts would put administrators, police and clinics where at present only cadres go. It is the least glamorous work available to this government and probably the most important."
  VIE_NH_Vinh_Modernize_Education_System: "Modernize the Educational System"
+ VIE_NH_Vinh_Modernize_Education_System_desc: "The schools are French in language, colonial in curriculum, and available to perhaps a third of the children who should be in them. A national system teaching in Vietnamese would produce the clerks, teachers and officers the state needs and would stop handing the nationalist argument to the other side. The reform will take a generation to show results and must be started regardless."
  VIE_NH_Vinh_Disbanding_Ve_quoc_Paramilitaries: "Disbanding Ve-quoc Paramilitaries"
+ VIE_NH_Vinh_Disbanding_Ve_quoc_Paramilitaries_desc: "The Bao-Chinh-Doan and the Nghia-Dung-Doan are private armies with government letterhead, loyal to the men who raised them and to nobody above. They will be dissolved and rebuilt as four regular infantry battalions under the national army. Those who will not take the oath can hand in their weapons."
  VIE_NH_Vinh_Establish_Tuyen_uy_Corp: "Establish the Tuyen-uy Corp"
+ VIE_NH_Vinh_Establish_Tuyen_uy_Corp_desc: "An army drawn from a dozen faiths and half a dozen private militias needs something to hold it together beyond pay. A chaplaincy corps, staffed from every major community rather than one, would give the soldiers somewhere to take their grievances that is not their old sect commander. The Cao-Dai will expect to supply most of it; they will not be allowed to."
  VIE_NH_Vinh_Integrate_the_Cao_dai_Army: "Integrate the Cao-dai Army"
+ VIE_NH_Vinh_Integrate_the_Cao_dai_Army_desc: "The Cao-Dai militia is the largest armed force in the south that is not the national army or the enemy. Bringing it in whole - as a formation, with its own officers and name - is expensive in money, political capital and command authority, and it is the only way to get those men under our flag rather than someone else's. A private army integrated is a private army no longer."
 
  VIE_NH_Hung_PM: "Prime Minister Hoang-nam-Hung"
+ VIE_NH_Hung_PM_desc: "Hoang-nam-Hung is the candidate of the men who think the restoration has been too gentle with its enemies. He offers order, a hard line against the left, and no patience at all for the sects or the French. The country will be more stable under him and a good deal less free, and both of those are the point."
  VIE_NH_Hung_Stabilize_NamPhan: "Stabilizing Nam-Phan"
+ VIE_NH_Hung_Stabilize_NamPhan_desc: "Nam-Phan is administered on paper and contested in fact, with the old Cochinchinese apparatus still half in place and the population unconvinced that anything has changed. A concentrated pacification - administrators, police, public works and a great many arrests - would make the south genuinely ours for the first time. It is the foundation everything else in this programme rests on."
  VIE_NH_Hung_Pardon_French_Collaborators: "Pardon French Collaborators"
+ VIE_NH_Hung_Pardon_French_Collaborators_desc: "Half the competent administrators and officers in the country served the French, and we have been refusing to employ them on principle while the ministries run on enthusiasm and the army runs on Frenchmen. The pardon brings them back - Tam, Chanson's Vietnamese staff, the provincial men who know where the records are. The nationalists will call it a betrayal and they will not be entirely wrong."
  VIE_NH_Hung_Seek_Closer_ties_to_West: "Seek Closer Ties to the West"
+ VIE_NH_Hung_Seek_Closer_ties_to_West_desc: "A government of this character has exactly one market for its friendship, and it is in Washington, London and Paris. We will court all three openly: anti-communist credentials on display, awkward questions about the sects and the arrests left for another time. The West does not require its clients to be pleasant, only reliable."
  VIE_NH_Hung_Seek_ROC_Support: "Seek Republic of China's support"
+ VIE_NH_Hung_Seek_ROC_Support_desc: "Taipei has advisors, arsenals and a grievance against Peking older and sharper than ours. Their military mission would bring both expertise and equipment, and their government would gain the recognition it needs from any quarter it can get. It is an alliance of two states that have each lost half a country."
  VIE_NH_Hung_Invite_Foreign_Investors: "Invite Foreign Investors"
+ VIE_NH_Hung_Invite_Foreign_Investors_desc: "Order has been imposed at some cost, and the point of imposing it was to make the country worth investing in. Refineries and plant financed from abroad would give us an industrial base beyond rubber and rice, and would give the investors a stake in our survival. That second effect is worth more than the first."
  VIE_NH_Hung_Emulate_Japanese_Economic_Policy: "Emulate Japanese Economic Policies"
+ VIE_NH_Hung_Emulate_Japanese_Economic_Policy_desc: "Japan has gone from ruin to industry in five years by directing capital rather than waiting for it, and it did so under an occupation and a constitution it did not write. A ministry that picks industries and backs them, on the Japanese model, suits both our circumstances and this government's instincts."
  VIE_NH_Hung_Enforce_Military_Professionalism: "Enforce Military Professionalism"
+ VIE_NH_Hung_Enforce_Military_Professionalism_desc: "Our officer corps was assembled from sect commanders, French auxiliaries and political appointees, and it shows in everything from staff work to the state of the pay rolls. Proper examinations, proper postings, and promotion on merit rather than on who raised the battalion. Every general will support this in principle and resist it in his own command."
  VIE_NH_Hung_Outlaw_Private_Militaries: "Outlaw Private Militaries"
+ VIE_NH_Hung_Outlaw_Private_Militaries_desc: "There will be one army in this country. The UMDC, the Hoa-Hao bands and every other force that answers to a man rather than to the state will be outlawed, and their officers struck from the rolls. This is the fight the last three governments deferred, and deferring it again would simply mean fighting it later on worse terms."
  VIE_NH_Hung_Form_AntiCommunist_Front: "Form the Anti-Communist United Front"
+ VIE_NH_Hung_Form_AntiCommunist_Front_desc: "A united front binding the parties, the sects and the army to a single anti-communist platform would let this government speak for something broader than itself. Hanoi and the Front will denounce it as a police operation with a manifesto, which is roughly what it is - but it will hold, and holding is the point."
  VIE_NH_Hung_Unify_KienThiet_Army: "Unify the Kien-Thiet Army"
+ VIE_NH_Hung_Unify_KienThiet_Army_desc: "The Kien-Thiet formations are the last of the irregular commands, and they will be dissolved into four regular battalions of the national army with proper equipment and proper officers. The men keep their pay and lose their patrons. It is the same medicine already given to the sects, administered to our own side."
  VIE_NH_Hung_Modernizing_War_Tactics: "Modernize War Tactics"
+ VIE_NH_Hung_Modernizing_War_Tactics_desc: "We are fighting a guerrilla war with a doctrine written for the plains of Europe, and losing patrols to it every week. New doctrine, written here and taught to our own officers rather than imported from Saint-Cyr, would at least address the war we are actually in. The staff colleges will resist; the battalion commanders will not."
  VIE_NH_Hung_Intensify_AntiCommunist_Activities: "Intensify Anti-Communist Activities"
+ VIE_NH_Hung_Intensify_AntiCommunist_Activities_desc: "The campaign will be carried up a level in two places at once: an administrative sweep through Labour, Education and Information, and a military one through the districts the Front has been running unopposed. It will cost us men, it will cost us a great many people who were guilty of nothing worse than their associations, and it will bring two provinces back under our writ."
  VIE_NH_Hung_Jail_NgoDinh_Brothers: "Jail the Ngo-Dinh Brothers"
+ VIE_NH_Hung_Jail_NgoDinh_Brothers_desc: "The Ngo-Dinh brothers have spent this government's whole tenure building a parallel one, and Nhu's organisation is now the only structure in the country that could replace ours intact. They will be arrested. Their supporters will call it the act of a police state and the Catholics will not forgive it, but an alternative government in waiting is not something we can afford to leave standing."
  VIE_NH_Hung_Pardon_VuHongKhanh: "Pardon Vu-hong_Khanh"
+ VIE_NH_Hung_Pardon_VuHongKhanh_desc: "Vu-Hong-Khanh has been a fugitive under every government since the French put a price on him, and he commands the loyalty of the VNQDD's fighting men. Pardoning him and legalising his faction brings a real nationalist organisation inside the tent, and brings a capable irregular commander back into our order of battle. He will not be a comfortable subordinate."
  VIE_NH_Hung_Monitor_Buu: "Monitor Buu's Syndicalist Activities"
+ VIE_NH_Hung_Monitor_Buu_desc: "Tran-Quoc-Buu's unions are the one mass organisation of the left we have not suppressed, largely because breaking them would stop the ports and the plantations. Surveillance rather than suppression, then - and a labour code that regulates the unions into something manageable. It costs us the goodwill of the workers and buys us their continued employment."
  VIE_NH_Hung_Introduce_Political_Commisars: "Introduce Political Commisars"
+ VIE_NH_Hung_Introduce_Political_Commisars_desc: "The enemy's cadres keep his units fighting after they should have broken, and we have nothing equivalent. Political officers attached to our own formations would handle indoctrination, morale and the loyalty of the officers they serve alongside. Copying the enemy's institutions to fight him is uncomfortable and it works."
  VIE_NH_Hung_Implement_Armored_Units: "Employ Armored Units"
+ VIE_NH_Hung_Implement_Armored_Units_desc: "Armour is of limited use in the paddy and decisive on the roads, and the roads are how the delta is actually controlled. Mechanised groups built around medium tanks would give us a mobile reserve able to reach a threatened district in hours instead of days. The country has never fielded such a formation under its own flag."
 
  # === Hinh's French Coup Focus Tree ===
 
